@@ -18,7 +18,7 @@ try {
     
     
     // ROUTE DEFINITION: get, post, put and delete
-	Route::get('/', function(){ echo 'Hello word';});
+	Route::get('/', function(){ echo 'Hello world';});
     Route::get('/view', function() { return view('default/index'); });
     
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
