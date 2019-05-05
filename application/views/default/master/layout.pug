@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+  // Defining global variables
+  // Use this aread to define any global variables needed in the UI
+  - $home = session('home');
+  
+  //- Defining the headers
+  head
+    block headers
+    if $metadata
+        include ../modules/metadata
+    
+  //- Defining the body
+  body
+    if $authorized
+        block navigation_authorized
+    else 
+        block navigation_default
+    if $metadata
+        include ../modules/metadata_body
+     
+    div(class='shadowCoverTop color0')
+    .container
+        .shadowContainer
+            .radialShadowTop
+        block content
+        block scripts
+    .spacer-2
+    if $metadata and $social
+        include ../modules/social
+    block footer

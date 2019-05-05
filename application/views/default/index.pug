@@ -1,0 +1,16 @@
+extends master/layoutblocks
+
+block content
+    .spacer-2
+    div(class='content-section equally-spaced-1')
+        .spacer-2
+        if $authorized
+            h2 You are currently logged in.
+        else
+            h2 Welcome to Caligrafy
+        p Start from the ground up with this light MVC framework
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+    "name": "dory.azar/mvc",
+    "description": "PHP MVC framework",
+    "keywords": ["php", "framework", "mvc", "laravel", "light", "model", "view", "controller"],
+    "type": "framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dory Azar",
+            "email": "dory.azar@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.0",
+        "pug-php/pug": "^3.2",
+        "vlucas/phpdotenv": "^3.3",
+        "wixel/gump": "dev-master",
+        "claviska/simpleimage": "dev-master",
+        "stripe/stripe-php": "6.*"
+    }
+}

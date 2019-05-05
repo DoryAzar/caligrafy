@@ -1,0 +1,13 @@
+- $posterDescription = urlencode($metadata['description'])
+- $fbId = FB_APP_ID
+div(class="container color0 horizontal-center")
+    p(class="textcolor5") Spread the word!
+    a(class="btn btn-social-icon btn-facebook", href="https://www.facebook.com/dialog/share?app_id={$fbId}&display=popup&href={$metadata['site_url']}&redirect_uri={$metadata['site_url']}", target="_blank")
+        i(class="fa fa-facebook")
+    a(class="btn btn-social-icon btn-twitter", href="https://twitter.com/intent/tweet?url={$metadata['site_url']}", target="_blank")
+        i(class="fa fa-twitter")
+    a(class="btn btn-social-icon btn-linkedin", href="https://www.linkedin.com/shareArticle?mini=true&url={$metadata['site_url']}&title=&summary=&source=", target="_blank")
+        i(class="fa fa-linkedin")
+    a(class="btn btn-social-icon btn-pinterest", data-pin-do="buttonPin", href="https://www.pinterest.com/pin/create/button/?url={$metadata['site_url']}&media={$metadata['image']}&description={$posterDescription}", data-pin-custom="true", target="_blank")
+        i(class="fa fa-pinterest")
+.spacer-2
