@@ -1242,16 +1242,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v6.34.2",
+            "version": "v6.34.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "60335d5dad000fb4b08aa7176b832a59d13d0420"
+                "reference": "8f74cbe130f962d96d4ba92e75a44396a40cf41a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/60335d5dad000fb4b08aa7176b832a59d13d0420",
-                "reference": "60335d5dad000fb4b08aa7176b832a59d13d0420",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/8f74cbe130f962d96d4ba92e75a44396a40cf41a",
+                "reference": "8f74cbe130f962d96d4ba92e75a44396a40cf41a",
                 "shasum": ""
             },
             "require": {
@@ -1294,7 +1294,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2019-04-26T18:30:55+00:00"
+            "time": "2019-05-01T18:14:32+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1474,12 +1474,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "8296e713485869de38a5f55ce2cce9a12fd107ad"
+                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/8296e713485869de38a5f55ce2cce9a12fd107ad",
-                "reference": "8296e713485869de38a5f55ce2cce9a12fd107ad",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
+                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-04-18T06:55:47+00:00"
+            "time": "2019-05-01T12:55:49+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
