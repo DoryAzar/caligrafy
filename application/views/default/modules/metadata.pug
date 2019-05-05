@@ -12,7 +12,7 @@ meta(name="twitter:title", content=$metadata['title'])/
 meta(name="twitter:description", content=$metadata['description'])/
 meta(name="twitter:creator", content=$metadata['creator'])/
 meta(name="twitter:image", content =$metadata['image'])/
-meta(name="twitter:data1", content=$metadata['amount'] != '' ? $metadata['amount'] : 0)/
+meta(name="twitter:data1", content=$metadata['amount'] != '' ? $metadata['amount'] : '0.00')/
 meta(name="twitter:label1", content="Price")
 
 meta(property="og:type", content="og:product")/
@@ -23,7 +23,7 @@ meta(property="og:image:width", content="600")/
 meta(property="og:image:height", content="317")/
 meta(property="og:description", content=$metadata['description'])/
 meta(property="og:site_name", content=$metadata['site_name'])/
-meta(property="product:price:amount", content=$metadata['amount'] != '' ? $metadata['amount'] : 0)/
+meta(property="product:price:amount", content=$metadata['amount'] != '' ? $metadata['amount'] : '0.00')/
 meta(property="product:price:currency", content=$metadata['currency'] != '' ? $metadata['currency'] : trim(localeconv()['int_curr_symbol']))/
-meta(property="product:shipping_cost:amount", content=$metadata['shipping_cost'] != '' ? $metadata['shipping_cost'] : 0)/
+meta(property="product:shipping_cost:amount", content=$metadata['shipping_cost'] != '' ? $metadata['shipping_cost'] : '0.00')/
 meta(property="product:shipping_cost:currency", content=$metadata['currency'] != '' ? $metadata['currency'] : trim(localeconv()['int_curr_symbol']))/
