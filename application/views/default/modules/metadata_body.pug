@@ -1,9 +1,10 @@
+- $amount = $metadata['amount'] != '' ? $metadata['amount'] : 0
 div(itemscope, itemtype="http://schema.org/Product")
     meta(itemprop="name", content=$metadata['site_name'])/
     meta(itemprop="description", content="{$metadata['description']}")/
     meta(itemprop="image", content="{$metadata['image']}")/
     div(itemprop="offers", itemscope, itemtype="https://schema.org/Offer", class="hide")
-        span(itemprop="price")= $metadata['amount']
+        span(itemprop="price")= $amount
         meta(itemprop="priceCurrency", content="USD")/ 
         meta(itemprop="availability", itemtype="http://schema.org/ItemAvailability"
             content="http://schema.org/InStock")/
