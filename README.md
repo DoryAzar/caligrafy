@@ -83,6 +83,10 @@ We have created a rigorous documentation to help you understand the basics of th
 11. [Stripe Payment](https://github.com/DoryAzar/mvc/wiki/9.2-Stripe-Payment)
 12. [Metadata & Rich Cards](https://github.com/DoryAzar/mvc/wiki/9.3-Metadata-&-Social-Rich-Cards)
     
+## Learn through examples
+Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our you tube channel.
+[Caligrafy Video Channel](https://www.youtube.com/channel/UCo0ZZbiHVGlF9lFWFpVhG8g)
+    
 ## Connecting with the Caligrafy Community
 There are several ways for the Caligrafy community to connect:
 + **github:** You can always use github to stay up to date with the roadmap of Caligrafy, to post issues and to track when feature requests and issues are done
@@ -90,3 +94,9 @@ There are several ways for the Caligrafy community to connect:
 [Join our slack community](https://join.slack.com/t/caligrafy/shared_invite/enQtNjI4OTQwOTk0NTM0LWMyMmJiODI5M2E2ZTI5MjEwM2E3MTM2NWRkMWJjOTc3NmU4ZmY2ZjRiN2ZkMmE2YmE1YjhkZTRmNmI5MzE5Yzc)
 + **facebook Caligrafy Group:** Joining our Caligrafy group on facebook gives you more ways to interact with the community and to share success stories. 
 [Join our facebook group](https://www.facebook.com/groups/caligrafy/)
+
+## Keep Caligrafy going...
+Your support keeps us going. If you like Caligrafy, there are several ways you could contribute:
++ **Promote us:** On our website, you can share our page with your friends and fans [caligrafy.com](https://caligrafy.com)
++ **Fund our project:** You can fun our project on [Kickposter](https://kickposter.us/kickposter/project/index.php?email=bVVCOHhURXQ0RjhFd1hTUjBVeGR0Umh6LzVucm80NHNDckNQdGI3Rkp3bz0=&postcart_id=a3pQM0c3UlFoZVdUK00zL1RhSjU3Zz09). Kickposter is an application that was built using earlier versions of Caligrafy. 
+
