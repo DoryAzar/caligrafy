@@ -3,7 +3,7 @@ html(lang="en")
   // Defining global variables
   // Use this aread to define any global variables needed in the UI
   - $home = session('home');
-  - $analytics_id = GOOGLE_ANALYTICS_ID;
+  - $analytics_id = strtolower(APP_ENV) == 'production'? GOOGLE_ANALYTICS_ID : '';
   
   //- Defining the headers
   head
