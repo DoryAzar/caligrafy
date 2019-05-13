@@ -2,11 +2,13 @@ extends layout
 
 //- Headers with meta data
 block headers
-        title= $title
+        title Caligrafy
         meta(http-equiv="content-type", content="text/html; charset=UTF-8")
         meta(name="viewport", content="width=devide-width, initial-scale=1, maximum-scale=1")
         meta(name='apple-mobile-web-app-capable', content='yes')
         meta(name='apple-mobile-web-app-status-bar-style', content='black')/
+        if $metadata
+            include ../modules/metadata
         link(rel='shortcut icon', href=scripts('favicon'), type='image/x-icon')
         link(rel="stylesheet", type="text/css", href=scripts('css'))
         link(rel="stylesheet", href=scripts('bootstrap_css'))
