@@ -23,7 +23,6 @@ block headers
               gtag('js', new Date());
 
               gtag('config', '#{$analytics_id}');
-        include ../modules/standalone
 
 //- Default Navigation
 block navigation_default
@@ -91,6 +90,7 @@ block scripts
     script(src=scripts('bootstrap_script'))
     block additional_preload_scripts
     script(src=scripts('script'))
+    include ../modules/standalone
     block additional_scripts
     if $install
         include ../modules/install
