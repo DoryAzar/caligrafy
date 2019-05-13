@@ -36,7 +36,7 @@ session('icons', "<link rel='apple-touch-icon' sizes='57x57' href='' />
 
 
 // Initialize metadata
-session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => ''] );
+session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => '', 'google-site-verification' => ''] );
 
 // Keywords
 keywords("caligrafy, php, mvc, framework, mvc framework, php framework, model, view, controller, learn php, learn coding, laravel, symfony", 'keywords');
