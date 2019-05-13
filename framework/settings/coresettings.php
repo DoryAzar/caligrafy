@@ -43,7 +43,7 @@ session('standalone', array('ios' => "<meta name='apple-mobile-web-app-capable' 
 session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => ''] );
 
 // Keywords
-keywords("broadposter, broad, poster, post", 'keywords');
+keywords("caligrafy, php, mvc, framework, mvc framework, php framework, model, view, controller, learn php, learn coding, laravel, symfony", 'keywords');
 
 // Copyright notice
 copyright(date("Y")." - Company Name");
