@@ -29,13 +29,6 @@ session('scripts', array(  'favicon' => $_SESSION['imagesUrl'].getenv('FAVICON')
                  ));
 
 
-//Initialize phone icons
-session('icons', "<link rel='apple-touch-icon' sizes='57x57' href='' />
-<link rel='apple-touch-icon' sizes='72x72' href='' />
-<link rel='apple-touch-icon' sizes='114x114' href='' />
-<link rel='apple-touch-icon' sizes='144x144' href='' />");
-
-
 // Initialize metadata
 session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => '', 'google-site-verification' => ''] );
 
