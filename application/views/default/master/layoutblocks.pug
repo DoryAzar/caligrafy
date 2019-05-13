@@ -12,6 +12,8 @@ block headers
         link(rel="stylesheet", href=scripts('bootstrap_css'))
         if $social
             link(rel="stylesheet", type="text/css", href=scripts('social_buttons_css'))
+        if $install
+            link(rel="stylesheet", type="text/css", href=scripts('add_to_home_css'))
         block additional_css
         if $google_analytics
             script(async src="https://www.googletagmanager.com/gtag/js?id={$analytics_id}")

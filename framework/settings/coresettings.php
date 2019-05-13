@@ -22,6 +22,7 @@ session('scripts', array(  'favicon' => $_SESSION['imagesUrl'].getenv('FAVICON')
                    'fallback_respond' => 'https://oss.maxcdn.com/respond/1.4.2/respond.min.js',
                    'lightbox_script' => "<script src='../js/lightbox/lightbox.js'></script><script>lightbox.option({'alwaysShowNavOnTouchDevices': true,'disableScrolling': true})</script>",
                    'add_to_home' => $_SESSION['public'].'js/addtohome/src/addtohomescreen.js',
+                   'add_to_home_css' => $_SESSION['public'].'js/addtohome/style/addtohomescreen.css',
                    'wysiwyg_css' => 'https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css',
                    'wysiwyg_js' => 'https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js',
                    'social_buttons_css' => $_SESSION['public'].'css/social_buttons.css'
