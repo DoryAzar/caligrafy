@@ -33,7 +33,7 @@ block navigation_default
         nav(class='horizontal')
             ul(class='leftnavigation hidden-xs col-lg-1 col-md-2 col-sm-2')
                 li
-                    a(class='horizontal-item btn btn-md btn-default', href="${home}register") Register
+                    a(class='horizontal-item btn btn-md btn-default', href="{$home}register") Register
             ul(id='menu_icon', class='leftnavigation menu visible-xs col-xs-1')
                 li(class='color1')
                 li(class='color1')
@@ -45,13 +45,13 @@ block navigation_default
                         
             ul(class='rightnavigation hidden-xs col-lg-1 col-md-2 col-sm-2')
                 li
-                    a(class='horizontal-item btn btn-md btn-default', href="${home}login") Sign in
+                    a(class='horizontal-item btn btn-md btn-default', href="{$home}login") Sign in
             nav(id='vertical_menu' class='vertical hide')
                 ul(class='menulist color0')
                     li(class='medium-text')
-                        a(class='vertical-item', href="${home}register") Register
+                        a(class='vertical-item', href="{$home}register") Register
                     li(class='medium-text')
-                        a(class='vertical-item', href="${home}login") Sign in
+                        a(class='vertical-item', href="{$home}login") Sign in
     
 //- Private Navigation
 block navigation_authorized
@@ -71,11 +71,11 @@ block navigation_authorized
                         
             ul(class='rightnavigation hidden-xs col-lg-1 col-md-2 col-sm-2')
                 li
-                    a(class='horizontal-item btn btn-md btn-default', href="${home}logout") Sign out
+                    a(class='horizontal-item btn btn-md btn-default', href="{$home}logout") Sign out
             nav(id='vertical_menu' class='vertical hide')
                 ul(class='menulist color0')
                     li(class='medium-text')
-                        a(class='vertical-item', href="${home}logout") Sign out
+                        a(class='vertical-item', href="{$home}logout") Sign out
 
 //- Content block that will get populated by page
 block content
