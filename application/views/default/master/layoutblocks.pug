@@ -5,6 +5,8 @@ block headers
         title= $title
         meta(http-equiv="content-type", content="text/html; charset=UTF-8")
         meta(name="viewport", content="width=devide-width, initial-scale=1, maximum-scale=1")
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style', content='black')/
         link(rel='shortcut icon', href=scripts('favicon'), type='image/x-icon')
         link(rel="stylesheet", type="text/css", href=scripts('css'))
         link(rel="stylesheet", href=scripts('bootstrap_css'))
@@ -19,6 +21,7 @@ block headers
               gtag('js', new Date());
 
               gtag('config', '#{$analytics_id}');
+        include ../modules/standalone
 
 //- Default Navigation
 block navigation_default
@@ -87,6 +90,9 @@ block scripts
     block additional_preload_scripts
     script(src=scripts('script'))
     block additional_scripts
+    if $install
+        include ../modules/install
+    include ../modules/gestures
     <!--[if lt IE 9] -->
         <script src=<?php echo "'".scripts('fallback_html5shiv')."'"; ?>></script>
         <script src=<?php echo "'".scripts('fallback_respond')."'"; ?>></script>

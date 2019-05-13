@@ -1,0 +1,20 @@
+script(src="https://hammerjs.github.io/dist/hammer.js")
+script(type="text/javascript").
+    if(("standalone" in window.navigator) && window.navigator.standalone){
+        var gesturize = document.getElementById('gesturize');
+
+    // create a simple instance
+    // by default, it only adds horizontal recognizers
+    var mc = new Hammer(gesturize);
+
+    mc.get('swipe').set({ threshold: 15, velocity: 0.5 });
+
+    // listen to events...
+    mc.on("swiperight", function(ev) {
+        window.history.back();
+    });
+    mc.on("swipeleft", function(ev) {
+        window.history.forward();
+    });
+
+    }
