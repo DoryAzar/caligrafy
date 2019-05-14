@@ -95,6 +95,10 @@ There are several ways for the Caligrafy community to connect:
 + **facebook Caligrafy Group:** Joining our Caligrafy group on facebook gives you more ways to interact with the community and to share success stories. 
 [Join our facebook group](https://www.facebook.com/groups/caligrafy/)
 
+## Need help getting started?
+We are always here to help when you need us. If you need assistance getting started or if you need help understanding how Caligrafy can be useful to you, we can help. Reach out to us by joining our slack channel.
+[Reach out to us](https://join.slack.com/t/caligrafy/shared_invite/enQtNjI4OTQwOTk0NTM0LWMyMmJiODI5M2E2ZTI5MjEwM2E3MTM2NWRkMWJjOTc3NmU4ZmY2ZjRiN2ZkMmE2YmE1YjhkZTRmNmI5MzE5Yzc)
+
 ## Keep Caligrafy going...
 Your support keeps us going. If you like Caligrafy, there are several ways you could contribute:
 + **Promote us:** On our website, you can share our page with your friends and fans [caligrafy.com](https://caligrafy.com)
