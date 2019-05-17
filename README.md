@@ -82,6 +82,7 @@ We have created a rigorous documentation to help you understand the basics of th
 10. [Authentication](https://github.com/DoryAzar/mvc/wiki/9.1-Authentication)
 11. [Stripe Payment](https://github.com/DoryAzar/mvc/wiki/9.2-Stripe-Payment)
 12. [Metadata & Rich Cards](https://github.com/DoryAzar/mvc/wiki/9.3-Metadata-&-Social-Rich-Cards)
+13. [Search Referencing and Analytics](https://github.com/DoryAzar/caligrafy/wiki/9.4-Search-Referencing-and-Analytics)
     
 ## Learn through examples
 Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our you tube channel.
