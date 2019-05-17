@@ -1,6 +1,12 @@
 # Caligrafy - A Light PHP Framework
 ![Caligrafy](http://broadposter.com/public/uploads/08fc6d5af320f97c1f341b82.png)
 
+## Caligrafy Events
+If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
+
+[Join the event](https://www.eventbrite.com/e/learn-php-using-caligrafy-tickets-62056781504?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing)
+
+
 ## Requirements
 + PHP > 7.0
 + MySql > 5.6
