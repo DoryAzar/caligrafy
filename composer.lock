@@ -1514,16 +1514,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v6.34.3",
+            "version": "v6.35.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "8f74cbe130f962d96d4ba92e75a44396a40cf41a"
+                "reference": "a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/8f74cbe130f962d96d4ba92e75a44396a40cf41a",
-                "reference": "8f74cbe130f962d96d4ba92e75a44396a40cf41a",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5",
+                "reference": "a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5",
                 "shasum": ""
             },
             "require": {
@@ -1566,7 +1566,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2019-05-01T18:14:32+00:00"
+            "time": "2019-05-14T19:58:30+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1746,12 +1746,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574"
+                "reference": "34dac0586369f29f52fccff2317a251bb5218a77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
-                "reference": "2fd2ecf7913fb96f0c2e941ca15bb702184c6574",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/34dac0586369f29f52fccff2317a251bb5218a77",
+                "reference": "34dac0586369f29f52fccff2317a251bb5218a77",
                 "shasum": ""
             },
             "require": {
@@ -1780,7 +1780,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.3-dev"
+                    "dev-master": "4.4-dev"
                 }
             },
             "autoload": {
@@ -1814,7 +1814,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-05-01T12:55:49+00:00"
+            "time": "2019-05-09T07:23:25+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
