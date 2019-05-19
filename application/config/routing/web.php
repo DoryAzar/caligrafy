@@ -8,6 +8,10 @@
  *
 */
 
+use Caligrafy\Auth;
+use Caligrafy\Route;
+use \Exception as Exception;
+
 try {
     
     // API ACCESS - add comments if you don't want to allow API access on routes
