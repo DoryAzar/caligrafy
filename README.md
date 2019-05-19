@@ -86,7 +86,7 @@ We have created a rigorous documentation to help you understand the basics of th
     > + [HTML Forms](https://github.com/DoryAzar/mvc/wiki/9.-Helpers-,-Forms-&-REST-API#forms)
     > + [REST API](https://github.com/DoryAzar/mvc/wiki/9.-Helpers-,-Forms-&-REST-API#restapi)
 10. [Authentication](https://github.com/DoryAzar/mvc/wiki/9.1-Authentication)
-11. [Stripe Payment](https://github.com/DoryAzar/mvc/wiki/9.2-Stripe-Payment)
+11. [Stripe & Cryptocurrency Payment](https://github.com/DoryAzar/caligrafy/wiki/9.2-Stripe-&-Cryptocurrency-Payment)
 12. [Metadata & Rich Cards](https://github.com/DoryAzar/mvc/wiki/9.3-Metadata-&-Social-Rich-Cards)
 13. [Search Referencing and Analytics](https://github.com/DoryAzar/caligrafy/wiki/9.4-Search-Referencing-and-Analytics)
     
