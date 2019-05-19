@@ -24,6 +24,7 @@ if (empty($_SESSION['token'])) {
 define("DS", DIRECTORY_SEPARATOR);
 define("ROOT", getcwd() . DS);
 define("APP_PATH", ROOT . 'application' . DS);
+define("TEST_PATH", ROOT . 'tests' . DS);
 define("FRAMEWORK_PATH", ROOT . "framework" . DS);
 define("PUBLIC_PATH", ROOT . "public" . DS);
 define("CONFIG_PATH", APP_PATH . "config" . DS);

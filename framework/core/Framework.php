@@ -58,6 +58,7 @@ class Framework {
         self::_require_all(CORE_PATH);
         self::_require_all(DB_PATH);
         self::_require_all(APP_PATH);
+        self::_require_all(TEST_PATH);
     }
 
     /**
