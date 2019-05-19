@@ -18,6 +18,7 @@
         "wixel/gump": "dev-master",
         "claviska/simpleimage": "dev-master",
         "stripe/stripe-php": "6.*",
-        "coinbase/coinbase-commerce": "dev-master"
+        "coinbase/coinbase-commerce": "dev-master",
+        "phpmailer/phpmailer": "6.*"
     }
 }
