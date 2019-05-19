@@ -30,7 +30,7 @@ session('scripts', array(  'favicon' => $_SESSION['imagesUrl'].getenv('FAVICON')
 
 
 // Initialize metadata
-session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => '', 'google-site-verification' => ''] );
+session('metadata', ['site_name' => '', 'site_url' => '', 'creator' => '','title' => '', 'image' => '', 'description' => '', 'amount' => '', 'currency' => '', 'shipping_cost' => '', 'shipping_cost_currency' => '', 'google-site-verification' => '', 'availability' => ''] );
 
 // Keywords
 keywords("caligrafy, php, mvc, framework, mvc framework, php framework, model, view, controller, learn php, learn coding, laravel, symfony", 'keywords');
