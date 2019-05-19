@@ -14,6 +14,10 @@
  * @author Dory Azar
 */
 
+namespace Caligrafy;
+
+use \Phug;
+
 class View {
     
     public $viewName;

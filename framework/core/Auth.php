@@ -14,7 +14,10 @@
  *
 */
 
+namespace Caligrafy;
+
 class Auth {
+    
 
     protected static $api;
     private static $authModel;

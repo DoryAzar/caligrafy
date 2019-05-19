@@ -13,6 +13,8 @@
  * @version 1.0
  */
 
+namespace Caligrafy;
+
 use CoinbaseCommerce\ApiClient;
 use CoinbaseCommerce\Resources\Charge;
 

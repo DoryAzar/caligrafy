@@ -7,6 +7,22 @@
  * @version 1.0
  */
 
+use Caligrafy\Auth;
+use Caligrafy\Controller;
+use Caligrafy\CryptoPayment;
+use Caligrafy\Errors;
+use Caligrafy\Framework;
+use Caligrafy\Loader;
+use Caligrafy\Mail;
+use Caligrafy\Model;
+use Caligrafy\Payment;
+use Caligrafy\Request;
+use Caligrafy\Route;
+use Caligrafy\Validator;
+use Caligrafy\View;
+use Caligrafy\Database;
+use \Exception as Exception;
+
 function generateKey($size = 32)
 {
     return base64_encode(openssl_random_pseudo_bytes($size));

@@ -13,6 +13,8 @@
  * @version 1.0
 */
 
+namespace Caligrafy;
+
 class Errors
 {
     /**

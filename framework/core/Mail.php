@@ -13,8 +13,11 @@
  * @version 1.0
  */
 
+namespace Caligrafy;
+
 use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\Exception as MailerException;
+use \Exception as Exception;
 
 class Mail {
     

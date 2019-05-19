@@ -14,6 +14,8 @@
  * @author Dory A
 */
 
+namespace Caligrafy;
+
 class Framework {
     
   /**

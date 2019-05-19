@@ -14,6 +14,9 @@
  * @author Dory Azar
 */
 
+namespace Caligrafy;
+use \Exception as Exception;
+
 class Model {
     
     public $table;
@@ -246,6 +249,7 @@ class Model {
         $outcome = array();
         $pivotOutcome = array();
         
+        
         // create the pivot table
         $result = Database::execute('CREATE TABLE IF NOT EXISTS '.$pivot.' (`id` INT(25) UNSIGNED NOT NULL AUTO_INCREMENT,`'.$fklocal.'` INT(25) NOT NULL, `'.$fkjoin.'` INT(25) NOT NULL, `created_at` DATETIME NOT NULL DEFAULT now(), `modified_at` DATETIME NOT NULL DEFAULT now() ON UPDATE now(), PRIMARY KEY (`id`), CONSTRAINT fk1 FOREIGN KEY (`'.$fklocal.'`) REFERENCES `'.$table1.'` (`'.$foreignKeyLocal.'`) ON UPDATE CASCADE ON DELETE CASCADE, CONSTRAINT fk2 FOREIGN KEY (`'.$fkjoin.'`) REFERENCES `'.$table2.'` (`'.$foreignKeyJoin.'`) ON UPDATE CASCADE ON DELETE CASCADE
         ) ENGINE = InnoDB DEFAULT CHARSET = utf8;');
@@ -261,6 +265,7 @@ class Model {
         $pivotResult = Database::execute('SELECT '.$pivot.'.* FROM '.$table1.' LEFT JOIN '.$pivot.' ON '.$table1.'.'.$foreignKeyLocal.'='.$pivot.'.'.$fklocal.' LEFT JOIN '.$table2.' ON '.$table2.'.'.$foreignKeyJoin.'='.$pivot.'.'.$fkjoin.' WHERE '.$table1.'.'.$foreignKeyLocal.' = '.$this->$foreignKeyLocal);
         $pivotResult = Database::toArray($pivotResult);
 
+        
         // Get the categories results
         foreach($result as $key => $value) {
             $newModel = new $modelName($joinedTableName);

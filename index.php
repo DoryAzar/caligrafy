@@ -8,6 +8,8 @@
  *
 */
 
+use Caligrafy\Framework;
+
 require_once "framework/core/Framework.php";
 
 // load external vendors

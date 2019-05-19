@@ -15,6 +15,8 @@
  *
 */
 
+namespace Caligrafy;
+
 class Validator extends \GUMP
 {
     public function check($data, $rules = array(), $filters = array())

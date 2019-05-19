@@ -12,6 +12,10 @@
  * @version 1.0
  */
 
+namespace Caligrafy;
+use PDO;
+use \Exception as Exception;
+
 class Database {
     // DB Params
     private static $db_activate = DB_ACTIVATE;

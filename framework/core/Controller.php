@@ -14,6 +14,7 @@
  *
 */
 
+namespace Caligrafy;
 
 class Controller
 {
@@ -24,7 +25,7 @@ class Controller
     protected $validator;
     protected $payment;
 
-    public function __construct($modelname, $table = null)
+    public function __construct($modelname = '', $table = null)
     {
        return $this($modelname, $table);
     }

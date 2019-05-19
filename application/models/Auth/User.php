@@ -1,5 +1,7 @@
 <?php
 
+use Caligrafy\Model;
+
 class User extends Model {
     public $id;
     public $username;
@@ -7,4 +9,5 @@ class User extends Model {
     public $permissions;
     public $created_at;
     public $modified_at;
+    
 }

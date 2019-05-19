@@ -14,8 +14,12 @@
  *
 */
 
+namespace Caligrafy;
+use \Exception as Exception;
+
 class Route
 {
+    
     /**
      * @var array $_httpMethods defines all the valid http methods that are set at runtime
      * @property array $_httpMethods defines all the valid http methods at runtime
@@ -178,7 +182,7 @@ class Route
             }
         
             // Execute if Controller and Action exist
-            $controller = new $controller('Model');
+            $controller = new $controller();
             $controller->$action();
 
         } else {

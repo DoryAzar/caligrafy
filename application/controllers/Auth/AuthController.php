@@ -1,5 +1,7 @@
 <?php
 
+use Caligrafy\Controller;
+
 class AuthController extends Controller {
     
     

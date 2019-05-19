@@ -1,5 +1,8 @@
 <?php
 
+namespace Caligrafy;
+use \Exception as Exception;
+
 class Request  {
     
     /**

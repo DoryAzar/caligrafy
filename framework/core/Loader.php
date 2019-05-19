@@ -15,6 +15,8 @@
  * @author Dory A
 */
 
+namespace Caligrafy;
+
 class Loader{
 
     // Load library classes

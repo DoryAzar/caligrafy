@@ -13,6 +13,9 @@
  * @version 1.0
  */
 
+namespace Caligrafy;
+use \Exception as Exception;
+
 class Payment {
 
 
