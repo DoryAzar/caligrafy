@@ -513,7 +513,7 @@ function sanitizePath($path)
 
 function associate($controller, $modelname, $table) 
 {
-    return get_parent_class($controller) == 'Controller'? $controller($modelname, $table) : false;
+    return get_parent_class($controller) == 'Caligrafy\Controller'? $controller($modelname, $table) : false;
 }
 
 function bindRouteToVar($route, $uri, $pattern = ROUTE_ARG_PATTERN)
