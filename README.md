@@ -111,3 +111,4 @@ Your support keeps us going. If you like Caligrafy, there are several ways you c
 + **Promote us:** On our website, you can share our page with your friends and fans [caligrafy.com](https://caligrafy.com)
 + **Fund our project:** You can fun our project on [Kickposter](https://kickposter.us/kickposter/project/index.php?email=bVVCOHhURXQ0RjhFd1hTUjBVeGR0Umh6LzVucm80NHNDckNQdGI3Rkp3bz0=&postcart_id=a3pQM0c3UlFoZVdUK00zL1RhSjU3Zz09). Kickposter is an application that was built using earlier versions of Caligrafy. 
 
+test
