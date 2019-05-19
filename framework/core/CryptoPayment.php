@@ -47,13 +47,14 @@ class CryptoPayment {
 	 * @version 1.0
 	 */
 
-	public function createTransaction($amount, $currency, $charge, $metadata = '', $redirectUrl = '', $cancelUrl = '')
+	public function createTransaction($amount, $currency, $charge, $metadata = array(), $redirectUrl = '', $cancelUrl = '')
     {   
         $currency = $currency?? 'USD';
         $chargeObj = new Charge();
 
         $chargeObj->name = $charge && isset($charge['name'])? $charge['name'] : '';
-        $chargeObj->description = $charge && isset($charge['description'])? $charge['description'] : '';;
+        $chargeObj->description = $charge && isset($charge['description'])? $charge['description'] : '';
+        $chargeObj->logo_url = $charge && isset($charge['logo_url'])? $charge['logo_url'] : session('imagesUrl').'resources/logo.png';
         $chargeObj->local_price = [
             'amount' => $amount,
             'currency' => $currency
@@ -61,7 +62,7 @@ class CryptoPayment {
         $chargeObj->pricing_type = 'fixed_price';
         $chargeObj->redirect_url = $redirectUrl;
         $chargeObj->cancel_url = $cancelUrl;
-        $chargeObj->metadata = ['customer_name' => 'Dory', 'customer_email' => 'test@test.com'];
+        $chargeObj->metadata = $metadata;
         $chargeObj->save();
         return $chargeObj;
     
