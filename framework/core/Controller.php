@@ -43,6 +43,7 @@ class Controller
         
         $this->connection = connect()?? null;
         
+        // instantiate main connected modules
         $this->payment = $this->payment?? null;
         
         // connect to the model

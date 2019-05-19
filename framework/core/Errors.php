@@ -36,7 +36,11 @@ class Errors
         
         
         //3xxx: Request Errors
-        3000 => '[ERROR 3000] Security Error - Cross Site Forgery' 
+        3000 => '[ERROR 3000] Security Error - Cross Site Forgery', 
+        
+        //4xxx: Mail Errors
+        4000 => '[ERROR 4000] Mail Error - Mailer could not be initialized',
+        4001 => '[ERROR 4001] Mail Error - Mail Content is not compliant'
     );
     
     
