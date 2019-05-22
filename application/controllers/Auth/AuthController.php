@@ -16,10 +16,28 @@ class AuthController extends Controller {
         $parameters = $this->request->parameters;
         $validate = $this->validator->check($parameters, array('username' => 'required|alpha_numeric|max_len, 100',
                                                    'passcode' => 'required|alpha_numeric|max_len,20'));
+        $user = $this->search('username', $parameters['username']);
+        $userInput = (Object)$parameters;
+   
+        
+        //confirm password
+        if ($parameters['passcode'] != $parameters['confirmpasscode']) {
+            return view('/Auth/register', array('error' => true, 'status' => 'danger', 'message_header' => 'Whoops, something is not right', 'message' => 'The passwords you entered don\'t match. Make sure that the password and the confirm password fields match.', 'errors' => ['passcode' => 'passwords don\'t match'], 'user' => $userInput));
+            exit;
+        }
+        
+        // invalid inputs
         if ($validate !== true) {
             return view('/Auth/register', array('error' => true, 'status' => 'danger', 'message_header' => 'Whoops, something is not right', 'message' => 'Some of the inputs are invalid. Make sure all the required inputs are entered properly', 'errors' => $validate ));
             exit;
         }
+        
+        //check if user exists
+        if ($user && !empty($user[0])) {
+            return view('/Auth/register', array('error' => true, 'status' => 'danger', 'message_header' => 'Whoops, something is not right', 'message' => 'You are already registered', 'errors' => ['username' => 'The username already exists in the system'], 'user' => $userInput));
+            exit;            
+        }
+        
         $user = new User();
         $user->username = $parameters['username'];
         $user->passcode = encryptDecrypt('encrypt', $parameters['passcode']);
