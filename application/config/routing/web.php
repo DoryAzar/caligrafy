@@ -18,7 +18,7 @@ try {
     Auth::activateAPI();
     
     // AUTHENTICATION - Remove comment if you have an authentication implemented
-    //Auth::authentication('User', 'users');
+    Auth::authentication('User', 'users');
     
     
     // ROUTE DEFINITION: get, post, put and delete
@@ -26,12 +26,12 @@ try {
     Route::get('/view', function() { return view('default/index'); });
     
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
-    //Route::get('/home', 'AuthController');
-    //Route::get('/login', function() { return view('Auth/login'); });
-    //Route::get('/logout', 'AuthController@logout');
-    //Route::get('/register', function() { return view('Auth/register'); });
-    //Route::post('/login', 'AuthController@login');
-    //Route::post('/register', 'AuthController@register');
+    Route::get('/home', 'AuthController');
+    Route::get('/login', function() { return view('Auth/login'); });
+    Route::get('/logout', 'AuthController@logout');
+    Route::get('/register', function() { return view('Auth/register'); });
+    Route::post('/login', 'AuthController@login');
+    Route::post('/register', 'AuthController@register');
 
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
