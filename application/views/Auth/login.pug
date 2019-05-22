@@ -5,31 +5,32 @@ block content
     if $error
         include ../default/modules/messaging
     div(class='content-section bounded-xlarge color4')
-        div(class='card wrapper horizontal-center width-max-600 color0')
-            section(class='main-section horizontal-left color0 maketransparent')
-                .spacer-2
-                if $authorized
+        div(class='wrapper width-max-600 color0')
+            .card(class="horizontal-center equally-spaced-1")
+                section(class='main-section horizontal-left color0 maketransparent')
                     .spacer-2
-                    p(class='medium-text') Welcome to Caligrafy. You are now signed in.
-                    .spacer-4
-                    .horizontal-center
-                        a(href="{$home}projects" class='btn btn-default btn-lg ') discover my projects
-                    .spacer-2
-                else
-                    form(id='login_form', method='POST', enctype="multipart/form-data", action="{$home}login")
-                        =csrf()
-                        .form-group
-                            label(for='username', class='default-text textcolor5') * username
-                            input(type='text', name='username', id='username' class='form-control input-default', required, placeholder='Enter a username', maxlength='100')
+                    if $authorized
+                        .spacer-2
+                        p(class='medium-text') Welcome to Caligrafy. You are now signed in.
+                        .spacer-4
+                        .horizontal-center
+                            a(href="{$home}projects" class='btn btn-default btn-lg ') discover my projects
+                        .spacer-2
+                    else
+                        form(id='login_form', method='POST', enctype="multipart/form-data", action="{$home}login")
+                            =csrf()
+                            .form-group
+                                label(for='username', class='default-text textcolor5') * username
+                                input(type='text', name='username', id='username' class='form-control input-default', required, placeholder='Enter a username', maxlength='100')
 
-                        .form-group
-                            label(for='passcode', class='default-text textcolor5') * passcode
-                            input(type='password', name='passcode', id='passcode' class='form-control input-default', required, placeholder='Enter a passcode', maxlength='20')
-                        .spacer-4    
+                            .form-group
+                                label(for='passcode', class='default-text textcolor5') * passcode
+                                input(type='password', name='passcode', id='passcode' class='form-control input-default', required, placeholder='Enter a passcode', maxlength='20')
+                            .spacer-4    
 
 
-                        input(class='btn btn-primary btn-default btn-block', type='submit' value='Access')
-                        .spacer-1
+                            input(class='btn btn-primary btn-default btn-block', type='submit' value='Access')
+                            .spacer-1
 
     .spacer-3
             

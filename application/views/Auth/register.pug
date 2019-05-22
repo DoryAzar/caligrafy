@@ -5,37 +5,38 @@ block content
         =csrf()
         .spacer-4
         div(class='content-section bounded-xlarge')   
-            div(class='card wrapper horizontal-center width-max-600 color0')
-                if $error
-                    include ../default/modules/messaging
-                section(class='main-section horizontal-left color0 maketransparent')
-                    .spacer-2
-                    span(class='normal medium-text textcolor1') Register to Caligrafy
-                    .spacer-2
-                    .form-group
-                        label(for='username', class=isset($errors['username']) ? 'textcolor5 error' : 'textcolor5') * username
-                        if isset($errors['username'])
-                            p(class='error')= $errors['username']
-                        input(type='text', name='username', id='username' class='form-control input-default', value=$user->username?? '', required, placeholder='Enter a username', maxlength='100')
-                    .spacer-1
+            div(class='wrapper width-max-600 color0')
+                .card(class="horizontal-center equally-spaced-1")
+                    if $error
+                        include ../default/modules/messaging
+                    section(class='main-section horizontal-left color0 maketransparent')
+                        .spacer-2
+                        span(class='normal medium-text textcolor1') Register to Caligrafy
+                        .spacer-2
+                        .form-group
+                            label(for='username', class=isset($errors['username']) ? 'textcolor5 error' : 'textcolor5') * username
+                            if isset($errors['username'])
+                                p(class='error')= $errors['username']
+                            input(type='text', name='username', id='username' class='form-control input-default', value=$user->username?? '', required, placeholder='Enter a username', maxlength='100')
+                        .spacer-1
 
-                    .form-group
-                        label(for='passcode', class=isset($errors['passcode']) ? 'textcolor5 error' : 'textcolor5') * passcode
-                        if isset($errors['passcode'])
-                            p(class='error')= $errors['passcode']
-                        input(type='password', name='passcode', id='passcode' class='form-control input-default', required, placeholder='Enter a passcode', maxlength='20')
-                    .spacer-1      
+                        .form-group
+                            label(for='passcode', class=isset($errors['passcode']) ? 'textcolor5 error' : 'textcolor5') * passcode
+                            if isset($errors['passcode'])
+                                p(class='error')= $errors['passcode']
+                            input(type='password', name='passcode', id='passcode' class='form-control input-default', required, placeholder='Enter a passcode', maxlength='20')
+                        .spacer-1      
 
-                    .form-group
-                        label(for='confirmpasscode', class=isset($errors['passcode']) ? 'textcolor5 error' : 'textcolor5') * confirm password
-                        if isset($errors['passcode'])
-                            p(class='error')= $errors['passcode']
-                        input(type='password', name='confirmpasscode', id='confirmpasscode' class='form-control input-default', required, placeholder='Confirm your passcode', maxlength='20')
-                    .spacer-1     
+                        .form-group
+                            label(for='confirmpasscode', class=isset($errors['passcode']) ? 'textcolor5 error' : 'textcolor5') * confirm password
+                            if isset($errors['passcode'])
+                                p(class='error')= $errors['passcode']
+                            input(type='password', name='confirmpasscode', id='confirmpasscode' class='form-control input-default', required, placeholder='Confirm your passcode', maxlength='20')
+                        .spacer-1     
 
-                    .spacer-2
+                        .spacer-2
 
-                    input(class='btn btn-primary btn-md btn-block', type='submit' value='Create')
-                    .spacer-2
+                        input(class='btn btn-primary btn-md btn-block', type='submit' value='Create')
+                        .spacer-2
 
 
