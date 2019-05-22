@@ -58,6 +58,7 @@ class Payment {
 	 * @param Integer $amount defines the amount of the transaction in cents
 	 * @param string $currency defines the currecy of the transaction
 	 * @param Object $card takes the card object submitted
+	 * @param string $receipt_email takes the customer email
 	 * @param string $metadata defines the metadata information that can be passed on to the transaction
 	 * @param string $description defines the description that can be passed on to the transaction
 	 * @param boolean $save defines whether the transaction should be saved or not for a particular customer
@@ -66,7 +67,7 @@ class Payment {
 	 * @version 1.0
 	 */
 
-	public function createTransaction($amount, $currency, $card, $metadata = null, $description = '', $save = false) {
+	public function createTransaction($amount, $currency, $card, $receipt_email = null, $metadata = null, $description = '', $save = false) {
         
         $result = array('action_success' => false, 'error' => 'Transaction could not be completed');
         // Create a charge: this will charge the user's card
@@ -80,7 +81,8 @@ class Payment {
                 "currency" => $currency,
                 "source" => $token,
                 "metadata" => $metadata,
-                "description" => $description
+                "description" => $description,
+                "receipt_email" => $receipt_email
                 ));
                 $result = $outcome && $outcome->id?  array('action_success' => true, 'data' => array('confirmation' => $outcome->id)) : $result;
               }
