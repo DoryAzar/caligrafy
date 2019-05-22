@@ -14,6 +14,15 @@ class AuthController extends Controller {
         redirect('/home');
     }
     
+    public function registerForm()
+    {
+        if (authorized()) {
+            redirect('/home');
+        }
+        return view('Auth/register');
+        exit;       
+    }
+    
     
     public function home()
     {
