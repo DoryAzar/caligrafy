@@ -26,8 +26,8 @@ try {
     Route::get('/view', function() { return view('default/index'); });
     
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
-    //Route::get('/home', 'AuthController');
-    //Route::get('/login', function() { return view('Auth/login'); });
+    //Route::get('/home', 'AuthController@home');
+    //Route::get('/login', 'AuthController');
     //Route::get('/logout', 'AuthController@logout');
     //Route::get('/register', function() { return view('Auth/register'); });
     //Route::post('/login', 'AuthController@login');

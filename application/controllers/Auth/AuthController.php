@@ -7,8 +7,24 @@ class AuthController extends Controller {
     
     public function index()
     {
-        return view('/default/index', array('authorized' => authorized()));
+        if (!authorized()) {
+            return view('Auth/login');
+            exit;
+        }
+        redirect('/home');
     }
+    
+    
+    public function home()
+    {
+        if (authorized()) {
+            return view('default/index', array('authorized' => authorized()));   
+            exit;
+        }
+        redirect('/login');
+
+    }
+    
     /*
      *Register
      */

@@ -537,13 +537,13 @@ p.error, label.error {
 }
 
 #color4, .color4 {
-    background-color:#f2f2f2; /* light grey */
+    background-color:#fafafa; /* light grey */
     color: #414141;
     border-color: #d5d5d5;
 }
 
 .textcolor4 {
-  color:#f2f2f2; 
+  color:#fafafa; 
 }
 
 #color5, .color5 {
