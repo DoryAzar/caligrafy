@@ -9,13 +9,17 @@ class AuthController extends Controller {
     {
         return view('/default/index', array('authorized' => authorized()));
     }
-    
+    /*
+     *Register
+     */
     public function register()
     {
         $this->associate('User', 'users');
         $parameters = $this->request->parameters;
         $validate = $this->validator->check($parameters, array('username' => 'required|alpha_numeric|max_len, 100',
-                                                   'passcode' => 'required|alpha_numeric|max_len,20'));
+                                                               'passcode' => 'required|alpha_numeric|max_len,20',
+                                                               'confirmpasscode' => 'required|alpha_numeric|max_len,20'
+                                                              ));
         $user = $this->search('username', $parameters['username']);
         $userInput = (Object)$parameters;
    
@@ -46,6 +50,10 @@ class AuthController extends Controller {
 
     }
     
+    
+    /*
+     * Login
+     */
     public function login()
     {
         $this->associate('User', 'users');
@@ -63,6 +71,9 @@ class AuthController extends Controller {
         exit;
     }
     
+    /*
+     * Logout
+     */
     public function logout()
     {
         // Make a call out to the core helpher function that terminates the user info from the session
