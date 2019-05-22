@@ -132,7 +132,7 @@ class Model {
 
     /**
      * Search functionality that searched records in a table
-     * @param string $scope defines the column to search in the database
+     * @param string $scope defines the columns to search in the database separated by commas
      * @param string $keywords defines the wildcard pattern to look for
      * @return array $result results found in the database
      * @author Dory A.Azar 
@@ -140,8 +140,25 @@ class Model {
      */  
     public function search($scope, $keywords) {
 
-        // SEARCH DATA
-        $result = Database::execute('SELECT * FROM ' . $this->table .  ' WHERE ' .$scope. ' LIKE :keywords', ['keywords' => $keywords]);
+        // clean up the input
+        $scopeArray = explode(',', $scope);
+        $keywords = trim($keywords);
+        $sql = '';
+        
+        //build the query
+        foreach($scopeArray as $key => $value) {
+            $DS = ' OR ';
+            if ($key == count($scopeArray) - 1) {
+                $DS = '';
+            }
+            $value = sanitize(trim($value));
+            $sql .= "`$value`". ' LIKE ' . "'$keywords'" . $DS;
+        }
+        
+        $sql = 'SELECT * FROM ' . $this->table . ' WHERE ' . $sql;
+        
+        // Execute the result
+        $result = Database::execute($sql);
         $renderedResult = array();
         foreach($result as $key => $value) {
             $renderedResult[] = $this->arrayToModel($value);
