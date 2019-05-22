@@ -118,10 +118,11 @@ class Model {
     }
     
     // ALL
-    public function all() { 
+    public function all($condition = null, $order = null, $limit = null) { 
     
         // Create query
-        $result = Database::execute('SELECT * FROM ' . $this->table);
+        $extension = ' ' . $condition . ' ' . $order . ' ' . $limit;
+        $result = Database::execute('SELECT * FROM ' . $this->table . $extension);
         $renderedResult = array();
         foreach($result as $key => $value) {
             $renderedResult[] = $this->arrayToModel($value);
