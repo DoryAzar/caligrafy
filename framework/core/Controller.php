@@ -84,8 +84,8 @@ class Controller
     /**
      * Basic common CRUD function that fetches all data from the associated table
      */
-    public function all() {
-        return $this->model->all();
+    public function all($args = array()) {
+        return $this->model->all($args);
     }
     
 

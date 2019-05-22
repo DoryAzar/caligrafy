@@ -118,17 +118,23 @@ class Model {
     }
     
     // ALL
-    public function all($condition = null, $order = null, $limit = null) { 
-    
+    public function all($args = array()) { 
+        
+        $extension = '';
         // Create query
-        $extension = ' ' . $condition . ' ' . $order . ' ' . $limit;
+        if(!empty($args)) {
+            $condition = isset($args['condition'])? ' '.$args['condition'].' ' : '';
+            $order = isset($args['order'])? ' '.$args['order'].' ' : '';
+            $limit = isset($args['limit'])? ' '.$args['limit'].' ' : '';
+            $extension = $condition.$order.$limit;
+        }
+
         $result = Database::execute('SELECT * FROM ' . $this->table . $extension);
         $renderedResult = array();
         foreach($result as $key => $value) {
             $renderedResult[] = $this->arrayToModel($value);
         }
         return $renderedResult;
-
     } 
 
     /**
