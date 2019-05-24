@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
 /*!
  * @copyright broadposter
  * @version 1.0
@@ -22,7 +22,7 @@ body  {
 
 body * { /* making sure that the default font is Roboto Light*/
     -webkit-font-smoothing: antialiased;
-  font-family: 'Roboto',UILanguageFont,Arial,sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;    
   font-weight: lighter; /* default font weight*/
 }
 
