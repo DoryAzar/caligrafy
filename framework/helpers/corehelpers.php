@@ -651,7 +651,7 @@ function user()
 */
 function guard($permissionAttribute, $acceptedPermission, $loginUrl = '/')
 {
-    return Auth::guard($permissionAttribute, $acceptedPermission, $loginUrl = '/');
+    return Auth::guard($permissionAttribute, $acceptedPermission, $loginUrl);
 }
 
 /**
