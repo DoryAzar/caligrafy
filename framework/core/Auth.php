@@ -118,6 +118,7 @@ class Auth {
     public static function logout($redirectUrl = '/')
     {
         self::unauthorize();
+        session_destroy();
         redirect($redirectUrl);
         exit;
     }
