@@ -94,6 +94,39 @@ class CryptoPayment {
     {
         return Charge::getAll();
     }
+    
+    /**
+	 * Retrieve a charge
+     * @param chargeId defines the id of the charge
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getCharge($chargeId)
+    {
+        return Charge::retrieve($chargeId)?? null;
+    }
+    
+    
+    /**
+	 * Get Charge Status
+     * @param chargeId defines the id of the charge
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    public function getChargeStatus($chargeId)
+    {
+        $charge = Charge::retrieve($chargeId)?? null;
+        $status = 'unknown';
+        if ($charge) {
+            $statuses = $charge->timeline?? array();
+            $status = !empty($statuses)? $statuses[count($statuses)-1]['status'] : $status; 
+            
+        }
+        return $status;
+        
+    }
+    
 
 }
 
