@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "a346647434953deb5bd599d92922b2d225e25170"
+                "reference": "dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a346647434953deb5bd599d92922b2d225e25170",
-                "reference": "a346647434953deb5bd599d92922b2d225e25170",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5",
+                "reference": "dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +275,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-04-01T06:40:32+00:00"
+            "time": "2019-05-26T12:43:51+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -676,16 +676,16 @@
         },
         {
             "name": "phug/compiler",
-            "version": "0.5.24",
+            "version": "0.5.25",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/compiler.git",
-                "reference": "13fc3f44ef783fbdb4f052e3982eda33e1291a76"
+                "reference": "b7a0b66ec06610deffefa00f10390c74a848fa93"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/compiler/zipball/13fc3f44ef783fbdb4f052e3982eda33e1291a76",
-                "reference": "13fc3f44ef783fbdb4f052e3982eda33e1291a76",
+                "url": "https://api.github.com/repos/phug-php/compiler/zipball/b7a0b66ec06610deffefa00f10390c74a848fa93",
+                "reference": "b7a0b66ec06610deffefa00f10390c74a848fa93",
                 "shasum": ""
             },
             "require": {
@@ -733,7 +733,7 @@
                 "template",
                 "views"
             ],
-            "time": "2019-04-29T13:23:11+00:00"
+            "time": "2019-05-21T16:20:12+00:00"
         },
         {
             "name": "phug/dependency-injection",
@@ -1578,16 +1578,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v6.35.0",
+            "version": "v6.37.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5"
+                "reference": "6915bed0b988ca837f3e15a1f31517a6172a663a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5",
-                "reference": "a5f6d81ad82852d34a21dfa8d50a82db98ffe6e5",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/6915bed0b988ca837f3e15a1f31517a6172a663a",
+                "reference": "6915bed0b988ca837f3e15a1f31517a6172a663a",
                 "shasum": ""
             },
             "require": {
@@ -1630,7 +1630,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2019-05-14T19:58:30+00:00"
+            "time": "2019-05-23T23:59:23+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1819,13 +1819,12 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php72": "~1.5"
+                "php": "^7.2.9",
+                "symfony/polyfill-mbstring": "~1.0"
             },
             "conflict": {
-                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
-                "symfony/console": "<3.4"
+                "phpunit/phpunit": "<5.4.3",
+                "symfony/console": "<4.4"
             },
             "require-dev": {
                 "ext-iconv": "*",
