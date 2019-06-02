@@ -29,6 +29,7 @@ This framework uses several third-party librairies that are included in the dist
 + dotEnv is used to provide the capability of setting up environment variables for both local and production servers
 + claviska/SimpleImage is used to provide the ability to do server-side manipulations on images
 + stripe/stripe-php is used for payment features
++ coinbase/coinbase-commerce is used for cryptopayment features
 
 
 ## Documentation
