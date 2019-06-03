@@ -299,9 +299,23 @@ li {
   width:100%;
 }
 
+.card-image-contain {
+    /* Combine with thumbnail for borders to appear*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: auto;
+}
+
 .card-success {
   border: thin solid;
   border-color: #006837;
+}
+
+.card-responsive
+{
+    max-width: 100%;
 }
 
 /* FORM Elements */
