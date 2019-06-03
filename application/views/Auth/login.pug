@@ -1,13 +1,13 @@
 extends ../default/master/layoutblocks
 
 block content
-    .spacer-4
-    if $error
-        include ../default/modules/messaging
     div(class='content-section bounded-xlarge color4')
-        div(class='wrapper width-max-600 color0')
-            .card(class="horizontal-center equally-spaced-1")
-                section(class='main-section horizontal-left color0 maketransparent')
+        div(class='wrapper width-max-600')
+            .spacer-4
+            .card(class="horizontal-center color0 equally-spaced-1 dropshadow")
+                section(class='main-section horizontal-left color0')
+                    if $error
+                        include ../default/modules/messaging
                     .spacer-2
                     if $authorized
                         .spacer-2
@@ -33,10 +33,9 @@ block content
                             .spacer-1
 
 
-            .card(class="horizontal-center color0 equally-spaced-1")
+            .card(class="horizontal-center color0 equally-spaced-1 dropshadow")
                 p(class="medium-text") Don't have an account? 
                 a(href="{$home}register", class='btn btn-default input-size-150') Sign up
 
     .spacer-3
-            
             

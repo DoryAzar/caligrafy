@@ -3,13 +3,13 @@ extends ../default/master/layoutblocks
 block content
     form(id='user_new_form', method='POST', enctype="multipart/form-data")
         =csrf()
-        .spacer-4
         div(class='content-section bounded-xlarge')   
-            div(class='wrapper width-max-600 color0')
-                .card(class="horizontal-center equally-spaced-1")
-                    if $error
-                        include ../default/modules/messaging
+            div(class='wrapper width-max-600')
+                .spacer-4
+                .card(class="dropshadow color0 horizontal-center equally-spaced-1")
                     section(class='main-section horizontal-left color0 maketransparent')
+                        if $error
+                            include ../default/modules/messaging
                         .spacer-2
                         span(class='normal medium-text textcolor1') Sign up to Caligrafy
                         .spacer-2
@@ -40,6 +40,7 @@ block content
                         .spacer-2
 
 
-                .card(class="horizontal-center color0 equally-spaced-1")
+                .card(class="horizontal-center color0 equally-spaced-1 dropshadow")
                     p(class="medium-text") Have an account?
                     a(href="{$home}login", class='btn btn-default input-size-150') Sign in
+        .spacer-3
