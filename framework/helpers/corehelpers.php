@@ -770,4 +770,18 @@ function getRelativeTime($datetime, $depth=1) {
     }
     return $output.($timediff<0?$suffix2:$suffix1);
 }
+
+/** 
+ * Rearrange multi-dimensional array onto key array. Used to rearrange File inputs
+ * 
+*/
+
+function rearrange( $arr ){
+    foreach( $arr as $key => $all ){
+        foreach( $all as $i => $val ){
+            $new[$i][$key] = $val;    
+        }    
+    }
+    return $new;
+}
     
