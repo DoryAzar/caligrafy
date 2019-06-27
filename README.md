@@ -6,7 +6,7 @@
 + Caligrafy offers an online course that gives you all the basics that you need to create powerful applications with Caligrafy.
 
 
-[![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
+    [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
 
 + If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
     
