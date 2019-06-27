@@ -8,6 +8,8 @@
 
     [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
 
+
+
 + If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
     
     
