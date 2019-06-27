@@ -9,6 +9,8 @@
 [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
 
 + If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
+    
+    
     [![](https://caligrafy.com/public/images/resources/joinevent.png)](https://www.eventbrite.com/e/learn-php-using-caligrafy-tickets-62056781504?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing)
 
 
