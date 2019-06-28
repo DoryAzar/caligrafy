@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "9a7674c5549194509bfda950a3b6d744575e90e9"
+                "reference": "18592bfa64cbe174ceb7425562f4217093a6a6b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/9a7674c5549194509bfda950a3b6d744575e90e9",
-                "reference": "9a7674c5549194509bfda950a3b6d744575e90e9",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/18592bfa64cbe174ceb7425562f4217093a6a6b4",
+                "reference": "18592bfa64cbe174ceb7425562f4217093a6a6b4",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
-            "time": "2018-07-19T18:47:30+00:00"
+            "time": "2019-06-20T12:59:59+00:00"
         },
         {
             "name": "coinbase/coinbase-commerce",
@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "f41c29ca9bebed2fe92b054d9b0c214882ce55b9"
+                "reference": "a32e06202f2c91425face092d792bc017c0bf0c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/f41c29ca9bebed2fe92b054d9b0c214882ce55b9",
-                "reference": "f41c29ca9bebed2fe92b054d9b0c214882ce55b9",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/a32e06202f2c91425face092d792bc017c0bf0c5",
+                "reference": "a32e06202f2c91425face092d792bc017c0bf0c5",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "ethereum",
                 "litecoin"
             ],
-            "time": "2018-12-21T18:15:27+00:00"
+            "time": "2019-05-31T17:23:14+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -161,19 +161,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "926eaa3ff73cde2becf652b785831bcb7618568a"
+                "reference": "e6d006f1ced100d81755966f09625d71ce6a7dca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/926eaa3ff73cde2becf652b785831bcb7618568a",
-                "reference": "926eaa3ff73cde2becf652b785831bcb7618568a",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/e6d006f1ced100d81755966f09625d71ce6a7dca",
+                "reference": "e6d006f1ced100d81755966f09625d71ce6a7dca",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.5.0"
+                "php": ">=5.6"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36"
+                "phpunit/phpunit": "^5.7.27 || ^7.5"
             },
             "type": "library",
             "extra": {
@@ -204,7 +204,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2018-10-30T00:20:04+00:00"
+            "time": "2019-06-11T17:44:31+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5"
+                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5",
-                "reference": "dd1ba1de1234e5e8939809bbd9e103e7aeebf0d5",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e113254d23b24c548f0b4d8f671828c4eeb876d2",
+                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2",
                 "shasum": ""
             },
             "require": {
@@ -238,7 +238,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.5-dev"
+                    "dev-master": "1.6-dev"
                 }
             },
             "autoload": {
@@ -275,20 +275,20 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-05-26T12:43:51+00:00"
+            "time": "2019-06-17T23:10:01+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
-            "version": "2.4.0",
+            "version": "2.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize.git",
-                "reference": "6c9c03face2fe508e9a7ebe4875a8cf4c527596e"
+                "reference": "e41ce34728bd6bb618cc7a1a0979f467f6234d4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/6c9c03face2fe508e9a7ebe4875a8cf4c527596e",
-                "reference": "6c9c03face2fe508e9a7ebe4875a8cf4c527596e",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/e41ce34728bd6bb618cc7a1a0979f467f6234d4b",
+                "reference": "e41ce34728bd6bb618cc7a1a0979f467f6234d4b",
                 "shasum": ""
             },
             "require": {
@@ -316,7 +316,7 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code.",
-            "time": "2018-10-23T10:48:59+00:00"
+            "time": "2019-06-24T07:07:05+00:00"
         },
         {
             "name": "js-phpize/js-phpize-phug",
@@ -1578,16 +1578,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v6.39.2",
+            "version": "v6.40.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "2e8cf31da233bd5e9c281f20447cbd4810c07e9e"
+                "reference": "9c22ffab790ef4dae0f371929de50e8b53c9ec8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/2e8cf31da233bd5e9c281f20447cbd4810c07e9e",
-                "reference": "2e8cf31da233bd5e9c281f20447cbd4810c07e9e",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/9c22ffab790ef4dae0f371929de50e8b53c9ec8d",
+                "reference": "9c22ffab790ef4dae0f371929de50e8b53c9ec8d",
                 "shasum": ""
             },
             "require": {
@@ -1630,7 +1630,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2019-06-26T17:10:28+00:00"
+            "time": "2019-06-27T23:24:51+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1750,61 +1750,6 @@
             "time": "2019-02-06T07:57:58+00:00"
         },
         {
-            "name": "symfony/polyfill-php72",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/polyfill-php72.git",
-                "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/ab50dcf166d5f577978419edd37aa2bb8eabce0c",
-                "reference": "ab50dcf166d5f577978419edd37aa2bb8eabce0c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.11-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Polyfill\\Php72\\": ""
-                },
-                "files": [
-                    "bootstrap.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nicolas Grekas",
-                    "email": "p@tchwork.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "compatibility",
-                "polyfill",
-                "portable",
-                "shim"
-            ],
-            "time": "2019-02-06T07:57:58+00:00"
-        },
-        {
             "name": "symfony/var-dumper",
             "version": "dev-master",
             "source": {
@@ -1885,12 +1830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "ffcaf1dfee56c8830d83d9812efad2a98c08f02e"
+                "reference": "8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/ffcaf1dfee56c8830d83d9812efad2a98c08f02e",
-                "reference": "ffcaf1dfee56c8830d83d9812efad2a98c08f02e",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b",
+                "reference": "8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b",
                 "shasum": ""
             },
             "require": {
@@ -1904,7 +1849,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.3-dev"
+                    "dev-master": "3.4-dev"
                 }
             },
             "autoload": {
@@ -1918,9 +1863,14 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com",
+                    "homepage": "https://gjcampbell.co.uk/"
+                },
+                {
                     "name": "Vance Lucas",
                     "email": "vance@vancelucas.com",
-                    "homepage": "http://www.vancelucas.com"
+                    "homepage": "https://vancelucas.com/"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -1929,7 +1879,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-03-23T10:56:16+00:00"
+            "time": "2019-06-25T12:23:24+00:00"
         },
         {
             "name": "wixel/gump",
