@@ -208,16 +208,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "dev-master",
+            "version": "1.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2"
+                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e113254d23b24c548f0b4d8f671828c4eeb876d2",
-                "reference": "e113254d23b24c548f0b4d8f671828c4eeb876d2",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +275,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-17T23:10:01+00:00"
+            "time": "2019-06-30T00:37:05+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -1830,12 +1830,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b"
+                "reference": "9159290ad347bf56fa6d208bf35645c450f9e567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b",
-                "reference": "8dd48d767cf643c49b7041fdc3fc8f1cef3ad87b",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9159290ad347bf56fa6d208bf35645c450f9e567",
+                "reference": "9159290ad347bf56fa6d208bf35645c450f9e567",
                 "shasum": ""
             },
             "require": {
@@ -1879,7 +1879,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-06-25T12:23:24+00:00"
+            "time": "2019-06-29T14:13:05+00:00"
         },
         {
             "name": "wixel/gump",
