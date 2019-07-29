@@ -161,12 +161,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "e6d006f1ced100d81755966f09625d71ce6a7dca"
+                "reference": "17d36ed176c998839582c739ce0753381598edf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/e6d006f1ced100d81755966f09625d71ce6a7dca",
-                "reference": "e6d006f1ced100d81755966f09625d71ce6a7dca",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/17d36ed176c998839582c739ce0753381598edf0",
+                "reference": "17d36ed176c998839582c739ce0753381598edf0",
                 "shasum": ""
             },
             "require": {
@@ -204,7 +204,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2019-06-11T17:44:31+00:00"
+            "time": "2019-07-02T14:54:06+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -212,12 +212,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf"
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
-                "reference": "dc784032a3f6f4e7a4b882e272b771f6fe4c37cf",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/239400de7a173fe9901b9ac7c06497751f00727a",
+                "reference": "239400de7a173fe9901b9ac7c06497751f00727a",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +275,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-06-30T00:37:05+00:00"
+            "time": "2019-07-01T23:21:34+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -676,22 +676,22 @@
         },
         {
             "name": "phug/compiler",
-            "version": "0.5.25",
+            "version": "0.5.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/compiler.git",
-                "reference": "b7a0b66ec06610deffefa00f10390c74a848fa93"
+                "reference": "fcd727d368f86d39a7ccef60d74352b772b6bcb1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/compiler/zipball/b7a0b66ec06610deffefa00f10390c74a848fa93",
-                "reference": "b7a0b66ec06610deffefa00f10390c74a848fa93",
+                "url": "https://api.github.com/repos/phug-php/compiler/zipball/fcd727d368f86d39a7ccef60d74352b772b6bcb1",
+                "reference": "fcd727d368f86d39a7ccef60d74352b772b6bcb1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
                 "phug/dependency-injection": "^1.1.2",
-                "phug/formatter": "^0.5.48",
+                "phug/formatter": "^0.5.50",
                 "phug/parser": "^0.5.0",
                 "phug/util": "^0.4.0"
             },
@@ -733,7 +733,7 @@
                 "template",
                 "views"
             ],
-            "time": "2019-05-21T16:20:12+00:00"
+            "time": "2019-07-29T12:43:00+00:00"
         },
         {
             "name": "phug/dependency-injection",
@@ -844,16 +844,16 @@
         },
         {
             "name": "phug/formatter",
-            "version": "0.5.48",
+            "version": "0.5.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/formatter.git",
-                "reference": "3f9286a169a0d45b8b8acc1fae64e880ebdb567e"
+                "reference": "b73c2b0e1692e4244d64f8ed359a8b675970b44a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/formatter/zipball/3f9286a169a0d45b8b8acc1fae64e880ebdb567e",
-                "reference": "3f9286a169a0d45b8b8acc1fae64e880ebdb567e",
+                "url": "https://api.github.com/repos/phug-php/formatter/zipball/b73c2b0e1692e4244d64f8ed359a8b675970b44a",
+                "reference": "b73c2b0e1692e4244d64f8ed359a8b675970b44a",
                 "shasum": ""
             },
             "require": {
@@ -877,13 +877,13 @@
             ],
             "authors": [
                 {
-                    "name": "Torben Koehn",
-                    "email": "torben@talesoft.codes"
-                },
-                {
                     "name": "KyleKatarn",
                     "email": "jade-php@selfbuild.fr",
                     "homepage": "http://github.com/kylekatarnls"
+                },
+                {
+                    "name": "Torben Koehn",
+                    "email": "torben@talesoft.codes"
                 }
             ],
             "description": "Pug (ex-Jade) formatter for PHP, HTML template engine structured by indentation",
@@ -902,7 +902,7 @@
                 "template",
                 "views"
             ],
-            "time": "2019-01-26T23:41:41+00:00"
+            "time": "2019-07-29T11:01:49+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
