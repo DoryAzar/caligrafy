@@ -146,7 +146,7 @@ class Controller
     public function validate($data, $rules) 
     {
         $valid = $this->validator->validate($data, $rules);
-        return $valid === true? $valid : $validator->get_errors_array();
+        return $valid === true? $valid : $this->validator->get_errors_array();
     }
     
     /**
