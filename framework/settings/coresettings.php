@@ -14,6 +14,7 @@ define('ROUTE_PARAM_PATTERN', '/([^?&=#]+)=([^&#]*)/');
 
 session('scripts', array(  'favicon' => $_SESSION['imagesUrl'].getenv('FAVICON'),
                    'css' => $_SESSION['public'].'css/styles.css',
+                   'animate' => $_SESSION['public'].'css/styles.css',
                    'script' => $_SESSION['public'].'js/script.js',
                    'bootstrap_css' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css',
                    'bootstrap_script' => 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',
