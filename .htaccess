@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
-    Header always set Access-Control-Allow-Origin "*"
-    Header always set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
-    Header always set Access-Control-Allow-Headers "*"
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
+    Header set Access-Control-Allow-Headers "*"
     RewriteEngine On
 
     #RewriteBase /mvc
