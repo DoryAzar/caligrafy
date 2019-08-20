@@ -30,6 +30,12 @@
 
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
 
+## New in Caligrafy
++ Caligrafy can now support VueJS a progressive Javascript framework that helps you build powerful user interfaces
+
+> Learn more about VueJS [here](https://vuejs.org/)
+
+
 ## Dependencies
 
 This framework uses several third-party librairies that are included in the distribution
