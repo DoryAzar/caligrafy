@@ -17,7 +17,7 @@ var app = new Vue({
   },
   /* upon page load example showing other headers from axios */
   mounted () {
-    axios.get('/caligrafy/', {async: true, crossDomain: true, headers: {
+    axios.get('/caligrafy', {async: true, crossDomain: true, headers: {
           'Access-Control-Allow-Origin': '*', 
           'Accept': 'application/json', 
           'Content-Type': 'application/json',
