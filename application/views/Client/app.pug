@@ -1,3 +1,7 @@
+- $variables = get_defined_vars()?? array();
+- $globals = array('app_root' => APP_CLIENT, 'service_root' => APP_SERVICE_ROOT, 'request' => request()->parameters);
+- $env = sizeof($variables) > 2? array_splice($variables, 2) : array();
+- $env = json_encode(array_merge($env, $globals));
 if $app
     - include(PUBLIC_PATH.'app/'.$app.'.php');
 else

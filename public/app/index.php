@@ -16,10 +16,7 @@
              */
             load({
                 services: ['main'],
-                env: { 
-                        app_root: '<?php echo APP_CLIENT; ?>',
-                        service_root: '<?php echo APP_SERVICE_ROOT; ?>'
-                }
+                env: `<?php echo $env; ?>`
              });
         </script>
     </body>
