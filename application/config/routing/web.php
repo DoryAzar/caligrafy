@@ -25,8 +25,6 @@ try {
 	Route::get('/', function(){ echo 'Hello world';});
     Route::get('/view', function() { return view('default/index'); });
     
-    Route::get('/app', 'TestController@app');
-    
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
     //Route::get('/home', 'AuthController@home');
     //Route::get('/login', 'AuthController');
