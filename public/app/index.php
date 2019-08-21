@@ -9,14 +9,17 @@
         <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="<?php echo scripts('css'); ?>" />
         <link rel="stylesheet" href="<?php echo scripts('bootstrap_css'); ?>" />
-        
     </head>
     
     <body>
+        
+        <!-- Beginning of the app -->
         <div id="app">
             {{ response }}
-
         </div>
+        <!-- End of the app -->
+        
+        <!-- Load Scripts -->
         <script> 
             /* Loading the app client framework
              * Any environment variables to be passed on from the server can take place in this here
