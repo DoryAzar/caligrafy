@@ -14,7 +14,7 @@
             // Loading the app client framework
             load({
                 services: ['main'],
-                environment_variables: { 
+                env: { 
                         app_root: '<?php echo APP_CLIENT; ?>',
                         service_root: '<?php echo APP_SERVICE_ROOT; ?>'
                 }
