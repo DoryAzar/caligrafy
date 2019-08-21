@@ -10,14 +10,14 @@ var app = new Vue({
   methods: {
       
       // example of axios get method with default parameters
-      all: function() {
-          axios.get('/caligrafy/')
+      all: function(route) {
+          axios.get(route)
               .then(response => (this.response = response.data))
               .catch(error => (console.log(error)));
       },
       // example of axios method with additional parameters such as headers
-      allWithHeaders: function() {
-            axios.get('/caligrafy', {async: true, crossDomain: true, headers: {
+      allWithHeaders: function(route) {
+            axios.get(route, {async: true, crossDomain: true, headers: {
                   'Access-Control-Allow-Origin': '*', 
                   'Accept': 'application/json', 
                   'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ var app = new Vue({
   },
   /* upon object load, the following will be executed */
   mounted () {
-     this.allWithHeaders();
+     this.allWithHeaders('/caligrafy');
   }
 
 });
