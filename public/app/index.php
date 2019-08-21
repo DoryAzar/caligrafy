@@ -10,8 +10,10 @@
         <div id="app">
           {{ response }}
         </div>
-        <script>
-            // Loading the app client framework
+        <script> 
+            /* Loading the app client framework
+             * Any environment variables to be passed on from the server can take place in this here
+             */
             load({
                 services: ['main'],
                 env: { 

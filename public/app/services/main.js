@@ -6,24 +6,30 @@ var app = new Vue({
 
     }
   },
-  /* example of asynchronous methods are defined here  */
+  /* Method Definition  */
   methods: {
-
+      
+      // example of axios get method with default parameters
       all: function() {
           axios.get('/caligrafy/')
               .then(response => (this.response = response.data))
               .catch(error => (console.log(error)));
-      }
+      },
+      // example of axios method with additional parameters such as headers
+      allWithHeaders: function() {
+            axios.get('/caligrafy', {async: true, crossDomain: true, headers: {
+                  'Access-Control-Allow-Origin': '*', 
+                  'Accept': 'application/json', 
+                  'Content-Type': 'application/json',
+                  'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
+                  'Access-Control-Allow-Headers': '*'}}
+                  )
+              .then(response => (this.response = response.data))
+      },
   },
-  /* upon page load example showing other headers from axios */
+  /* upon object load, the following will be executed */
   mounted () {
-    axios.get('/caligrafy/', {async: true, crossDomain: true, headers: {
-          'Access-Control-Allow-Origin': '*', 
-          'Accept': 'application/json', 
-          'Content-Type': 'application/json',
-          'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE, OPTIONS',
-          'Access-Control-Allow-Headers': '*'}}
-          )
-      .then(response => (this.response = response.data))
+     this.allWithHeaders();
   }
+
 });
