@@ -4,11 +4,18 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
+
+        <!-- Additional scripts go here -->
+        <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
+        <link rel="stylesheet" type="text/css" href="<?php echo scripts('css'); ?>" />
+        <link rel="stylesheet" href="<?php echo scripts('bootstrap_css'); ?>" />
+        
     </head>
     
     <body>
         <div id="app">
-          {{ response }}
+            {{ response }}
+
         </div>
         <script> 
             /* Loading the app client framework
@@ -19,5 +26,15 @@
                 env: `<?php echo $env; ?>`
              });
         </script>
+        
+        <!-- Additional scripts go here -->
+        <script src="<?php echo scripts('bootstrap_jquery'); ?>"></script>
+        <script src="<?php echo scripts('bootstrap_script'); ?>"></script>
+        <script src="<?php echo scripts('script'); ?>"></script>
+        
+        <!--[if lt IE 9] -->
+        <script src="<?php scripts('fallback_html5shiv'); ?>"></script>
+        <script src="<?php echo scripts('fallback_respond'); ?>"></script>
+        <!--<![endif]-->
     </body>
 </html>
