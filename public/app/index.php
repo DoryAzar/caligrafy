@@ -1,12 +1,13 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
-        <!-- production version of VueJS with Axios, optimized for size and speed -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
-        <script>loadEnvironment(`<?php echo $env; ?>`);</script>
+        <meta http-equiv="content-type", content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
+        <meta name='apple-mobile-web-app-capable' content='yes'>
+        <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+        <title>Index Page with Vue.js</title>
 
-        <!-- Additional scripts go here -->
+        <!-- Stylesheet and head scripts go here -->
         <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="<?php echo scripts('css'); ?>" />
         <link rel="stylesheet" href="<?php echo scripts('bootstrap_css'); ?>" />
@@ -16,10 +17,14 @@
     <body>
         <!-- Beginning of the app -->
         <div id="app">
-            {{ response }}           
+            {{ response }}
         </div>
         
-        <!-- Load scripts -->
+        <!-- Initialization scripts -->
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
+        <script>loadEnvironment(`<?php echo $env; ?>`);</script>
         <script> 
             /* Loading the app client framework
              * Any environment variables to be passed on from the server can take place in this here
