@@ -4,29 +4,28 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
+        <script>loadEnvironment(`<?php echo $env; ?>`);</script>
 
         <!-- Additional scripts go here -->
         <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="<?php echo scripts('css'); ?>" />
         <link rel="stylesheet" href="<?php echo scripts('bootstrap_css'); ?>" />
+        
     </head>
     
     <body>
-        
         <!-- Beginning of the app -->
         <div id="app">
-            {{ response }}
+            {{ response }}           
         </div>
-        <!-- End of the app -->
         
-        <!-- Load Scripts -->
+        <!-- Load scripts -->
         <script> 
             /* Loading the app client framework
              * Any environment variables to be passed on from the server can take place in this here
              */
-            load({
+            loadVue({
                 services: ['main'],
-                env: `<?php echo $env; ?>`
              });
         </script>
         

@@ -2,7 +2,8 @@ var app = new Vue({
   el: '#app',
   data () {
     return {
-        response: null
+        response: null,
+        env: env
 
     }
   },
@@ -29,7 +30,7 @@ var app = new Vue({
   },
   /* upon object load, the following will be executed */
   mounted () {
-     this.allWithHeaders('/caligrafy');
+      this.allWithHeaders('/caligrafy');
   }
 
 });

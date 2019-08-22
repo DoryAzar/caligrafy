@@ -1,7 +1,11 @@
 var env = null;
 
-function load(parameters) {
-    env = JSON.parse(parameters.env);
+function loadEnvironment(environment) {
+    env = JSON.parse(environment);
+}
+
+
+function loadVue(parameters) {
     var body = document.getElementsByTagName('body').item(0);
     for(i = 0; i < parameters.services.length; i++) {
         var script = document.createElement('script');
