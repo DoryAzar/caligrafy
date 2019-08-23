@@ -42,6 +42,8 @@ This framework uses several third-party librairies that are included in the dist
 
 ## Documentation
 
+### Learning Caligrafy
+
 We have created a rigorous documentation to help you understand the basics of the framework and to get you started as quickly as possible
 
 1. [Getting Started](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
@@ -98,6 +100,18 @@ We have created a rigorous documentation to help you understand the basics of th
 11. [Stripe & Cryptocurrency Payment](https://github.com/DoryAzar/caligrafy/wiki/9.2-Stripe-&-Cryptocurrency-Payment)
 12. [Metadata & Rich Cards](https://github.com/DoryAzar/mvc/wiki/9.3-Metadata-&-Social-Rich-Cards)
 13. [Search Referencing and Analytics](https://github.com/DoryAzar/caligrafy/wiki/9.4-Search-Referencing-and-Analytics)
+
+### Caligrafy and Vue.js
+
+Caligrafy is a modern MVC framework that leverages the powerful technologies that fuel each of the M (Model), the V (View) and the C (Controller). Vue.js is a modern and progressive Javascript framework that has been built from the  ground up just like Caligrafy. Vue.js empowers you to create powerful and sophisticated Views. 
+This framework integrates seamlessly with Vue.js to combine the best of PHP with the best of JS.
+
+1. [Understanding the flow of information](https://github.com/DoryAzar/caligrafy/wiki/9.7-Understanding-the-flow-of-information)
+2. [Understanding structure](https://github.com/DoryAzar/caligrafy/wiki/9.7.1-Understanding-the-structure)
+3. [Routes](https://github.com/DoryAzar/caligrafy/wiki/9.7.2-Routes)
+3. [Requests](https://github.com/DoryAzar/caligrafy/wiki/9.7.3-Requests)
+4. [Forms](https://github.com/DoryAzar/caligrafy/wiki/9.7.4-Forms)
+5. [Validations](https://github.com/DoryAzar/caligrafy/wiki/9.7.5-Validations)
     
 ## Learn through examples
 Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our you tube channel.
