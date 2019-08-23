@@ -1,24 +1,17 @@
 # Caligrafy - A Light PHP Framework
 ![Caligrafy](https://caligrafy.com/public/images/resources/banner_white.png)
 
-## Learn Caligrafy
+## What is Caligrafy
 
-+ Caligrafy offers an online course that gives you all the basics that you need to create powerful applications with Caligrafy.
+Caligrafy is a new and modern MVC framework for PHP that was built from the ground up to provide quick an easy ways for you to build sophisticated and modern web applications. The framework comes with powerful features such as Responsive Templates, easy database interfacing, social sharing, creating clean structured, easy authentication, easy credit card and cryptocurrency payments, easy search referencing and analytics.
 
-
-    [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
-
-
-
-+ If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
-    
-    
-    [![](https://caligrafy.com/public/images/resources/joinevent.png)](https://www.eventbrite.com/e/learn-php-using-caligrafy-tickets-62056781504?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing)
+Caligrafy bridges the power of server-side languages like a PHP with the sophistication of the client-side languages like Javascript to bring you one of the most versatile MVC frameworks on the market today.
 
 
 ## Requirements
 + PHP > 7.0
 + MySql > 5.6
+
 
 ## Installation
 + Pull the code from github
@@ -117,6 +110,20 @@ There are several ways for the Caligrafy community to connect:
 [Join our slack community](https://join.slack.com/t/caligrafy/shared_invite/enQtNjI4OTQwOTk0NTM0LWMyMmJiODI5M2E2ZTI5MjEwM2E3MTM2NWRkMWJjOTc3NmU4ZmY2ZjRiN2ZkMmE2YmE1YjhkZTRmNmI5MzE5Yzc)
 + **facebook Caligrafy Group:** Joining our Caligrafy group on facebook gives you more ways to interact with the community and to share success stories. 
 [Join our facebook group](https://www.facebook.com/groups/caligrafy/)
+
+## Learn Caligrafy
+
++ Caligrafy offers an online course that gives you all the basics that you need to create powerful applications with Caligrafy.
+
+
+    [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
+
+
+
++ If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
+    
+    
+    [![](https://caligrafy.com/public/images/resources/joinevent.png)](https://www.eventbrite.com/e/learn-php-using-caligrafy-tickets-62056781504?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing)
 
 ## Need help getting started?
 We are always here to help when you need us. If you need assistance getting started or if you need help understanding how Caligrafy can be useful to you, we can help. Reach out to us by joining our slack channel.
