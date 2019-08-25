@@ -784,4 +784,33 @@ function rearrange( $arr ){
     }
     return $new;
 }
+
+/**
+ * cUrl request function
+*/
+
+function httpRequest($url, $method, $data, $headers) {
+    
+    $curl = curl_init();
+    curl_setopt_array($curl, array(
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => "",
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 30,
+        CURLOPT_URL => $url,
+        CURLOPT_CUSTOMREQUEST => $method,
+        CURLOPT_POSTFIELDS => (strtoupper($method == "POST")? json_encode($data) : null),  
+        CURLOPT_HTTPHEADER => $headers
+        ));
+        $response = curl_exec($curl);
+        $err = curl_error($curl);
+
+        curl_close($curl);
+
+        if ($err) {
+          return $err;
+        } else {
+          return $response;
+        }
+}
     
