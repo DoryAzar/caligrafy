@@ -808,9 +808,9 @@ function httpRequest($url, $method, $data, $headers) {
         curl_close($curl);
 
         if ($err) {
-          return $err;
+          return json_decode($err, true);
         } else {
-          return $response;
+          return json_decode($response, true);
         }
 }
     
