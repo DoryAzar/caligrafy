@@ -18,7 +18,7 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 + create a .env file by copying the example `cp .env.example .env`
 + Change the values in .env file to match your local or production server settings
 + run `composer install` to get all the dependencies needed
-+ make the folder `/public/uploads/` readable if you intend to allow uploads in your application. You will need to run the command `sudo chmod -R 777 /public/uploads`
++ make the folder `/public/uploads/` writable if you intend to allow uploads in your application. You will need to run the command `sudo chmod -R 777 /public/uploads`
 + You are good to go!
 
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
