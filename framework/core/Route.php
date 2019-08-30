@@ -176,7 +176,7 @@ class Route
             }
 
             // Generate Exception if it is an API access and it is not allowed
-            if (self::$_request->wantsJson() && !Auth::api()) {
+            if (self::$_request->wantsJson() && (!Auth::$api || !self::$_request->authorizeApiRequest())) {
                 throw new Exception(Errors::get(1004), 1004);
                 exit;
             }

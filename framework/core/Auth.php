@@ -19,7 +19,7 @@ namespace Caligrafy;
 class Auth {
     
 
-    protected static $api;
+    public static $api = false;
     private static $authModel;
     
     /**
@@ -28,12 +28,7 @@ class Auth {
     */
     public static function activateAPI()
     {
-        $apiToken = generateKey();
-        self::$api = encryptDecrypt('encrypt', $apiToken);
-        if (!self::$api) {
-            return false;
-        }
-        return true;
+        self::$api = true;
     }
     
     /**

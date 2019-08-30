@@ -57,8 +57,11 @@ function encryptDecrypt($action, $data, $key = APP_KEY) {
     }
     else if( $action == 'decrypt' ){
         // To decrypt, split the encrypted data from our IV - our unique separator used was "::"
-        list($encrypted_data, $iv) = explode('::', base64_decode($data), 2);
-        $output = openssl_decrypt($encrypted_data, $encrypt_method, $encryption_key, 0, $iv);
+        $decrypted = explode('::', base64_decode($data), 2);
+        if (sizeof($decrypted) == 2) {
+            list($encrypted_data, $iv) = $decrypted;
+            $output = openssl_decrypt($encrypted_data, $encrypt_method, $encryption_key, 0, $iv);
+        }    
     }
     
     return $output;

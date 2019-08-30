@@ -17,6 +17,7 @@ try {
     // API ACCESS - add comments if you don't want to allow API access on routes
     Auth::activateAPI();
     
+    
     // AUTHENTICATION - Remove comment if you have an authentication implemented
     //Auth::authentication('User', 'users');
     

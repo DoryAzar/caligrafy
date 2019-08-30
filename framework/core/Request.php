@@ -49,6 +49,12 @@ class Request  {
     public $host;
     
     /**
+     * @var string host reads the host information as taken from the headers of the request
+     * @property string host reads the host information as taken from the headers of the request
+    */
+    public $authorization;
+    
+    /**
      * @var array cache has all the headers information of the request
      * @property array cache has all the headers information of the request
     */
@@ -120,6 +126,7 @@ class Request  {
         $this->_request = getallheaders();
         $this->method = isset($_REQUEST['_method']) && $_REQUEST['_method'] != ''? strtoupper($_REQUEST['_method']) : $_SERVER['REQUEST_METHOD'];
         $this->host = $this->_request['Host']?? '';
+        $this->authorization = $this->_request['Authorization']?? '';
         $this->cache = $this->_request['Cache']?? '';
         $this->userAgent = $this->_request['User-Agent']?? '';
         $this->accept = $this->_request['Accept']?? '';
@@ -137,6 +144,23 @@ class Request  {
         $this->parameters = empty($this->uriParameters)? $this->currentBind : $this->uriParameters;
         $this->fetch = (Object)($this->currentBind);
         return $this;
+    }
+    
+    /**
+     * Checks if API requests are authorized
+     */
+    public function authorizeApiRequest()
+    {
+        $result = false;
+        $apiKey = isset($this->authorization)? $this->authorization : null;
+        $matches = array();
+        if ($apiKey) {
+            preg_match('/Bearer\s(\S+)/', $apiKey, $matches);
+            if(!empty($matches) && isset($matches[1])) {
+                $result = encryptDecrypt('decrypt', $matches[1]) == getenv('APP_KEY')?? false;
+            }
+        }
+        return $result;
     }
     
     /**
