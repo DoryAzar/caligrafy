@@ -42,7 +42,11 @@ class Errors
         
         //4xxx: Mail Errors
         4000 => '[ERROR 4000] Mail Error - Mailer could not be initialized',
-        4001 => '[ERROR 4001] Mail Error - Mail Content is not compliant'
+        4001 => '[ERROR 4001] Mail Error - Mail Content is not compliant',
+        
+        
+        //5xxx: Caligrafer Errors
+        5000 => '[ERROR 5000] Key Generator Error - Generator could not generate keys'
     );
     
     

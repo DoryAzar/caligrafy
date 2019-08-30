@@ -40,7 +40,8 @@ define("FONTS_PATH", PUBLIC_PATH . "fonts" . DS);
 
 
 //URL of the application
-$_SESSION['base'] = getenv('APP_PROTOCOL')."://".$_SERVER['SERVER_NAME'].DS;
+$serverName = isset($_SERVER['SERVER_NAME'])? $_SERVER['SERVER_NAME'].DS : '';
+$_SESSION['base'] = getenv('APP_PROTOCOL')."://".$serverName;
 $_SESSION['home'] = $_SESSION['base'].(getenv('APP_ROOT')? getenv('APP_ROOT').DS : '');
 $_SESSION['public'] = $_SESSION['home'].'public'.DS;
 $_SESSION['appClient'] = $_SESSION['home'].'public/app'.DS;
