@@ -24,6 +24,7 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
 
 ## New in Caligrafy
++ Caligrafy now supports API Authorization
 + Caligrafy can now support VueJS a progressive Javascript framework that helps you build powerful user interfaces
 
 > Learn more about VueJS [here](https://vuejs.org/)
