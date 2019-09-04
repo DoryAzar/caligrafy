@@ -11,6 +11,7 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 ## Requirements
 + PHP > 7.0
 + MySql > 5.6
++ curl, mbstring, openssl, mcrypt and headers modules must be enabled in your servers
 
 
 ## Installation
