@@ -650,12 +650,13 @@ p.error, label.error {
   /* use this value to count block height */
   line-height: 1.2em;
   /* max-height = line-height (1.2) * lines max number (3) */
-  max-height: 7.5em;/*7.5em;*/ 
+  max-height: 3.6em;/*7.5em;*/ 
+  height:3.6em;
   /* fix problem when last visible word doesn't adjoin right side  */
   text-align: justify;  
   /* place for '...' */
-  margin-right: -1em;
-  padding-right: 1em;
+  margin-right: -0.7em;
+  padding-right: 0.7em;
   max-width: inherit;
   word-wrap: break-word;
 }
