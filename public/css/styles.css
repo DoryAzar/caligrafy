@@ -885,6 +885,28 @@ p.error, label.error {
   margin:2em auto;
 }
 
+.vertical-fixed-3 {
+  display: block;
+  height: 3em;
+  width: auto;
+  margin: 10px auto;
+}
+
+.vertical-fixed-10 {
+  display: block;
+  height: 10em;
+  width: auto;
+  margin:2em auto;
+}
+
+.vertical-fixed-13 {
+  height: 13em;
+}
+
+.vertical-fixed-20 {
+  height: 40em;
+}
+
 /* TABLE definition */
 
 .table td.bounded-sm, th.bounded-sm {
@@ -905,10 +927,10 @@ p.error, label.error {
 
 .table-image {
   /* Combine with thumbnail for borders to appear*/
-  background-size: cover;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  width:100%;
+  width:auto;
   height: 75px;
 }
 
