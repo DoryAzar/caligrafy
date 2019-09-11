@@ -6,7 +6,7 @@
 - $metadata = array('metadata' => metadata());
 - $copyright = array('copyright' => copyright());
 - $env = sizeof($variables) > 2? array_slice($variables, 2) : array();
-- $env = json_encode(array_merge($env, $_ENV, $globals, $token, $home, $keywords, $metadata, $copyright));
+- $env = json_encode(array_merge($env, $globals, $token, $home, $keywords, $metadata, $copyright));
 if $app
     - include(PUBLIC_PATH.'app/'.$app.'.php');
 else
