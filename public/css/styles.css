@@ -892,6 +892,13 @@ p.error, label.error {
   margin: 10px auto;
 }
 
+.vertical-fixed-5 {
+  display: block;
+  height: 5em;
+  width: auto;
+  margin: 10px auto;
+}
+
 .vertical-fixed-10 {
   display: block;
   height: 10em;
