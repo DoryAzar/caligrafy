@@ -30,6 +30,32 @@ class Payment {
 	* @property string Stripe private_key
 	*/
 	private $_private_key;
+    
+    
+    /**
+	* @var string the Plaid client_id
+	* @property string the Plaid client_id
+	*/
+	private $_ach_client_id;
+    
+    /**
+	* @var string the Plaid public key
+	* @property string the Plaid public key
+	*/
+	private $_ach_public_key;
+    
+    /**
+	* @var string the Plaid secret 
+	* @property string the Plaid secret
+	*/
+	private $_ach_secret;
+    
+    /**
+	* @var string the Plaid url 
+	* @property string the Plaid sandbox url
+	*/
+	private $_ach_url;
+    
 
 	/**
 	 * Constructs the Payment Controller to initiate the Stripe api
@@ -46,6 +72,18 @@ class Payment {
         } else {
             $this->_public_key = PAY_PUBLIC_KEY_TEST;
             $this->_private_key = PAY_PRIVATE_KEY_TEST;
+        }
+        
+        if (strtolower(ACH_ACTIVATE) == 'true') {
+            $this->_ach_client_id = ACH_CLIENT_ID;
+            $this->_ach_public_key = ACH_PUBLIC_KEY;
+            if (strtolower(APP_ENV) == 'production') {
+                $this->_ach_url = "https://google.plaid.com";
+                $this->_ach_secret = ACH_PRODUCTION_SECRET;
+            } else {
+                $this->_ach_url = "https://sandbox.plaid.com";
+                $this->_ach_secret = ACH_SANDBOX_SECRET;
+            }
         }
 
 		\Stripe\Stripe::setApiKey($this->_private_key);
@@ -74,8 +112,9 @@ class Payment {
 		try {
           
           if ($card) {
-              $token = $this->createStripeToken($card);
-              if ($token && $token->id) {
+              $token = is_array($card)? $this->createStripeToken($card) : $card;
+              
+              if (isset($token)) {
                 $outcome = \Stripe\Charge::create(array(
                 "amount" => $amount, // Amount in cents
                 "currency" => $currency,
@@ -94,6 +133,37 @@ class Payment {
 		}
 		return $result;
 	}
+    
+    
+    public function linkBankInformation($publicToken, $account)
+    {
+        $result = array('action_success' => false, 'error' => 'Transaction could not be completed');
+        
+        if (isset($publicToken) && isset($account)) {
+            
+           $data = array('client_id' => $this->_ach_client_id,
+                         'secret' => $this->_ach_secret,
+                         'public_token' => $publicToken);
+            $headers = array("Content-Type: application/json");
+            $response = httpRequest($this->_ach_url.'/item/public_token/exchange', 'POST', $data, $headers);
+            
+            if (isset($response['access_token'])) {
+                $data = array('client_id' => $this->_ach_client_id,
+                         'secret' => $this->_ach_secret,
+                         'access_token' => $response['access_token'],
+                         'account_id' => $account);
+                
+                $response = httpRequest($this->_ach_url.'/processor/stripe/bank_account_token/create', 'POST', $data, $headers);
+                
+            }
+            
+            $response = isset($response['stripe_bank_account_token'])? $response['stripe_bank_account_token'] : null;
+            if ($response) {
+                $result = array('action_success' => true, 'token' => $response);
+            }
+        }
+        return $result;
+    }
     
     
     private function createStripeToken($card)
