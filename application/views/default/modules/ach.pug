@@ -1,0 +1,7 @@
+- $ach = strtolower($_ENV['ACH_ACTIVATE']) == 'true'? true : false;
+- $public_key = $_ENV['ACH_PUBLIC_KEY']
+- $environment = strtolower($_ENV['APP_ENV']) != 'production'? 'sandbox' : 'development';
+if $ach
+    div(class="container textcolor0 horizontal-center")
+        form(id = "bank-form" class="btn btn-primary btn-lg")
+        script(src="https://cdn.plaid.com/link/v2/stable/link-initialize.js", data-form-id="bank-form", data-client-name="Caligrafy", data-key="{$public_key}", data-product="auth", data-env="{$environment}" )
