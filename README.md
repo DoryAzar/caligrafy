@@ -45,6 +45,9 @@ Caligrafy has a built-in and powerful template engine that can be used to create
 ### 6. Lightweight Syntax
 Caligrafy is closer to bare-bone programming than other frameworks out there. Why it delivers equivalent - if not more powerful - features, it is built from the ground up with developers in mind.
 
+### 7. Documentation & Support
+Caligrafy is committed to providing continuous support to its community of developers through an extensive online Documentation, Online video tutorials on its youtube channel, training courses on Udemy and live help through Slack, Facebook and Github.
+
 
 ## New in Caligrafy
 + Caligrafy now supports ACH payments
