@@ -24,7 +24,6 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
 
-<br />
 
 ## Why Caligrafy
 
@@ -46,7 +45,6 @@ Caligrafy has a built-in and powerful template engine that can be used to create
 ### 6. Lightweight Syntax
 Caligrafy is closer to bare-bone programming than other frameworks out there. Why it delivers equivalent - if not more powerful - features, it is built from the ground up with developers in mind.
 
-<br />
 
 ## New in Caligrafy
 + Caligrafy now supports ACH payments
