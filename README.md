@@ -24,6 +24,27 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
 
+## Why Caligrafy
+
+### Full-Stack Framework
+Caligrafy is a full-stack framework that leverages the power of server-side languages such as PHP with the power of client-side languages such as Javascript to help you build powerful and sophisticated web applications.
+
+### MVC Architecture
+Caligrafy is built with an MVC architecture pattern that separates the business logic from the presentation layers. The Caligrafy MVC established an arsenal of methods and features that ensure that the separation of concerns is maintained between business and presentation layers.
+
+### Modern Modular Librairies
+Caligrafy comes pre-packaged with ready-to-use modern features. In few lines, you can start accepting credit card payments, ach payments, cryptocurrency payments. In one line of code, your application can have rich structured data and can be ready for social sharing. In no time, your application can have a REST-API exposed for third-party applications. And many others...
+
+### VueJS
+Caligrafy supports VueJS as an alternative to using its template engine. VueJS complements Caligrafy in its ability to create powerful and nimble user experiences in the "View" layer of an MVC architecture. If you are a PHP developer, Caligrafy made it easy for you to use VueJS. If you are a Javascript developer, Caligrafy makes it easy for you to not be overwhelmed by PHP.
+
+### Template Engine
+Caligrafy has a built-in and powerful template engine that can be used to create sophisticated user experiences easily.
+
+### Lightweight Syntax
+Caligrafy is closer to bare-bone programming than other frameworks out there. Why it delivers equivalent - if not more powerful - features, it is built from the ground up with developers in mind.
+
+
 ## New in Caligrafy
 + Caligrafy now supports ACH payments
 + Caligrafy now supports API Authorization
