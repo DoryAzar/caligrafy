@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "18592bfa64cbe174ceb7425562f4217093a6a6b4"
+                "reference": "3786d80af8e6d05e5e42f0350e5e5da5b92041a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/18592bfa64cbe174ceb7425562f4217093a6a6b4",
-                "reference": "18592bfa64cbe174ceb7425562f4217093a6a6b4",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/3786d80af8e6d05e5e42f0350e5e5da5b92041a0",
+                "reference": "3786d80af8e6d05e5e42f0350e5e5da5b92041a0",
                 "shasum": ""
             },
             "require": {
@@ -43,7 +43,7 @@
                 }
             ],
             "description": "A PHP class that makes working with images as simple as possible.",
-            "time": "2019-06-20T12:59:59+00:00"
+            "time": "2019-09-26T01:22:02+00:00"
         },
         {
             "name": "coinbase/coinbase-commerce",
@@ -1697,12 +1697,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
+                "reference": "a874bbf9135bd76175baa2c26d14312c9ef25543"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
-                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/a874bbf9135bd76175baa2c26d14312c9ef25543",
+                "reference": "a874bbf9135bd76175baa2c26d14312c9ef25543",
                 "shasum": ""
             },
             "require": {
@@ -1748,7 +1748,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2019-08-06T08:03:45+00:00"
+            "time": "2019-09-17T10:46:08+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -1888,12 +1888,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "6f7451eddcdca596495ce6883855e9c59d35e1e6"
+                "reference": "26de1a52d20fe9178d418c368ab4fefdb973e72c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/6f7451eddcdca596495ce6883855e9c59d35e1e6",
-                "reference": "6f7451eddcdca596495ce6883855e9c59d35e1e6",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/26de1a52d20fe9178d418c368ab4fefdb973e72c",
+                "reference": "26de1a52d20fe9178d418c368ab4fefdb973e72c",
                 "shasum": ""
             },
             "type": "library",
@@ -1918,7 +1918,7 @@
             ],
             "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
             "homepage": "https://wixelhq.com/",
-            "time": "2018-11-16T06:19:11+00:00"
+            "time": "2019-09-16T08:41:54+00:00"
         }
     ],
     "packages-dev": [],
