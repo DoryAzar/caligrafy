@@ -57,49 +57,35 @@ class Mail {
     
     public function sendMail($recipients, $content)
     {
-        if (!$recipients || !$content) {
+        if (empty($recipients)) {
             throw new Exception(Errors::get('4001'), 4001);
         }
         
         // adding recipients with name
-        $this->add($recipients['from'], 'setFrom')
-             ->add($recipients['to'], 'addAddress')
-             ->add($recipients['reply_to'], 'addReplyTo')
-             ->add($recipients['cc'], 'addCC')
-             ->add($recipients['bcc'], 'addBCC')
-             ->add($recipients['attachment'], 'addAttachment');
+        $this->mailer->setFrom($recipients['from']);
+        $this->mailer->addAddress($recipients['to']);
+        
+        
+        //$this->add($recipients['from'], 'setFrom')
+        //     ->add($recipients['to'], 'addAddress')
+        //     ->add($recipients['reply_to'], 'addReplyTo')
+        //     ->add($recipients['cc'], 'addCC')
+        //     ->add($recipients['bcc'], 'addBCC')
+        //     ->add($recipients['attachment'], 'addAttachment');
         
         // add Content
         $this->mailer->isHTML(true);
         $this->mailer->Subject = 'Here is the subject';
         $this->mailer->Body    = 'This is the HTML message body <b>in bold!</b>';
         $this->mailer->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    
         
         if(!$this->mailer->send()) {
-            return false;
+            return $this;
             exit;
         }       
 
         return true;
-        
-    }
-    
-    
-    private function add($recipients, $function)
-    {
-        // If no email is entered then return
-        if (!is_array($recipients) || empty($function) || !isset($recipients['address'])) {
-            return $this;
-            exit;
-        }
-
-        if (isset($recipients['name'])) {
-            $this->mailer->$function($recipients['address'], $recipients['name']);
-        } else {
-           $this->mailer->$function($recipients['address']); 
-        }
-
-        return $this;
         
     }
     
