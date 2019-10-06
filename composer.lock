@@ -504,26 +504,28 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "6.0.x-dev",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "ea25dc122d22966b7dd4ca1083c63afeeb50dfcd"
+                "reference": "26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/ea25dc122d22966b7dd4ca1083c63afeeb50dfcd",
-                "reference": "ea25dc122d22966b7dd4ca1083c63afeeb50dfcd",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8",
+                "reference": "26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8",
                 "shasum": ""
             },
             "require": {
                 "ext-ctype": "*",
+                "ext-filter": "*",
                 "php": ">=5.5.0"
             },
             "require-dev": {
                 "doctrine/annotations": "1.2.*",
+                "friendsofphp/php-cs-fixer": "^2.2",
                 "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "4.*",
+                "phpunit/phpunit": "^4.8 || ^5.7",
                 "zendframework/zend-eventmanager": "3.0.*",
                 "zendframework/zend-i18n": "2.7.3",
                 "zendframework/zend-serializer": "2.7.*"
@@ -544,16 +546,16 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1"
+                "LGPL-2.1-only"
             ],
             "authors": [
                 {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
                     "name": "Marcus Bointon",
                     "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
                 },
                 {
                     "name": "Andy Prevost",
@@ -564,7 +566,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2017-08-28T11:42:41+00:00"
+            "time": "2019-09-27T21:33:43+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -906,23 +908,24 @@
         },
         {
             "name": "phug/js-transformer-filter",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/js-transformer-filter.git",
-                "reference": "969c38e00af7f8c95e6345cf1e9006a835394181"
+                "reference": "dbadf07950ee552471905001266cdae7793868a8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/js-transformer-filter/zipball/969c38e00af7f8c95e6345cf1e9006a835394181",
-                "reference": "969c38e00af7f8c95e6345cf1e9006a835394181",
+                "url": "https://api.github.com/repos/phug-php/js-transformer-filter/zipball/dbadf07950ee552471905001266cdae7793868a8",
+                "reference": "dbadf07950ee552471905001266cdae7793868a8",
                 "shasum": ""
             },
             "require": {
                 "js-transformer/js-transformer": "^1.0",
-                "phug/phug": "^0.1.8 || ^0.2.0 || ^0.3.0"
+                "phug/phug": "^0.1.8 || ^0.2.0 || ^0.3.0 || ^1.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "^4 || ^5",
                 "phug/dev-tool": "^0.1.11"
             },
             "type": "library",
@@ -945,7 +948,7 @@
             "keywords": [
                 "js-transformer"
             ],
-            "time": "2018-02-09T07:58:41+00:00"
+            "time": "2019-10-05T16:02:15+00:00"
         },
         {
             "name": "phug/lexer",
@@ -1756,12 +1759,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "34dac0586369f29f52fccff2317a251bb5218a77"
+                "reference": "abcae10cfba6fb0cdc5407585f087728915d558a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/34dac0586369f29f52fccff2317a251bb5218a77",
-                "reference": "34dac0586369f29f52fccff2317a251bb5218a77",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/abcae10cfba6fb0cdc5407585f087728915d558a",
+                "reference": "abcae10cfba6fb0cdc5407585f087728915d558a",
                 "shasum": ""
             },
             "require": {
@@ -1774,9 +1777,9 @@
             },
             "require-dev": {
                 "ext-iconv": "*",
-                "symfony/console": "~3.4|~4.0",
-                "symfony/process": "~3.4|~4.0",
-                "twig/twig": "~1.34|~2.4"
+                "symfony/console": "^4.4|^5.0",
+                "symfony/process": "^4.4|^5.0",
+                "twig/twig": "^2.4|^3.0"
             },
             "suggest": {
                 "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
@@ -1789,7 +1792,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "4.4-dev"
+                    "dev-master": "5.0-dev"
                 }
             },
             "autoload": {
@@ -1823,7 +1826,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-05-09T07:23:25+00:00"
+            "time": "2019-10-02T15:00:37+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
