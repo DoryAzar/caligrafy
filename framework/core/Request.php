@@ -171,9 +171,7 @@ class Request  {
         $result = false;
         $acceptance = explode(',', strtolower(preg_replace('/\s+/', '', $this->accept)));
         if (!empty($acceptance)) {
-            if(!in_array('text/html', $acceptance)) {
-                $result = in_array('application/json', $acceptance); 
-            }
+            $result = !in_array('text/html', $acceptance); // set to true if client is not asking for html
         }
         return $result;
         
