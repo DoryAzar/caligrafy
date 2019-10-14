@@ -792,7 +792,7 @@ function rearrange( $arr ){
  * cUrl request function
 */
 
-function httpRequest($url, $method, $data, $headers) {
+function httpRequest($url, $method, $data, $headers, $username = null, $password = null) {
     
     $curl = curl_init();
     curl_setopt_array($curl, array(
@@ -802,9 +802,20 @@ function httpRequest($url, $method, $data, $headers) {
         CURLOPT_TIMEOUT => 30,
         CURLOPT_URL => $url,
         CURLOPT_CUSTOMREQUEST => $method,
-        CURLOPT_POSTFIELDS => (strtoupper($method == "POST")? json_encode($data) : null),  
         CURLOPT_HTTPHEADER => $headers
         ));
+        
+        if ($username && $password) {
+            curl_setopt_array($curl, array(
+                CURLOPT_USERPWD => $username . ":" . $password
+            ));
+        }
+        
+        if (strtoupper($method) == "POST" && !empty($data)) {
+            curl_setopt_array($curl, array(
+                CURLOPT_POSTFIELDS => json_encode($data)
+            ));
+        }
         $response = curl_exec($curl);
         $err = curl_error($curl);
 
