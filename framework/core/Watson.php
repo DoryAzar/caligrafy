@@ -121,7 +121,7 @@ class Watson {
         if (!empty($result) && isset($result['context'])) {
             $this->_watson_context = $result['context'];
         } 
-        return $result;
+        return $this;
     }
     
     
@@ -190,6 +190,20 @@ class Watson {
     public function getLastExchange()
     {
         return array_pop($this->_watson_conversation_log);
+    }
+    
+    
+    /**
+	 * Get Last Response
+	 * @return the last response
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getResponse()
+    {
+        $response = array_pop($this->_watson_conversation_log);
+        return isset($response['response'])? $response['response'] : null;
     }
     
     
