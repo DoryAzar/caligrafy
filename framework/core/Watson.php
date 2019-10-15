@@ -53,7 +53,19 @@ class Watson {
 	private $_watson_api_version;
     
     
-
+    /**
+	* @var array the Conversation context
+	* @property the Conversation context
+	*/
+	private $_watson_context;
+    
+    /**
+	* @var array the Conversation
+	* @property the Conversation
+	*/
+	private $_watson_conversation_log;
+    
+    
 
 	/**
 	 * Constructs the Watson Controller to initiate the Watson exchange
@@ -67,6 +79,8 @@ class Watson {
 		$this->_api_key = WATSON_API_KEY;
         $this->_watson_assistant_id = $watson_assistant_id;
         $this->_watson_api_version = "?version=2019-02-28";
+        $this->_watson_context = array();
+        $this->_watson_conversation_log = array();
         
         $url = $this->_watson_url.$this->_watson_assistant_id."/sessions".$this->_watson_api_version;
         
@@ -82,16 +96,31 @@ class Watson {
     
 	/**
 	 * Send Input to Watson
-	 * @param $watson_assistant_id takes the Watson ID
-     * @param array $input to send to Watson
+     * @param string $messageText to send to Watson
+     * @param array $skillVariables
 	 * @author Dory A.Azar
 	 * @version 1.0
 	 */
     
-    public function communicate($input)
+    public function communicate($messageText, $skillVariables = null)
     {
+        $input = array('input' => array('text' => $messageText,
+                                        'options' => array('return_context' => true)
+                        ));
+        $input['context']['skills']['main skill']['user_defined'] = $skillVariables?? array();
+        
         $url = $this->_watson_url.$this->_watson_assistant_id."/sessions/".$this->_watson_session."/message".$this->_watson_api_version;
         $result = httpRequest($url, 'POST', $input, array('Content-Type:application/json'), 'apikey', $this->_api_key);
+        
+        // If there is an output then log the conversation
+        if (!empty($result) && isset($result['output']['generic'][0])) {    
+            $this->_watson_conversation_log[sizeof($this->_watson_conversation_log) + 1] =  array('turn_count' => sizeof($this->_watson_conversation_log) + 1, 'user' => $messageText, 'response' => $result['output']['generic'][0]);
+        }
+        
+        // If there is a context then update the object context
+        if (!empty($result) && isset($result['context'])) {
+            $this->_watson_context = $result['context'];
+        } 
         return $result;
     }
     
@@ -108,6 +137,62 @@ class Watson {
     {
         return $this->_watson_session;
     }
+    
+    
+    /**
+	 * Get Context
+	 * @return the current Context
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getContext()
+    {
+        return $this->_watson_context;
+    }
+                                                    
+                                                    
+                                                    
+    /**
+	 * Get Context
+	 * @return the current Conversation
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getConversation()
+    {
+        return $this->_watson_conversation_log;
+    }
+    
+    
+    /**
+	 * Get Context
+	 * @return the last exchange
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getLastExchange()
+    {
+        return array_pop($this->_watson_conversation_log);
+    }
+    
+    
+    /**
+	 * Get conversation exchange at turn count
+     * @param int $turnCount defines the turn count of the conversation
+	 * @return array the conversation exchange at turn count
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getExchangeAt($turnCount)
+    {
+        return isset($this->_watson_conversation_log[$turnCount])? $this->_watson_conversation_log[$turnCount] : array();
+    }
+    
+    
     
     /**
 	 * Close the Watson Session
