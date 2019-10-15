@@ -150,6 +150,20 @@ class Watson {
     {
         return $this->_watson_context;
     }
+    
+    
+    
+    /**
+	 * Get Context Variable
+	 * @return the Context variable
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getContextVariable($variable)
+    {
+        return isset($this->_watson_context['skills']['main skill']['user_defined'][$variable])? $this->_watson_context['skills']['main skill']['user_defined'][$variable] : null;
+    }
                                                     
                                                     
                                                     
