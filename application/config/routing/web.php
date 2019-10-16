@@ -26,6 +26,7 @@ try {
     Route::get('/', function() { return view('default/index'); });
     Route::get('/helloworld', function() { echo "Hello World"; });
     
+    
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
     //Route::get('/home', 'AuthController@home');
     //Route::get('/login', 'AuthController');
@@ -33,7 +34,13 @@ try {
     //Route::get('/register', 'AuthController@registerForm');
     //Route::post('/login', 'AuthController@login');
     //Route::post('/register', 'AuthController@register');
-
+    
+    // Bot Routes - Uncomments only if you want to build a Watson bot
+    //Route::get('/bot', function() { return view('Client/app', array('bot' => 'index'));});
+    //Route::post('/bot/communicate', 'WatsonController@communicate');
+    //Route::post('/bot/{appId}', 'WatsonController@connect');
+    //Route::delete('/bot', 'WatsonController@end');   
+    
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
     Route::run(); 

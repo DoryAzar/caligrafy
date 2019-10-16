@@ -46,6 +46,8 @@ $_SESSION['home'] = $_SESSION['base'].(getenv('APP_ROOT')? getenv('APP_ROOT').DS
 $_SESSION['public'] = $_SESSION['home'].'public'.DS;
 $_SESSION['appClient'] = $_SESSION['home'].'public/app'.DS;
 $_SESSION['appService'] = $_SESSION['home'].'public/app/services'.DS;
+$_SESSION['botClient'] = $_SESSION['home'].'public/bot'.DS;
+$_SESSION['botService'] = $_SESSION['home'].'public/bot/services'.DS;
 $_SESSION['uploadsUrl'] = $_SESSION['home']."public/uploads".DS;
 $_SESSION['jsUrl'] = $_SESSION['home']."public/js".DS;
 $_SESSION['cssUrl'] = $_SESSION['home']."public/css".DS;
@@ -53,3 +55,5 @@ $_SESSION['imagesUrl'] = $_SESSION['home']."public/images".DS;
 
 define("APP_CLIENT", $_SESSION['appClient']);
 define("APP_SERVICE_ROOT", $_SESSION['appService']);
+define("BOT_CLIENT", $_SESSION['botClient']);
+define("BOT_SERVICE_ROOT", $_SESSION['botService']);
