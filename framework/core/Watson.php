@@ -107,7 +107,9 @@ class Watson {
         $input = array('input' => array('text' => $messageText,
                                         'options' => array('return_context' => true)
                         ));
-        $input['context']['skills']['main skill']['user_defined'] = $skillVariables?? array();
+        if (!empty($skillVariables)) {
+            $input['context']['skills']['main skill']['user_defined'] = $skillVariables;
+        }
         
         $url = $this->_watson_url.$this->_watson_assistant_id."/sessions/".$this->_watson_session."/message".$this->_watson_api_version;
         $result = httpRequest($url, 'POST', $input, array('Content-Type:application/json'), 'apikey', $this->_api_key);
