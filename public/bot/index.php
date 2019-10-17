@@ -9,7 +9,6 @@
 
         <!-- Stylesheet and head scripts go here -->
         <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
-        <link rel="stylesheet" type="text/css" href="<?php echo scripts('css'); ?>" />
         <link rel="stylesheet" href="<?php echo scripts('bootstrap_css'); ?>" />
         
         <link rel="stylesheet" href="https://unpkg.com/botui/build/botui.min.css" />
@@ -44,7 +43,6 @@
         <!-- Additional scripts go here -->
         <script src="<?php echo scripts('bootstrap_jquery'); ?>"></script>
         <script src="<?php echo scripts('bootstrap_script'); ?>"></script>
-        <script src="<?php echo scripts('script'); ?>"></script>
         
         <!--[if lt IE 9] -->
         <script src="<?php scripts('fallback_html5shiv'); ?>"></script>

@@ -83,13 +83,13 @@ var app = new Vue({
                                 // assume it's an embed
                                 var imageInput = element.source;
                                 var type = 'embed';
-                                
+                                app.addMessage("<a target=_blank href='" + element.source +"'>" + element.title  + "</a>", false, 'html'); 
                                 // if image then use image display
                                 if (element.source.match(/\.(jpeg|jpg|gif|png)$/) != null) {
-                                    imageInput = element.title + '![product image](' + element.source + ')';
+                                    imageInput = '![product image](' + element.source + ')';
                                     type = 'text';
-                                }
-                                app.addMessage(imageInput, false, type);
+                                } 
+                                app.addMessage(imageInput, false, type); 
                                 app.addAction('text');
                                 break;
                             default:
