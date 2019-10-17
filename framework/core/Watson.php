@@ -153,6 +153,18 @@ class Watson {
         return $this->_watson_context;
     }
     
+    /**
+	 * Get Skill Variables
+	 * @return the skill variables
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+    
+    public function getSkillVariables()
+    {
+        return isset($this->_watson_context['skills']['main skill']['user_defined'])? $this->_watson_context['skills']['main skill']['user_defined'] : null;
+    }
+    
     
     
     /**

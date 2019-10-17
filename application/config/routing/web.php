@@ -36,11 +36,11 @@ try {
     //Route::post('/register', 'AuthController@register');
     
     // Bot Routes - Uncomments only if you want to build a Watson bot
-    //Route::get('/bot', function() { return view('Client/app', array('bot' => 'index'));});
-    //Route::post('/bot/communicate', 'WatsonController@communicate');
-    //Route::post('/bot/{appId}', 'WatsonController@connect');
-    //Route::delete('/bot', 'WatsonController@end');   
-    //
+    Route::get('/bot', function() { return view('Client/app', array('bot' => 'index'));});
+    Route::post('/bot/communicate', 'WatsonController@communicate');
+    Route::post('/bot/{appId}', 'WatsonController@connect');
+    Route::delete('/bot', 'WatsonController@end');   
+    
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
     Route::run(); 

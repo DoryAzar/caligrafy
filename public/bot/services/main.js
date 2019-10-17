@@ -7,13 +7,14 @@ var app = new Vue({
         env: env,
         botui: botui,
         botId: 'b605e1f8-38c5-4756-aa05-89e9ae6063e9',
-        route: 'http://localhost/caligrafy/bot/',
+        route: env.home + "bot/",
         config: {
             async: true,
             crossDomain: true,
             headers: {
                 "Authorization": "Bearer " + apiKey,
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                 'Set-Cookie': 'widget_session=caligrafy_bot; SameSite=None; Secure'
                 }
         }
     }
@@ -23,6 +24,7 @@ var app = new Vue({
       
       addMessage: function(message, human = false, type = 'text') {
           this.botui.message.add({
+              autoHide: false,
               type: type,
               human: human,
               content: message
@@ -31,6 +33,7 @@ var app = new Vue({
       
       addAction: function(action, options = []) {
           this.botui.action[action]({
+              autoHide: false,
               delay: 500,
               action: options
         }).then(function(res){
@@ -67,14 +70,27 @@ var app = new Vue({
                     response.data.response.forEach((element) => {
                         switch(element['response_type']) {
                             case 'text':
-                                app.promptUser(element.text);
+                                app.promptUser(element.text, 'text', []);
                                 break;
                             case 'option':
                                 var options = [];
-                                response.data.response.options.forEach(function(element) {
+                                element.options.forEach(function(element) {
                                     options.push({ 'text': element.label, 'value': element.value.input.text});
                                 });
-                                app.promptUser(response.data.response.title,'button', options);
+                                app.promptUser(element.title,'button', options);
+                                break;
+                            case 'image':
+                                // assume it's an embed
+                                var imageInput = element.source;
+                                var type = 'embed';
+                                
+                                // if image then use image display
+                                if (element.source.match(/\.(jpeg|jpg|gif|png)$/) != null) {
+                                    imageInput = element.title + '![product image](' + element.source + ')';
+                                    type = 'text';
+                                }
+                                app.addMessage(imageInput, false, type);
+                                app.addAction('text');
                                 break;
                             default:
                                 console.log(response.data);
@@ -92,7 +108,7 @@ var app = new Vue({
   /* upon object load, the following will be executed */
   mounted () {
       this.connect(this.route);
-      this.promptUser('Hi there! How can I help you?');
+      this.promptUser('Hi!');
   }
 
 });

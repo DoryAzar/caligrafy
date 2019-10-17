@@ -2,6 +2,7 @@
     Header set Access-Control-Allow-Origin "*"
     Header set Access-Control-Allow-Methods "POST, GET, OPTIONS, DELETE, PUT"
     Header set Access-Control-Allow-Headers "*"
+    Header always edit Set-Cookie ^(.*)$ $1;HttpOnly;Secure;SameSite=none
     RewriteEngine On
 
     #RewriteBase /mvc

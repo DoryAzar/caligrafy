@@ -39,7 +39,7 @@ class WatsonController extends Controller {
             if($textMessage != '') {
                 $result = array('action_success' => true);
                 $result['response'] = $myWatson->communicate($textMessage, $variables)->getResponse();
-                $result['context'] = $myWatson->getContext();
+                $result['context'] = $myWatson->getSkillVariables();
             }
             
         }

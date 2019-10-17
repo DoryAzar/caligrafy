@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
         <meta name='apple-mobile-web-app-capable' content='yes'>
         <meta name='apple-mobile-web-app-status-bar-style' content='black'>
-        <title>Index Page with Vue.js</title>
+        <title>Caligrafy Bot</title>
 
         <!-- Stylesheet and head scripts go here -->
         <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
