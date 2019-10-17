@@ -116,7 +116,7 @@ class Watson {
         
         // If there is an output then log the conversation
         if (!empty($result) && isset($result['output']['generic'][0])) {    
-            $this->_watson_conversation_log[sizeof($this->_watson_conversation_log) + 1] =  array('turn_count' => sizeof($this->_watson_conversation_log) + 1, 'user' => $messageText, 'response' => $result['output']['generic'][0]);
+            $this->_watson_conversation_log[sizeof($this->_watson_conversation_log) + 1] =  array('turn_count' => sizeof($this->_watson_conversation_log) + 1, 'user' => $messageText, 'response' => $result['output']['generic']);
         }
         
         // If there is a context then update the object context

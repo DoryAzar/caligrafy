@@ -37,7 +37,7 @@
              * Any environment variables to be passed on from the server can take place in this here
              */
             loadVue({
-                services: ['main'],
+                services: ['main']
              });
         </script>
         

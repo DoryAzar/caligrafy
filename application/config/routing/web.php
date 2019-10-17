@@ -40,7 +40,7 @@ try {
     //Route::post('/bot/communicate', 'WatsonController@communicate');
     //Route::post('/bot/{appId}', 'WatsonController@connect');
     //Route::delete('/bot', 'WatsonController@end');   
-    
+    //
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
     Route::run(); 

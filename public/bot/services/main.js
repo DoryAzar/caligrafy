@@ -35,7 +35,7 @@ var app = new Vue({
               action: options
         }).then(function(res){
             var input = { "text": res.value};
-            app.communicate(app.route, JSON.stringify(input));
+            app.communicate(app.route, input);
           });
       },
       
@@ -44,12 +44,6 @@ var app = new Vue({
           this.addAction(action, options);
       },
       
-      // example of axios get method with default parameters
-      all: function(route) {
-          axios.get(route)
-              .then(response => (this.response = response.data))
-              .catch(error => (console.log(error)));
-      },
       
     // Connect to the bot
       connect: function(route) {
@@ -69,21 +63,25 @@ var app = new Vue({
       communicate: function(route, input) {
             axios.post(route + 'communicate', input, this.config)
             .then(response => {
-                if (response.data['action_success'] === true) {
-                    switch(response.data.response['response_type']) {
-                        case 'text':
-                            app.promptUser(response.data.response.text);
-                            break;
-                        case 'option':
-                            var options = response.data.response.options.map( s => ({text:s.label}) );
-                            console.log(response.data.response);
-                            app.promptUser(response.data.response.title,'button', options);
-                            break;
-                        default:
-                            console.log(response.data);
-                    }
+                if (response.data && response.data['action_success'] === true && response.data.response) {
+                    response.data.response.forEach((element) => {
+                        switch(element['response_type']) {
+                            case 'text':
+                                app.promptUser(element.text);
+                                break;
+                            case 'option':
+                                var options = [];
+                                response.data.response.options.forEach(function(element) {
+                                    options.push({ 'text': element.label, 'value': element.value.input.text});
+                                });
+                                app.promptUser(response.data.response.title,'button', options);
+                                break;
+                            default:
+                                console.log(response.data);
+                        }                        
+                    });
                 } else {
-                    console.log('it did not work');
+                    console.log('Conversation ended');
                 }
 
             })
