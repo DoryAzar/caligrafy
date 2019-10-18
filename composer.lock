@@ -668,12 +668,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "ed822518abf2b9ec5e3b8b28adf4a2e4d0879fb3"
+                "reference": "71c02e66f84e68f28f49897e72f3a3787576112f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/ed822518abf2b9ec5e3b8b28adf4a2e4d0879fb3",
-                "reference": "ed822518abf2b9ec5e3b8b28adf4a2e4d0879fb3",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/71c02e66f84e68f28f49897e72f3a3787576112f",
+                "reference": "71c02e66f84e68f28f49897e72f3a3787576112f",
                 "shasum": ""
             },
             "require": {
@@ -704,7 +704,7 @@
                 "phpunit/php-code-coverage": "^2.2 || ^4.0 || ^5.2 || ^6.0 || ^7.0",
                 "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0 || ^7.0",
                 "pug-php/pug-filter-coffee-script": "^1.2",
-                "squizlabs/php_codesniffer": "^3.0"
+                "squizlabs/php_codesniffer": "~3.4.2"
             },
             "bin": [
                 "phug"
@@ -762,7 +762,7 @@
                 "template",
                 "views"
             ],
-            "time": "2019-10-07T15:07:43+00:00"
+            "time": "2019-10-17T21:42:20+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1207,12 +1207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "90790c7598b635e3116a7e7752db4c772e0d8790"
+                "reference": "a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/90790c7598b635e3116a7e7752db4c772e0d8790",
-                "reference": "90790c7598b635e3116a7e7752db4c772e0d8790",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10",
+                "reference": "a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-10-09T14:45:46+00:00"
+            "time": "2019-10-15T13:30:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
