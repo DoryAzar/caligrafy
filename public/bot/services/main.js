@@ -31,14 +31,17 @@ var app = new Vue({
             });
       },
       
-      addAction: function(action, options = []) {
+      addAction: function(action, options = [], context = null) {
           this.botui.action[action]({
               autoHide: false,
               delay: 500,
               action: options
         }).then(function(res){
             var input = { "text": res.value};
-            app.communicate(app.route, input);
+            if (context) {
+                input.variables = context; 
+            }
+            app.communicate(app.route, JSON.stringify(input));
           });
       },
       
@@ -70,7 +73,6 @@ var app = new Vue({
                     response.data.response.forEach((element) => {
                         switch(element['response_type']) {
                             case 'text':
-                                console.log(response.data);
                                 app.promptUser(element.text, 'text', []);
                                 break;
                             case 'option':
@@ -97,14 +99,8 @@ var app = new Vue({
                                 if (response.data.context && response.data.context.action) {
                                     var actionResponse = execute(response.data.context);
                                     if (actionResponse) {
-                                        var input = {
-                                            'text': 'Hi',
-                                            //'variables': {
-                                            //    "response": null
-                                            //}
-                                        };
-                                        app.communicate(app.route, input);
-                                        app.promptUser(actionResponse);
+                                        app.addMessage(actionResponse.text);
+                                        app.addAction('text', [], actionResponse.variables);
                                     }
                                 }
                                 break;
