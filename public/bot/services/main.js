@@ -70,6 +70,7 @@ var app = new Vue({
                     response.data.response.forEach((element) => {
                         switch(element['response_type']) {
                             case 'text':
+                                console.log(response.data);
                                 app.promptUser(element.text, 'text', []);
                                 break;
                             case 'option':
@@ -92,12 +93,27 @@ var app = new Vue({
                                 app.addMessage(imageInput, false, type); 
                                 app.addAction('text');
                                 break;
+                            case 'pause':
+                                if (response.data.context && response.data.context.action) {
+                                    var actionResponse = execute(response.data.context);
+                                    if (actionResponse) {
+                                        var input = {
+                                            'text': 'Hi',
+                                            //'variables': {
+                                            //    "response": null
+                                            //}
+                                        };
+                                        app.communicate(app.route, input);
+                                        app.promptUser(actionResponse);
+                                    }
+                                }
+                                break;
                             default:
                                 console.log(response.data);
                         }                        
                     });
                 } else {
-                    console.log('Conversation ended');
+                    app.addMessage("Bye for now. You can close the chat");
                 }
 
             })
