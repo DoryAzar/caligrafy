@@ -1,5 +1,12 @@
+/* This is where the bot is defined */
+
+// bot name
+var botName = 'Cali';
+
+// Actions that can be achieved by the bot
 function execute(contextInput)
 {
+    // The response is always a text and list of variables
     var response = {"text": null , "variables": null};
     switch(contextInput.action) {
         case 'timeoff':

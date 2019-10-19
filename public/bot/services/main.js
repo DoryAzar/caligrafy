@@ -120,7 +120,8 @@ var app = new Vue({
   /* upon object load, the following will be executed */
   mounted () {
       this.connect(this.route);
-      this.promptUser('Hi!');
+      this.addMessage('Hi!');
+      this.addAction('text', [], { "bot_name": botName });
   }
 
 });
