@@ -95,18 +95,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "bcbb52f6f8b28de44b7515519e3d2d9c640d40ab"
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/bcbb52f6f8b28de44b7515519e3d2d9c640d40ab",
-                "reference": "bcbb52f6f8b28de44b7515519e3d2d9c640d40ab",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/df36d8dae3979cf927d5bbbed6f0427f39aadfec",
+                "reference": "df36d8dae3979cf927d5bbbed6f0427f39aadfec",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.4",
+                "guzzlehttp/psr7": "^1.6.1",
                 "php": ">=5.5"
             },
             "require-dev": {
@@ -120,7 +120,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.3-dev"
+                    "dev-master": "6.5-dev"
                 }
             },
             "autoload": {
@@ -153,7 +153,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2019-10-14T09:23:25+00:00"
+            "time": "2019-10-30T11:22:04+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -1207,12 +1207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10"
+                "reference": "b782e8fe29913d7a1ad8d16b6b6da6a2035aefac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10",
-                "reference": "a0bdec5a86cef43b0e67b8ec1203f6481d5b7c10",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b782e8fe29913d7a1ad8d16b6b6da6a2035aefac",
+                "reference": "b782e8fe29913d7a1ad8d16b6b6da6a2035aefac",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-10-15T13:30:26+00:00"
+            "time": "2019-10-26T19:52:39+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
