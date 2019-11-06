@@ -570,16 +570,16 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed"
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/94e644f7d2051a5f0fcf77d81605f152eecff0ed",
-                "reference": "94e644f7d2051a5f0fcf77d81605f152eecff0ed",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/894e8f93890b79f29911cce497fe811fe9d931ba",
+                "reference": "894e8f93890b79f29911cce497fe811fe9d931ba",
                 "shasum": ""
             },
             "require": {
@@ -601,7 +601,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "Apache2"
+                "Apache-2.0"
             ],
             "authors": [
                 {
@@ -616,7 +616,7 @@
                 "php",
                 "type"
             ],
-            "time": "2015-07-25T16:39:46+00:00"
+            "time": "2019-11-06T12:42:47+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -1207,12 +1207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "b782e8fe29913d7a1ad8d16b6b6da6a2035aefac"
+                "reference": "cb7bd8f37bba2091e1a80c6ae6adcc7220c1fa0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b782e8fe29913d7a1ad8d16b6b6da6a2035aefac",
-                "reference": "b782e8fe29913d7a1ad8d16b6b6da6a2035aefac",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/cb7bd8f37bba2091e1a80c6ae6adcc7220c1fa0d",
+                "reference": "cb7bd8f37bba2091e1a80c6ae6adcc7220c1fa0d",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-10-26T19:52:39+00:00"
+            "time": "2019-11-06T12:04:01+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
