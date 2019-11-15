@@ -504,16 +504,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.1",
+            "version": "v6.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8"
+                "reference": "0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8",
-                "reference": "26bd96350b0b2fcbf0ef4e6f0f9cf3528302a9d8",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538",
+                "reference": "0ae8505d26fa7fa15d3d2d5ec1e695e854bb1538",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2019-09-27T21:33:43+00:00"
+            "time": "2019-11-13T20:09:28+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1207,12 +1207,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "f507d24f79be41656c027cb2b9027e4f17e5780e"
+                "reference": "98c818996296dd3447d934989ae7be447979705d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f507d24f79be41656c027cb2b9027e4f17e5780e",
-                "reference": "f507d24f79be41656c027cb2b9027e4f17e5780e",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/98c818996296dd3447d934989ae7be447979705d",
+                "reference": "98c818996296dd3447d934989ae7be447979705d",
                 "shasum": ""
             },
             "require": {
@@ -1274,7 +1274,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-11-08T16:32:03+00:00"
+            "time": "2019-11-12T14:58:10+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
