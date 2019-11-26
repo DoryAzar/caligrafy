@@ -570,16 +570,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "2f6af23c6ff2bcd32ebd969e118e5a3b57d649dc"
+                "reference": "31be9431082964e1bace3672463e0a12b883e221"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/2f6af23c6ff2bcd32ebd969e118e5a3b57d649dc",
-                "reference": "2f6af23c6ff2bcd32ebd969e118e5a3b57d649dc",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/31be9431082964e1bace3672463e0a12b883e221",
+                "reference": "31be9431082964e1bace3672463e0a12b883e221",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.0"
+                "php": "^5.5.9|^7.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.7|^5.0"
@@ -612,7 +612,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-11-10T15:06:50+00:00"
+            "time": "2019-11-26T11:13:28+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -660,21 +660,21 @@
         },
         {
             "name": "phug/phug",
-            "version": "dev-master",
+            "version": "1.4.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "71c02e66f84e68f28f49897e72f3a3787576112f"
+                "reference": "ede1e9faacbafad13ef61c2bb270a34018fd3520"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/71c02e66f84e68f28f49897e72f3a3787576112f",
-                "reference": "71c02e66f84e68f28f49897e72f3a3787576112f",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/ede1e9faacbafad13ef61c2bb270a34018fd3520",
+                "reference": "ede1e9faacbafad13ef61c2bb270a34018fd3520",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5.0",
-                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0@dev"
+                "symfony/var-dumper": "^3.4 || ^4.0 || ^5.0"
             },
             "replace": {
                 "phug/ast": "self.version",
@@ -758,7 +758,7 @@
                 "template",
                 "views"
             ],
-            "time": "2019-10-17T21:42:20+00:00"
+            "time": "2019-11-26T09:49:25+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1287,7 +1287,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.4 || ^7.0",
+                "php": "^5.5.9 || ^7.0",
                 "phpoption/phpoption": "^1.5",
                 "symfony/polyfill-ctype": "^1.9"
             },
