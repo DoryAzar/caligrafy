@@ -39,7 +39,7 @@ try {
     Route::get('/facedetect', function() { return view('Client/app', array('facedetect' => 'index'));});
     
     // Bot Routes - Uncomment only if you want to build a Watson bot
-    Route::get('/bot', function() { return view('Client/app', array('bot' => 'index'));});
+    Route::get('/bot', function() { return view('Client/app', array('bot' => 'index', 'botSkillId' => 'b605e1f8-38c5-4756-aa05-89e9ae6063e9'));});
     Route::post('/bot/communicate', 'WatsonController@communicate');
     Route::post('/bot/{appId}', 'WatsonController@connect');
     Route::delete('/bot', 'WatsonController@end');   

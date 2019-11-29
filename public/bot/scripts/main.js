@@ -6,7 +6,7 @@ var app = new Vue({
         response: null,
         env: env,
         botui: botui,
-        botId: 'b605e1f8-38c5-4756-aa05-89e9ae6063e9',
+        botId: env.botSkillId,
         route: env.home + "bot/",
         config: {
             async: true,
