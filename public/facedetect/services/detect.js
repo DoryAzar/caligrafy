@@ -1,6 +1,6 @@
 /********************************************************************************** 
  * Face detection framework built on top of the face-api framework
- * 
+ * @author: Dory A.Azar
  * @dependencies: face-api.js
  **********************************************************************************/
 
