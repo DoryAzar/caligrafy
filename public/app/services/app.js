@@ -2,7 +2,7 @@ var env = null;
 
 function loadEnvironment(environment) {
     env = JSON.parse(environment);
-    apiKey = "NHlVZEN6Ri8vR3hXNEVKSTJhTWlIbTE3bFpzcE1KNkRFVmwzTTloMi9FWGRzRzlRZHBMZ3oybGgrVFlsaXpHNjo6s9CfKQ/uyC8ZMVPcqFrB1w==";
+    apiKey = env.apiKey || null;
 }
 
 
