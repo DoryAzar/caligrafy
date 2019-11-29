@@ -35,7 +35,10 @@ try {
     //Route::post('/login', 'AuthController@login');
     //Route::post('/register', 'AuthController@register');
     
-    // Bot Routes - Uncomments only if you want to build a Watson bot
+    // Face Detect - Uncomment only if you want to build face detection
+    Route::get('/facedetect', function() { return view('Client/app', array('facedetect' => 'index'));});
+    
+    // Bot Routes - Uncomment only if you want to build a Watson bot
     Route::get('/bot', function() { return view('Client/app', array('bot' => 'index'));});
     Route::post('/bot/communicate', 'WatsonController@communicate');
     Route::post('/bot/{appId}', 'WatsonController@connect');
