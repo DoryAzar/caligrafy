@@ -29,14 +29,14 @@
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="https://unpkg.com/botui/build/botui.min.js"></script>
-        <script src="<?php echo BOT_SERVICE_ROOT.'app.js'; ?>"></script>
+        <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
         <script>loadEnvironment(`<?php echo $env; ?>`);</script>
         <script> 
             /* Loading the app client framework
              * Any environment variables to be passed on from the server can take place in this here
              */
             loadVue({
-                services: ['action', 'main']
+                scripts: ['action', 'main']
              });
         </script>
         

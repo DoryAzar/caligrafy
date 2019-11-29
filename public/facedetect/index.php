@@ -8,7 +8,8 @@
         <title>Face Detect</title>
 
         <!-- Stylesheet and head scripts go here -->
-        <link rel="stylesheet" href="<?php echo FACE_CLIENT.'css/styles.css'?>">
+        <link rel="stylesheet" href="<?php echo session('public').request()->fetch->uri.'/css/styles.css';?>">
+
     </head>
 
 
@@ -37,16 +38,16 @@
         <!-- Initialization scripts -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-        <script src="<?php echo FACE_SERVICE_ROOT.'app.js'; ?>"></script>
-        <script src="<?php echo FACE_SERVICE_ROOT.'face-api.min.js'; ?>"></script>
-        <script src="<?php echo FACE_SERVICE_ROOT.'detect.js'; ?>"></script>
+        <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
+        <script src="<?php echo APP_SERVICE_ROOT.'face-api.min.js'; ?>"></script>
+        <script src="<?php echo APP_SERVICE_ROOT.'detect.js'; ?>"></script>
         <script>loadEnvironment(`<?php echo $env; ?>`);</script>
         <script> 
             /* Loading the app client framework
              * Any environment variables to be passed on from the server can take place in this here
              */
             loadVue({
-                services: ['main']
+                scripts: ['main']
              });
         </script>
         

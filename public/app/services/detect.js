@@ -25,7 +25,7 @@ var FaceDetector = class FaceDetector {
     */
     async load() {
         // neural network models url
-        const MODEL_URL = env.face_root + 'models';
+        const MODEL_URL = env.app_root + 'resources/models';
         
         try {
             var loaded = await Promise.all([
@@ -374,7 +374,7 @@ var FaceDetector = class FaceDetector {
                 // iterate through all the model images in the folder (there are 6 right now and this number should be changed if more pics need to be added)
                 for (let i = 1; i <= sampleSize; i++) {
 
-                    url =  env.face_root + `recognition/${label}/${i}.png`;
+                    url =  env.home + 'public/' + env.request.uri + `/recognition/${label}/${i}.png`;
 
                     // fetch the images from the model
                     const img = await faceapi.fetchImage(url);

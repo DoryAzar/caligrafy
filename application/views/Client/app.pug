@@ -1,5 +1,5 @@
 - $variables = get_defined_vars()?? array();
-- $globals = array('app_root' => APP_CLIENT, 'service_root' => APP_SERVICE_ROOT, 'bot_root' => BOT_CLIENT, 'bot_service_root' => BOT_SERVICE_ROOT, 'face_root' => FACE_CLIENT,'face_service_root' => FACE_SERVICE_ROOT,'request' => request()->fetch);
+- $globals = array('app_root' => APP_CLIENT, 'service_root' => APP_SERVICE_ROOT, 'request' => request()->fetch);
 - $token = array('token'=> session('token'));
 - $home = array('home' => session('home'));
 - $keywords = array('keywords' => keywords());
