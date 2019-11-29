@@ -14,8 +14,9 @@ var FaceDetector = class FaceDetector {
         .then((loaded) => { 
                 // when loaded start the stream
                 this.media = document.getElementById(media) || null; 
-                this.startStream();
-                
+                if (this.media && this.media.tagName.toLowerCase() == 'video') {
+                    this.startStream();
+                }
         })
         .catch((error) => { console.log(error); }); 
     };
@@ -394,6 +395,25 @@ var FaceDetector = class FaceDetector {
         );
 
     }
+    
+    
+    /* 
+     * Utility method that reads the detections to perform something on them
+     * @callback: takes a callback method that is defined at method calling
+     * @recognize: set to true to get the recognitions rather than the detections if the recognition engine is running
+     * @fetchRate: define in ms the fetching rate of the detections. Default is 100ms
+     *
+     */
+    detect(callback, recognize = false, fetchRate = 100) {
+        setInterval(() => {
+            if (recognize && this.app && this.app.recognitions) {
+                    callback(this.app.recognitions);
+                } else if(this.app && this.app.detections) {
+                    callback(this.app.detections);
+                }
+        }, fetchRate)
+    }
+    
     
     /* 
      * Utility method that captures an image from the video and draws to a canva

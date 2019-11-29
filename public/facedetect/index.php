@@ -25,7 +25,9 @@
                 </ul>
             </section>
             <section id="detector">
-                <video id="video" width="720" height="560" class="show" autoplay="autoplay" muted playsinline></video>
+                <!-- media can be an image -->
+                <!--<img id="detection" class="show" src="">-->
+                <video id="detection" width="720" height="560" class="show" autoplay="autoplay" muted playsinline></video>
             </section>
 
             <section class="controls">

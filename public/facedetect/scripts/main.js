@@ -1,4 +1,4 @@
-var detector = new FaceDetector('video');
+var detector = new FaceDetector('detection');
 
 var app = new Vue({
   el: '#app',
@@ -15,16 +15,6 @@ var app = new Vue({
       // Load App method
       loadApp: function(app) {
           this.detector.loadApp(app);
-      },
-      
-      detect: function(callback, recognition = false) {
-            setInterval(() => {
-                if (recognition && this.detector.app && this.detector.app.recognitions) {
-                    callback(this.detector.app.recognitions);
-                } else if(this.detector.app && this.detector.app.detections) {
-                    callback(this.detector.app.detections);
-                }
-            }, 100);
       },
       
       print: function(detections) {
@@ -80,10 +70,10 @@ var app = new Vue({
       });
       
       // Print detections on the console
-      this.detect(this.print);
+      this.detector.detect(this.print);
       
       // Print recognitions when recognition engine is used
-      this.detect(this.print, true);
+      //this.detect(this.print, true);
       
   }
 
