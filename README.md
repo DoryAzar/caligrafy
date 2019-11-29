@@ -25,6 +25,7 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 > For more advanced installation, check the documentation [here](https://github.com/DoryAzar/mvc/wiki/1.-Getting-Started)
 
 ## New in Caligrafy
++ Caligrafy now supports Face Detection and Recognition using faceapi framework by Vincent Muhler
 + Caligrafy now supports ChatBot Assistant using IBM Watson
 + Caligrafy now supports ACH payments
 + Caligrafy now supports API Authorization
