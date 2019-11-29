@@ -43,7 +43,7 @@ var app = new Vue({
           name: 'Full Detection',
           method: this.detector.draw,
           options: {
-               welcome: "Hi there",
+               welcome: "Detect faces, genders, ages and expressions",
                detection: true,
                landmarks: true,
                gender: true,
