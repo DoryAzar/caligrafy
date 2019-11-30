@@ -75,7 +75,21 @@ var FaceDetector = class FaceDetector {
     
     /* 
      * Promise that loads the app settings
-     * @awaits for recognition models to be loaded for one of the apps
+     * @settings: Optional. Every app is controlled by a set of configuration that degines its behavior
+     * - name: String. defines the name of the app that will appear in the UI
+     * - custom: Boolean. When true, the application bypasses detection or recognition by calling a callback method
+     * - method: 2 framework methods can be called. "draw" is for drawing on top of the medium. "recognize" is for calling the facial recognition. Any other callback method can be used
+     * - algorithm: the faceapi algorithm used. The default algorithm is SsdMobilenetv1Options
+     * - options: 
+     *      - welcome: String. welcome message
+     *      - detection: Boolean. when true it draws a box around detected faces
+     *      - age, gender, expression: Boolean. when true, they are evaluated
+     *      - landmarks: Boolean. when true, the line drawing is drawn on top of the face
+     *      - recognition: Boolean. when true the recognition engine is called
+     * - models
+     *      - labels: Array. Collection of the names of "faces" to be recognized. A folder of the same name needs to be created in the "recognition" folder
+     *      - images: Array. Collection of the pictures associated with a label. Used only to create on the fly training of one face
+     *      - sampleSize: Integer. size of the picture of sample
      */
     async loadApp(settings = null) {
 
@@ -117,6 +131,7 @@ var FaceDetector = class FaceDetector {
     /* 
      * Method that detects faces throughout the life cycle of the video stream
      * @app: object definition of the app and its options
+     * @facedetector: FaceDetector object
      *
      */
      detectFaces(app, facedetector) {
@@ -203,10 +218,11 @@ var FaceDetector = class FaceDetector {
     
     /* 
      * Method that draws different renderings of the detections on the canvas
-     *
-     * @detections: face objects detected from the stream
-     * @options: Optional. Object defining the different options applied to the rendering
-     * @canvas: Optional. The canvas on which the drawings will be rendered
+     * 
+     * @facedetector: FaceDetector object
+     * - detections: face objects detected from the stream
+     * - options: Optional. Object defining the different options applied to the rendering
+     * - canvas: Optional. The canvas on which the drawings will be rendered
      *
      */
      draw(facedetector = this) {
@@ -321,10 +337,11 @@ var FaceDetector = class FaceDetector {
     
     /* 
      * Method that finds the best match for a face based on a model defined
-     *
-     * @detections: face objects detected from the stream
-     * @options: Optional. Object defining the different options applied to the rendering
-     * @canvas: Optional. The canvas on which the drawings will be rendered
+     * 
+     * @facedetector: FaceDetector object
+     * - detections: face objects detected from the stream
+     * - options: Optional. Object defining the different options applied to the rendering
+     * - canvas: Optional. The canvas on which the drawings will be rendered
      *
      */
      recognize(facedetector = this) {
@@ -362,6 +379,7 @@ var FaceDetector = class FaceDetector {
     /* 
      * Method that loads models for recognition
      *
+     * @models: Object. Default null. When specified the recognitions are loaded from the images provided as opposed to the ones in storage
      * @output: return promise with face descriptors of the models to be recognized
      */
      loadRecognition(models = null) {
@@ -424,6 +442,7 @@ var FaceDetector = class FaceDetector {
     /* 
      * Utility method that captures an image from the video and draws to a canva
      * @canvas: the canvas where the image will be drawn
+     * @media: video or img
      * @output: the data url of the blob image created
      *
      */
