@@ -20,11 +20,7 @@
             <header>
                 <h1>Face Detect</h1>
             </header>
-            <section id="infobar">
-                <ul id="message">
-                    <li id="status" class="status"></li>
-                </ul>
-            </section>
+            <section id="infobar"></section>
             <section id="detector">
                 <!-- media can be an image -->
                 <!--<img id="detection" class="show" src="">-->

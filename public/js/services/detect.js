@@ -183,6 +183,12 @@ var FaceDetector = class FaceDetector {
         if (this.runningEvent) {
             clearInterval(this.runningEvent);
         }
+         
+        // Display welcome message if defined
+        if(options && options.welcome) {
+            this.clearDisplay();
+            this.display(options.welcome, 'message');
+        }
 
         // set whether or not the video is to be visible
         if (options && options.puppeteer) {
@@ -289,13 +295,11 @@ var FaceDetector = class FaceDetector {
      clearDisplay() {
 
         // clear the ordered list
-        var messageElement = document.getElementById('message');
-        messageElement.innerHTML = '';
+        var messageElement = document.getElementById('message') || null;
+        if (messageElement) {
+            messageElement.innerHTML = '';      
+        }
 
-        // Add the default list item of id status
-        var newStatus = document.createElement('LI');
-        newStatus.id = 'status';
-        messageElement.appendChild(newStatus);
     }
     
     
@@ -311,10 +315,16 @@ var FaceDetector = class FaceDetector {
         if (!document.getElementById(output)) {
 
             // The message bar is an unordered list and list items can be accumulated in it
-            var messageElement = document.getElementById('message');
-            var separator = document.createElement('LI');
-            separator.innerHTML = "|";
-            messageElement.appendChild(separator);
+            var messageElement = document.getElementById('message') || null;
+            if (!messageElement) {
+                messageElement = document.createElement('UL');
+                messageElement.id = 'message';
+                document.getElementById('infobar').appendChild(messageElement);
+            } else {
+                var separator = document.createElement('LI');
+                separator.innerHTML = "|";
+                messageElement.appendChild(separator);            
+            }
             var newStatus = document.createElement('LI');
             newStatus.id = output;
             messageElement.appendChild(newStatus);
