@@ -44,12 +44,14 @@ $serverName = isset($_SERVER['SERVER_NAME'])? $_SERVER['SERVER_NAME'].DS : '';
 $_SESSION['base'] = getenv('APP_PROTOCOL')."://".$serverName;
 $_SESSION['home'] = $_SESSION['base'].(getenv('APP_ROOT')? getenv('APP_ROOT').DS : '');
 $_SESSION['public'] = $_SESSION['home'].'public'.DS;
-$_SESSION['appClient'] = $_SESSION['home'].'public/app'.DS;
-$_SESSION['appService'] = $_SESSION['home'].'public/app/services'.DS;
 $_SESSION['uploadsUrl'] = $_SESSION['home']."public/uploads".DS;
 $_SESSION['jsUrl'] = $_SESSION['home']."public/js".DS;
 $_SESSION['cssUrl'] = $_SESSION['home']."public/css".DS;
 $_SESSION['imagesUrl'] = $_SESSION['home']."public/images".DS;
+$_SESSION['appClient'] = $_SESSION['home'].'public/app'.DS;
+$_SESSION['appService'] = $_SESSION['home'].'public/js/services'.DS;
+$_SESSION['appResources'] = $_SESSION['home'].'public/resources'.DS;
 
 define("APP_CLIENT", $_SESSION['appClient']);
 define("APP_SERVICE_ROOT", $_SESSION['appService']);
+define("APP_RESOURCES", $_SESSION['appResources']);

@@ -26,7 +26,7 @@ var FaceDetector = class FaceDetector {
     */
     async load() {
         // neural network models url
-        const MODEL_URL = env.app_root + 'resources/models';
+        const MODEL_URL = env.app_resources + 'models';
         
         try {
             var loaded = await Promise.all([
