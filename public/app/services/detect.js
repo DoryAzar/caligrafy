@@ -99,7 +99,12 @@ var FaceDetector = class FaceDetector {
         };
         
         // load recognition models for use in the "Where is" app
-        app.options.recognitionModel = settings && settings.models && app.options.recognition? await this.loadRecognition(settings.models) : null;
+        try {
+           app.options.recognitionModel = settings && settings.models && app.options.recognition? await this.loadRecognition(settings.models) : null; 
+        } catch (error) {
+            console.log(error);
+        }
+        
 
         var button = document.createElement('button');
         button.innerHTML = app.name;
