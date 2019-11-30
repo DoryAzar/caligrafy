@@ -185,8 +185,8 @@ var FaceDetector = class FaceDetector {
         }
          
         // Display welcome message if defined
+        this.clearDisplay();
         if(options && options.welcome) {
-            this.clearDisplay();
             this.display(options.welcome, 'message');
         }
 
@@ -310,6 +310,22 @@ var FaceDetector = class FaceDetector {
      * @output: the HTML id where it should be displayed
      */
      display(message, output) {
+         
+        var infobarElement = document.getElementById('infobar') || null;
+        if (!document.getElementById('infobar')) {
+            infobarElement = document.createElement('SECTION');
+            infobarElement.id = 'infobar';
+            
+            // If the ids have been respected and the detector id is identified
+            var detectorElement = document.getElementById('detector') || null;
+            if (detectorElement) {
+                // place it before the detector section
+                detectorElement.parentNode.insertBefore(infobarElement, document.getElementById('detector'));
+            } else {
+                // otherwise place it in the beginning of the body
+                document.body.prepend(infobarElement);
+            }
+        }
 
         // If the output area where message needs to be placed does not exist then create it
         if (!document.getElementById(output)) {
@@ -319,7 +335,7 @@ var FaceDetector = class FaceDetector {
             if (!messageElement) {
                 messageElement = document.createElement('UL');
                 messageElement.id = 'message';
-                document.getElementById('infobar').appendChild(messageElement);
+                infobarElement.appendChild(messageElement);
             } else {
                 var separator = document.createElement('LI');
                 separator.innerHTML = "|";
