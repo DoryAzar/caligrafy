@@ -8,6 +8,7 @@
         <title>Face Detect</title>
 
         <!-- Stylesheet and head scripts go here -->
+        <link rel="shortcut icon" href="<?php echo scripts('favicon'); ?>" type="image/x-icon" />
         <link rel="stylesheet" href="<?php echo session('public').request()->fetch->uri.'/css/styles.css';?>">
 
     </head>

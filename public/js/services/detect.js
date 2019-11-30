@@ -93,9 +93,6 @@ var FaceDetector = class FaceDetector {
      */
     async loadApp(settings = null) {
 
-        // display welcome message
-        this.display("Hi! Let's show you how faces can be powerful", 'status');
-
         const app = settings? settings : {
                 name: 'Detect',
                 method: this.draw, // this.recognize
@@ -185,12 +182,6 @@ var FaceDetector = class FaceDetector {
         // clear any running event
         if (this.runningEvent) {
             clearInterval(this.runningEvent);
-        }
-
-        // Show any welcome message specified in the app options
-        if (options && options.welcome) {
-            this.clearDisplay();
-            this.display(options.welcome, 'status');
         }
 
         // set whether or not the video is to be visible
