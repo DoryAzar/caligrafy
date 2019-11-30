@@ -361,6 +361,7 @@ var FaceDetector = class FaceDetector {
      */
      loadRecognition(models = null) {
          const labels = models.labels || [];
+         const images = models.images || [];
          const sampleSize = models.sampleSize || 0;
 
         // return a promise that loads all the images and fetches their descriptors
@@ -375,7 +376,7 @@ var FaceDetector = class FaceDetector {
                 // iterate through all the model images in the folder (there are 6 right now and this number should be changed if more pics need to be added)
                 for (let i = 1; i <= sampleSize; i++) {
 
-                    url =  env.home + 'public/' + env.request.uri + `/recognition/${label}/${i}.png`;
+                    url =  images.length > 0 ? images[i-1] : env.home + 'public/' + env.request.uri + `/recognition/${label}/${i}.png`;
 
                     // fetch the images from the model
                     const img = await faceapi.fetchImage(url);
@@ -425,6 +426,42 @@ var FaceDetector = class FaceDetector {
         var context = canvas.getContext('2d');
         context.drawImage(media, 0, 0, media.offsetWidth, media.offsetHeight)
         return canvas.toDataURL();
+    }
+    
+    
+    
+    
+    /* 
+     * Method for custom app that doesn't use Face Detections
+     * @app: object definition of the app and its options
+     * @facdetector: takes this object as a parameter as well
+     *
+     */
+     custom(app, facedetector) {
+
+        return function() {
+
+            // Get the canvas ready with the app options
+            const canvas = facedetector.prepareCanva(app.options);
+
+
+            // Match the canva size with the video
+            const displaySize = {
+                width: facedetector.media.width,
+                height: facedetector.media.height
+            };
+            faceapi.matchDimensions(canvas, displaySize);
+            
+            
+            // initialize the app in the object
+            facedetector.app = app;
+            facedetector.app.canvas = canvas;
+
+
+            // call the app features from here
+            app.method(facedetector);
+        }
+
     }
     
     
