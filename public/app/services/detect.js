@@ -104,7 +104,7 @@ var FaceDetector = class FaceDetector {
         var button = document.createElement('button');
         button.innerHTML = app.name;
         button.id = 'app' + app.id;
-        button.addEventListener('click', this.detectFaces(app, this));
+        button.addEventListener('click', !app.custom ? this.detectFaces(app, this) : this.custom(app, this));
         document.getElementById('apps').appendChild(button);
 
     };
