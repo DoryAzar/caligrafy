@@ -98,7 +98,7 @@ var FaceDetector = class FaceDetector {
                 method: this.draw, // this.recognize
                 //algorithm: faceapi.SsdMobilenetv1Options,
                 options: {
-                    welcome: "Show yourselves and we will detect your faces",
+                    //welcome: "Show yourselves and we will detect your faces",
                     detection: true,
                     //age: true,
                     //gender: true,
