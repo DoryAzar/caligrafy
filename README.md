@@ -138,6 +138,13 @@ This framework integrates seamlessly with Vue.js to combine the best of PHP with
 3. [Requests](https://github.com/DoryAzar/caligrafy/wiki/9.7.3-Requests)
 4. [Forms](https://github.com/DoryAzar/caligrafy/wiki/9.7.4-Forms)
 5. [Validations](https://github.com/DoryAzar/caligrafy/wiki/9.7.5-Validations)
+
+### AI in Caligrafy
+
+Caligrafy provides easy ways to include Artificial Intelligence and Machine Learning to offer features such as Bots, Face Detection and Recognition. 
+
+1. [Creating Bots with Watson]()
+2. [Face Detection and Recognition](https://github.com/DoryAzar/caligrafy/wiki/9.9.2-Face-Detection-and-Face-Recognition)
     
 ## Learn through examples
 Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our you tube channel.
