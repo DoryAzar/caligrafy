@@ -22,9 +22,16 @@
             </header>
             <section id="infobar"></section>
             <section id="detector">
+                
                 <!-- media can be an image -->
                 <!--<img id="detection" class="show" src="">-->
+                
+                <!-- media can be a video -->
+                <!--<video id="detection"  src="<path to local video>" type="video/mp4" width="720" height="560" class="show" autoplay="autoplay" muted playsinline controls></video>-->
+                
+                <!-- media can be a webcam -->
                 <video id="detection" width="720" height="560" class="show" autoplay="autoplay" muted playsinline></video>
+                
             </section>
 
             <section class="controls">

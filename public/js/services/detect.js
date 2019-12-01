@@ -14,7 +14,7 @@ var FaceDetector = class FaceDetector {
         .then((loaded) => { 
                 // when loaded start the stream
                 this.media = document.getElementById(media) || null; 
-                if (this.media && this.media.tagName.toLowerCase() == 'video') {
+                if (this.media && this.media.tagName.toLowerCase() == 'video' && !this.media.src) {
                     this.startStream();
                 }
         })

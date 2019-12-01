@@ -24,7 +24,7 @@ var app = new Vue({
       callbackMethod: function(facedetector) {
          
         //<---- do whatever you want here
-          console.log('hello');
+          console.log('Example of what can be done');
         
         /* use any of the FaceDetect methods
          * facedetector.loadApp(app): load another app
