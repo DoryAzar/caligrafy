@@ -117,7 +117,7 @@ var app = new Vue({
   mounted () {
       this.connect(this.route);
       this.addMessage('Hi!');
-      this.addAction('text', [], { "bot_name": botName });
+      this.addAction('text', [], { "bot_name": 'Cali' });
   }
 
 });
