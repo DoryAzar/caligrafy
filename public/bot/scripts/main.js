@@ -86,7 +86,7 @@ var app = new Vue({
                                 // assume it's an embed
                                 var imageInput = element.source;
                                 app.addMessage("<a target=_blank href='" + element.source +"'>" + element.title  + "</a>", false, 'html'); 
-                                imageInput = "<embed src='" + element.source + "'></embed>";
+                                imageInput = "<embed src='" + element.source + "' style='width: 50vw; max-width: 600px; height: auto;'></embed>";
                                 type='html';
                                 app.addMessage(imageInput, false, type); 
                                 app.addAction('text');
