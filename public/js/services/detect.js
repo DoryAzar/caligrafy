@@ -133,7 +133,6 @@ var FaceDetector = class FaceDetector {
      */
      detectFaces(app, facedetector) {
         return function() {
-
             // Apply algorithm from app settings
             const algorithm = app.algorithm || faceapi.TinyFaceDetectorOptions;
             
@@ -164,6 +163,7 @@ var FaceDetector = class FaceDetector {
                 facedetector.app = app;
                 facedetector.app.detections = resizedDetections;
                 facedetector.app.canvas = canvas;
+                
                 
                 // call the defined app method
                 app.method(facedetector);
@@ -498,9 +498,10 @@ var FaceDetector = class FaceDetector {
             facedetector.app = app;
             facedetector.app.canvas = canvas;
 
-
+            
             // call the app features from here
             app.method(facedetector);
+
         }
 
     }
