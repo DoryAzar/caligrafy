@@ -8,7 +8,7 @@
 - $env = sizeof($variables) > 2? array_slice($variables, 2) : array();
 - $env = json_encode(array_merge($env, $globals, $token, $home, $keywords, $metadata, $copyright));
 if $app
-    - include(PUBLIC_PATH.'app/'.$app.'.php');
+    - include(PUBLIC_PATH.$globals['request']->uri."/".$app.'.php');
 else if $bot
     - include(PUBLIC_PATH.'bot/'.$bot.'.php');
 else if $facedetect
