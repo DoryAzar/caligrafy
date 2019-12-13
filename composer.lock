@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dde90e936ebffe07bf08c8bf76ea259e",
+    "content-hash": "5d3bb57957bfbfbab99742b9d6b7ec14",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -107,7 +107,8 @@
                 "ext-json": "*",
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
-                "php": ">=5.5"
+                "php": "^7.2.5",
+                "psr/http-client": "^1.0"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -279,16 +280,16 @@
         },
         {
             "name": "js-phpize/js-phpize",
-            "version": "2.5.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize.git",
-                "reference": "ca933003a8f5ddd6cf483a2dc3e4c5b0f1bdb285"
+                "reference": "88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/ca933003a8f5ddd6cf483a2dc3e4c5b0f1bdb285",
-                "reference": "ca933003a8f5ddd6cf483a2dc3e4c5b0f1bdb285",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a",
+                "reference": "88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a",
                 "shasum": ""
             },
             "require": {
@@ -316,7 +317,7 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code.",
-            "time": "2019-09-09T15:15:58+00:00"
+            "time": "2019-12-12T22:07:32+00:00"
         },
         {
             "name": "js-phpize/js-phpize-phug",
@@ -504,16 +505,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.3",
+            "version": "v6.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "a25ae38e03de4ee4031725498a600012364787c7"
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a25ae38e03de4ee4031725498a600012364787c7",
-                "reference": "a25ae38e03de4ee4031725498a600012364787c7",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c5e61d0729507049cec9673aa1a679f9adefd683",
+                "reference": "c5e61d0729507049cec9673aa1a679f9adefd683",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +563,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2019-11-21T09:37:46+00:00"
+            "time": "2019-12-10T11:17:38+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -570,29 +571,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "31be9431082964e1bace3672463e0a12b883e221"
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/31be9431082964e1bace3672463e0a12b883e221",
-                "reference": "31be9431082964e1bace3672463e0a12b883e221",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9|^7.0"
+                "php": "^5.5.9 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.7|^5.0"
+                "bamarni/composer-bin-plugin": "^1.3",
+                "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "PhpOption\\": "src/"
+                "psr-4": {
+                    "PhpOption\\": "src/PhpOption/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -603,6 +605,10 @@
                 {
                     "name": "Johannes M. Schmitt",
                     "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
                 }
             ],
             "description": "Option Type for PHP",
@@ -612,7 +618,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-11-26T11:13:28+00:00"
+            "time": "2019-12-13T00:10:22+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -759,6 +765,55 @@
                 "views"
             ],
             "time": "2019-11-26T22:23:20+00:00"
+        },
+        {
+            "name": "psr/http-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-client.git",
+                "reference": "fd5d37ae5a76ee3c5301a762faf66bf9519132ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/fd5d37ae5a76ee3c5301a762faf66bf9519132ef",
+                "reference": "fd5d37ae5a76ee3c5301a762faf66bf9519132ef",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Client\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP clients",
+            "homepage": "https://github.com/php-fig/http-client",
+            "keywords": [
+                "http",
+                "http-client",
+                "psr",
+                "psr-18"
+            ],
+            "time": "2019-09-04T06:46:09+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1203,12 +1258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "13fe6d3ebad192242a8ea7e0f2f27d316ae1345c"
+                "reference": "5ef8f363f2890827cc8b07830736d11ab9b0b4cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/13fe6d3ebad192242a8ea7e0f2f27d316ae1345c",
-                "reference": "13fe6d3ebad192242a8ea7e0f2f27d316ae1345c",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/5ef8f363f2890827cc8b07830736d11ab9b0b4cc",
+                "reference": "5ef8f363f2890827cc8b07830736d11ab9b0b4cc",
                 "shasum": ""
             },
             "require": {
@@ -1270,7 +1325,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-11-28T14:26:02+00:00"
+            "time": "2019-12-12T13:04:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1288,7 +1343,7 @@
             },
             "require": {
                 "php": "^5.5.9 || ^7.0",
-                "phpoption/phpoption": "^1.5",
+                "phpoption/phpoption": "^1.7",
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
