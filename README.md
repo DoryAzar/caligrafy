@@ -45,13 +45,16 @@ Caligrafy comes pre-packaged with ready-to-use modern features. In few lines, yo
 ### 4. VueJS
 Caligrafy supports VueJS as an alternative to using its template engine. VueJS complements Caligrafy in its ability to create powerful and nimble user experiences in the "View" layer of an MVC architecture. If you are a PHP developer, Caligrafy makes it easy for you to use VueJS. If you are a Javascript developer, Caligrafy makes it easy for you to not be overwhelmed by PHP.
 
-### 5. Template Engine
+### 5. AI and Machine Learning
+Caligrafy integrates machine learning capabilities at its core to help you build artificial intelligence seemlessly into your application. 
+
+### 6. Template Engine
 Caligrafy has a built-in and powerful template engine that can be used to create sophisticated user experiences easily.
 
-### 6. Lightweight Syntax
+### 7. Lightweight Syntax
 Caligrafy is closer to bare-bone programming than other frameworks out there. While it delivers equivalent - if not more powerful - features, it is built from the ground up with developers in mind.
 
-### 7. Documentation & Support
+### 8. Documentation & Support
 Caligrafy is committed to providing continuous support to its community of developers through an extensive online Documentation, Online video tutorials on its youtube channel, training courses on Udemy and live help through Slack, Facebook and Github.
 
 
