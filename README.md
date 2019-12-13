@@ -1,4 +1,4 @@
-# Caligrafy - A Light PHP Framework
+# Caligrafy - A Powerful Web Application Framework
 ![Caligrafy](https://caligrafy.com/public/images/resources/banner_white.png)
 
 ## What is Caligrafy
