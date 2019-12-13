@@ -1,7 +1,7 @@
 {
-    "name": "dory.azar/mvc",
+    "name": "dory.azar/caligrafy",
     "description": "PHP MVC framework",
-    "keywords": ["php", "framework", "mvc", "laravel", "light", "model", "view", "controller"],
+    "keywords": ["php", "framework", "mvc", "laravel", "light", "model", "view", "controller", "ai", "bot", "payment", "cryptocurrency"],
     "type": "framework",
     "license": "MIT",
     "authors": [
