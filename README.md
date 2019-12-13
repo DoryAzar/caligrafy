@@ -3,7 +3,7 @@
 
 ## What is Caligrafy
 
-Caligrafy is a new and modern MVC framework for PHP that was built from the ground up to provide quick and easy ways for you to build sophisticated and modern web applications. The framework comes with powerful features such as Responsive Templates, easy database interfacing, social sharing, easy authentication, easy credit card and cryptocurrency payments, easy search referencing and analytics.
+Caligrafy is a new and modern MVC framework for PHP that was built from the ground up to provide quick, easy and elegant ways for you to build sophisticated and modern web applications. We've laid a solid foundation of security, social, e-commerce, analytics and machine learning features so that you focus your genius on your ideas. 
 
 Caligrafy bridges the power of server-side languages like PHP with the sophistication of client-side languages like Javascript to bring you one of the most versatile MVC frameworks on the market today.
 
