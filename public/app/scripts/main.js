@@ -21,7 +21,7 @@ var app = new Vue({
       
       // API get call using axios
       all: function(route) {
-          axios.get(route, config)
+          axios.get(route, this.config)
               .then(response => (this.response = response.data))
               .catch(error => (console.log(error)));
       }
