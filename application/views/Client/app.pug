@@ -1,5 +1,5 @@
 - $variables = get_defined_vars()?? array();
-- $globals = array('app_root' => APP_CLIENT, 'service_root' => APP_SERVICE_ROOT, 'app_resources' => APP_RESOURCES, 'request' => request()->fetch, 'apiKey' => API_KEY);
+- $globals = array('app_root' => APP_CLIENT, 'service_root' => APP_SERVICE_ROOT, 'app_resources' => APP_RESOURCES, 'request' => request(), 'apiKey' => API_KEY);
 - $token = array('token'=> session('token'));
 - $home = array('home' => session('home'));
 - $keywords = array('keywords' => keywords());
@@ -8,7 +8,7 @@
 - $env = sizeof($variables) > 2? array_slice($variables, 2) : array();
 - $env = json_encode(array_merge($env, $globals, $token, $home, $keywords, $metadata, $copyright));
 if $app
-    - include(PUBLIC_PATH.$globals['request']->uri."/".$app.'.php');
+    - include(PUBLIC_PATH.$globals['request']->uriComponents[0]."/".$app.'.php');
 else if $bot
     - include(PUBLIC_PATH.'bot/'.$bot.'.php');
 else if $facedetect

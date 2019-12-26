@@ -162,12 +162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "17d36ed176c998839582c739ce0753381598edf0"
+                "reference": "ac2529fc650684c5cd687e2b462d046cdbed556e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/17d36ed176c998839582c739ce0753381598edf0",
-                "reference": "17d36ed176c998839582c739ce0753381598edf0",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/ac2529fc650684c5cd687e2b462d046cdbed556e",
+                "reference": "ac2529fc650684c5cd687e2b462d046cdbed556e",
                 "shasum": ""
             },
             "require": {
@@ -205,7 +205,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2019-07-02T14:54:06+00:00"
+            "time": "2019-12-17T17:19:17+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -213,12 +213,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "2595b33c1c924889b474d324f3d719fa40b6954e"
+                "reference": "c291e45d40e638815990004e5f7ee367c2b752e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/2595b33c1c924889b474d324f3d719fa40b6954e",
-                "reference": "2595b33c1c924889b474d324f3d719fa40b6954e",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/c291e45d40e638815990004e5f7ee367c2b752e9",
+                "reference": "c291e45d40e638815990004e5f7ee367c2b752e9",
                 "shasum": ""
             },
             "require": {
@@ -276,20 +276,20 @@
                 "uri",
                 "url"
             ],
-            "time": "2019-08-13T16:05:52+00:00"
+            "time": "2019-12-21T15:35:40+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize.git",
-                "reference": "88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a"
+                "reference": "41a3f8e6c56a36b51d337662446169cf2fb601a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a",
-                "reference": "88e1a89a8ba82f2b1c4d2f5ec98f6ff987b73c9a",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/41a3f8e6c56a36b51d337662446169cf2fb601a3",
+                "reference": "41a3f8e6c56a36b51d337662446169cf2fb601a3",
                 "shasum": ""
             },
             "require": {
@@ -317,7 +317,7 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code.",
-            "time": "2019-12-12T22:07:32+00:00"
+            "time": "2019-12-20T23:27:52+00:00"
         },
         {
             "name": "js-phpize/js-phpize-phug",
@@ -571,12 +571,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae"
+                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
-                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
+                "reference": "77f7c4d2e65413aff5b5a8cc8b3caf7a28d81959",
                 "shasum": ""
             },
             "require": {
@@ -618,7 +618,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-12-13T00:10:22+00:00"
+            "time": "2019-12-15T19:35:24+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -1258,12 +1258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "5ef8f363f2890827cc8b07830736d11ab9b0b4cc"
+                "reference": "00089d29bc559ce6ced04104a64cc02aaa5a948a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/5ef8f363f2890827cc8b07830736d11ab9b0b4cc",
-                "reference": "5ef8f363f2890827cc8b07830736d11ab9b0b4cc",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/00089d29bc559ce6ced04104a64cc02aaa5a948a",
+                "reference": "00089d29bc559ce6ced04104a64cc02aaa5a948a",
                 "shasum": ""
             },
             "require": {
@@ -1325,7 +1325,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-12-12T13:04:26+00:00"
+            "time": "2019-12-18T13:50:41+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1343,7 +1343,7 @@
             },
             "require": {
                 "php": "^5.5.9 || ^7.0",
-                "phpoption/phpoption": "^1.7",
+                "phpoption/phpoption": "^1.7.2",
                 "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
