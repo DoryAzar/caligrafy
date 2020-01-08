@@ -460,16 +460,16 @@
         },
         {
             "name": "nodejs-php-fallback/nodejs-php-fallback",
-            "version": "1.4.1",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
-                "reference": "06d5e4f0694cc6612bd25c8996441e6efd7ab766"
+                "reference": "0e514d0012eb94ffd2396d0b2dfe248062854cae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/06d5e4f0694cc6612bd25c8996441e6efd7ab766",
-                "reference": "06d5e4f0694cc6612bd25c8996441e6efd7ab766",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/0e514d0012eb94ffd2396d0b2dfe248062854cae",
+                "reference": "0e514d0012eb94ffd2396d0b2dfe248062854cae",
                 "shasum": ""
             },
             "require": {
@@ -501,7 +501,7 @@
                 }
             ],
             "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
-            "time": "2018-04-05T14:25:31+00:00"
+            "time": "2020-01-07T13:54:17+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -1258,12 +1258,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "00089d29bc559ce6ced04104a64cc02aaa5a948a"
+                "reference": "81fceb7bfbbd35001e6fa60b1d1d85452af8718f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/00089d29bc559ce6ced04104a64cc02aaa5a948a",
-                "reference": "00089d29bc559ce6ced04104a64cc02aaa5a948a",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/81fceb7bfbbd35001e6fa60b1d1d85452af8718f",
+                "reference": "81fceb7bfbbd35001e6fa60b1d1d85452af8718f",
                 "shasum": ""
             },
             "require": {
@@ -1325,7 +1325,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2019-12-18T13:50:41+00:00"
+            "time": "2020-01-04T14:20:45+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
