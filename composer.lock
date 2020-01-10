@@ -460,16 +460,16 @@
         },
         {
             "name": "nodejs-php-fallback/nodejs-php-fallback",
-            "version": "1.5.0",
+            "version": "1.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
-                "reference": "0e514d0012eb94ffd2396d0b2dfe248062854cae"
+                "reference": "24963d8833905356cfdcb197fb575f3eade8750e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/0e514d0012eb94ffd2396d0b2dfe248062854cae",
-                "reference": "0e514d0012eb94ffd2396d0b2dfe248062854cae",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/24963d8833905356cfdcb197fb575f3eade8750e",
+                "reference": "24963d8833905356cfdcb197fb575f3eade8750e",
                 "shasum": ""
             },
             "require": {
@@ -501,7 +501,7 @@
                 }
             ],
             "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
-            "time": "2020-01-07T13:54:17+00:00"
+            "time": "2020-01-09T23:51:08+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
