@@ -666,16 +666,16 @@
         },
         {
             "name": "phug/phug",
-            "version": "1.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "3408926c3bf3fb84c18a68fa155f5ca1898a4815"
+                "reference": "f914f3755ade1bd4047b1c8dff38d4dc36f60d4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/3408926c3bf3fb84c18a68fa155f5ca1898a4815",
-                "reference": "3408926c3bf3fb84c18a68fa155f5ca1898a4815",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/f914f3755ade1bd4047b1c8dff38d4dc36f60d4b",
+                "reference": "f914f3755ade1bd4047b1c8dff38d4dc36f60d4b",
                 "shasum": ""
             },
             "require": {
@@ -715,7 +715,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev",
+                    "dev-master": "1.x-dev",
                     "dev-facade": "0.4.x-dev"
                 }
             },
@@ -766,7 +766,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-01-13T21:19:43+00:00"
+            "time": "2020-01-20T21:19:24+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1260,12 +1260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "81fceb7bfbbd35001e6fa60b1d1d85452af8718f"
+                "reference": "f4cf5a20ed39d8fdbd5821740c1162ab2233fcf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/81fceb7bfbbd35001e6fa60b1d1d85452af8718f",
-                "reference": "81fceb7bfbbd35001e6fa60b1d1d85452af8718f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f4cf5a20ed39d8fdbd5821740c1162ab2233fcf0",
+                "reference": "f4cf5a20ed39d8fdbd5821740c1162ab2233fcf0",
                 "shasum": ""
             },
             "require": {
@@ -1327,7 +1327,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-01-04T14:20:45+00:00"
+            "time": "2020-01-21T10:49:11+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
