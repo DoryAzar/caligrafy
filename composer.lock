@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5d3bb57957bfbfbab99742b9d6b7ec14",
+    "content-hash": "c1f3c18bcbfe0b32ef56206d89856cda",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -673,12 +673,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "f914f3755ade1bd4047b1c8dff38d4dc36f60d4b"
+                "reference": "3ffce1f66a48a7a903dc39793e22b14366d701f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/f914f3755ade1bd4047b1c8dff38d4dc36f60d4b",
-                "reference": "f914f3755ade1bd4047b1c8dff38d4dc36f60d4b",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/3ffce1f66a48a7a903dc39793e22b14366d701f5",
+                "reference": "3ffce1f66a48a7a903dc39793e22b14366d701f5",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +769,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-01-20T21:19:24+00:00"
+            "time": "2020-02-03T22:33:28+00:00"
         },
         {
             "name": "psr/http-client",
@@ -872,16 +872,16 @@
         },
         {
             "name": "pug-php/pug",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/pug.git",
-                "reference": "848812ac401387966c44a6484e3958f24b173b54"
+                "reference": "81e10e2d890de01182aaeacc00ff4b25da807bab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/pug/zipball/848812ac401387966c44a6484e3958f24b173b54",
-                "reference": "848812ac401387966c44a6484e3958f24b173b54",
+                "url": "https://api.github.com/repos/pug-php/pug/zipball/81e10e2d890de01182aaeacc00ff4b25da807bab",
+                "reference": "81e10e2d890de01182aaeacc00ff4b25da807bab",
                 "shasum": ""
             },
             "require": {
@@ -889,7 +889,7 @@
                 "nodejs-php-fallback/nodejs-php-fallback": "^1.3.1",
                 "php": ">=5.5.0",
                 "phug/js-transformer-filter": "^1.0",
-                "phug/phug": "^0.3.0 || ^1.0"
+                "phug/phug": "^1.6"
             },
             "replace": {
                 "kylekatarnls/jade-php": "self.version"
@@ -930,108 +930,24 @@
                     "role": "Developer"
                 },
                 {
-                    "name": "Konstantin Kudryashov",
-                    "email": "konstantin.kudryashov@knplabs.com",
-                    "homepage": "http://about.me/everzet",
-                    "role": "Developer"
-                },
-                {
-                    "name": "volter9",
-                    "homepage": "https://github.com/volter9",
-                    "role": "Developer"
-                },
-                {
-                    "name": "sisoftrg",
-                    "homepage": "https://github.com/sisoftrg",
-                    "role": "Developer"
-                },
-                {
-                    "name": "hackaugusto",
-                    "homepage": "https://github.com/hackaugusto",
-                    "role": "Developer"
-                },
-                {
-                    "name": "peniar",
-                    "homepage": "https://github.com/peniar",
-                    "role": "Developer"
-                },
-                {
-                    "name": "NSinopoli",
-                    "homepage": "https://github.com/NSinopoli",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Luke GB",
-                    "email": "git@lukegb.com",
-                    "homepage": "http://twitter.com/lukegb",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "DJRanger",
-                    "homepage": "https://github.com/DJRanger",
+                    "name": "pug-php/pug contributors",
+                    "homepage": "https://github.com/pug-php/pug/graphs/contributors",
                     "role": "Contributor"
                 },
                 {
-                    "name": "fcrosfly",
-                    "homepage": "https://github.com/fcrosfly",
+                    "name": "phug-php/phug renderer contributors",
+                    "homepage": "https://github.com/phug-php/renderer/graphs/contributors",
                     "role": "Contributor"
                 },
                 {
-                    "name": "Ronan Tessier",
-                    "email": "ronan.tessier@vaconsulting.lu",
-                    "homepage": "http://github.com/ronan-gloo",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Soviut",
-                    "homepage": "http://github.com/Soviut",
+                    "name": "phug-php/phug compiler contributors",
+                    "homepage": "https://github.com/phug-php/compiler/graphs/contributors",
                     "role": "Contributor"
                 },
                 {
-                    "name": "just-paja",
-                    "homepage": "http://github.com/just-paja",
+                    "name": "pug-php/js-phpize contributors",
+                    "homepage": "https://github.com/pug-php/js-phpize/graphs/contributors",
                     "role": "Contributor"
-                },
-                {
-                    "name": "cjonasw",
-                    "homepage": "http://github.com/cjonasw",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "s4msung",
-                    "homepage": "http://github.com/s4msung",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "sadjow",
-                    "homepage": "http://github.com/sadjow",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "hkjels",
-                    "homepage": "http://github.com/hkjels",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "krizalys",
-                    "homepage": "http://github.com/krizalys",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "sszigeti",
-                    "homepage": "http://github.com/sszigeti",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "Janez Troha",
-                    "email": "janez.troha@gmail.com",
-                    "homepage": "http://flavors.me/dz0ny",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Marco \"Debo\" De Bortoli",
-                    "homepage": "https://github.com/debo",
-                    "role": "contributor"
                 }
             ],
             "description": "HAML-like template engine for PHP",
@@ -1042,7 +958,7 @@
                 "pug",
                 "template"
             ],
-            "time": "2019-11-27T06:44:29+00:00"
+            "time": "2020-02-03T23:15:28+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -1263,12 +1179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "49b85709e6bd2979b93117da8713524eb51ed35c"
+                "reference": "db66b4bf98c338d560995c5b6000a142498fa200"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/49b85709e6bd2979b93117da8713524eb51ed35c",
-                "reference": "49b85709e6bd2979b93117da8713524eb51ed35c",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/db66b4bf98c338d560995c5b6000a142498fa200",
+                "reference": "db66b4bf98c338d560995c5b6000a142498fa200",
                 "shasum": ""
             },
             "require": {
@@ -1330,7 +1246,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-01-26T13:13:42+00:00"
+            "time": "2020-02-04T10:10:55+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1434,7 +1350,8 @@
     "stability-flags": {
         "wixel/gump": 20,
         "claviska/simpleimage": 20,
-        "coinbase/coinbase-commerce": 20
+        "coinbase/coinbase-commerce": 20,
+        "phug/phug": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

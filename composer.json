@@ -19,6 +19,7 @@
         "claviska/simpleimage": "dev-master",
         "stripe/stripe-php": "6.*",
         "coinbase/coinbase-commerce": "dev-master",
-        "phpmailer/phpmailer": "6.*"
+        "phpmailer/phpmailer": "6.*",
+        "phug/phug": "^1.0@dev"
     }
 }
