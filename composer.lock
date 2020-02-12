@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "ac2529fc650684c5cd687e2b462d046cdbed556e"
+                "reference": "63793536355a64085fe7a602c9e2ef8bf32eb811"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/ac2529fc650684c5cd687e2b462d046cdbed556e",
-                "reference": "ac2529fc650684c5cd687e2b462d046cdbed556e",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/63793536355a64085fe7a602c9e2ef8bf32eb811",
+                "reference": "63793536355a64085fe7a602c9e2ef8bf32eb811",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2019-12-17T17:19:17+00:00"
+            "time": "2020-02-12T18:05:15+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -216,12 +216,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "ce6ae067e74df6be68b0b672d790b62bd48910fb"
+                "reference": "e193ff330a0f28b5e5f65ed3d804f5e2a89376e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/ce6ae067e74df6be68b0b672d790b62bd48910fb",
-                "reference": "ce6ae067e74df6be68b0b672d790b62bd48910fb",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/e193ff330a0f28b5e5f65ed3d804f5e2a89376e3",
+                "reference": "e193ff330a0f28b5e5f65ed3d804f5e2a89376e3",
                 "shasum": ""
             },
             "require": {
@@ -279,7 +279,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2020-01-31T17:23:47+00:00"
+            "time": "2020-02-04T14:54:51+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -1179,12 +1179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "db66b4bf98c338d560995c5b6000a142498fa200"
+                "reference": "69ddfa4c15c02bee351ba62720bd57614d3528aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/db66b4bf98c338d560995c5b6000a142498fa200",
-                "reference": "db66b4bf98c338d560995c5b6000a142498fa200",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/69ddfa4c15c02bee351ba62720bd57614d3528aa",
+                "reference": "69ddfa4c15c02bee351ba62720bd57614d3528aa",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1246,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-02-04T10:10:55+00:00"
+            "time": "2020-02-07T15:06:29+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
