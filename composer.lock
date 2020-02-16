@@ -165,12 +165,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "63793536355a64085fe7a602c9e2ef8bf32eb811"
+                "reference": "89b1a76b7fda5853401297dc4b2a093cba1fda23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/63793536355a64085fe7a602c9e2ef8bf32eb811",
-                "reference": "63793536355a64085fe7a602c9e2ef8bf32eb811",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/89b1a76b7fda5853401297dc4b2a093cba1fda23",
+                "reference": "89b1a76b7fda5853401297dc4b2a093cba1fda23",
                 "shasum": ""
             },
             "require": {
@@ -208,7 +208,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2020-02-12T18:05:15+00:00"
+            "time": "2020-02-15T23:33:03+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1311,13 +1311,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "26de1a52d20fe9178d418c368ab4fefdb973e72c"
+                "reference": "8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/26de1a52d20fe9178d418c368ab4fefdb973e72c",
-                "reference": "26de1a52d20fe9178d418c368ab4fefdb973e72c",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2",
+                "reference": "8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2",
                 "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
             },
             "type": "library",
             "autoload": {
@@ -1341,7 +1344,7 @@
             ],
             "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
             "homepage": "https://wixelhq.com/",
-            "time": "2019-09-16T08:41:54+00:00"
+            "time": "2020-02-15T12:04:57+00:00"
         }
     ],
     "packages-dev": [],
