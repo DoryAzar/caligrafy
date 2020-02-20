@@ -1311,22 +1311,30 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2"
+                "reference": "17376b325ee0547c17af6abd2d909d1a0be662ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2",
-                "reference": "8d344c2b4dfd290c5ce1532ffc86252d6c8a5ea2",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/17376b325ee0547c17af6abd2d909d1a0be662ce",
+                "reference": "17376b325ee0547c17af6abd2d909d1a0be662ce",
                 "shasum": ""
             },
             "require-dev": {
+                "badoo/soft-mocks": "^3.0",
+                "codeception/aspect-mock": "^3.0",
+                "mockery/mockery": "^1.3",
+                "php-mock/php-mock": "^2.2",
+                "php-mock/php-mock-phpunit": "^2.6",
                 "phpunit/phpunit": "^8"
             },
             "type": "library",
             "autoload": {
                 "files": [
                     "gump.class.php"
-                ]
+                ],
+                "psr-4": {
+                    "GUMP\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1344,7 +1352,7 @@
             ],
             "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
             "homepage": "https://wixelhq.com/",
-            "time": "2020-02-15T12:04:57+00:00"
+            "time": "2020-02-19T20:15:05+00:00"
         }
     ],
     "packages-dev": [],
