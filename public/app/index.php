@@ -16,7 +16,7 @@
     
     <body>
         <!-- Beginning of the app -->
-        <div id="app">
+        <div id="app" v-cloak>
             {{ response }}
         </div>
         
