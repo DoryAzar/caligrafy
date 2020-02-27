@@ -92,7 +92,7 @@ class Auth {
      * Method that checks if the user in session has permissions to access 
      * @return boolean of whether or not the user is valid and allowed to perform actions
     */
-    public static function guard($permissionAttribute, $acceptedPermission, $loginUrl = '/')
+    public static function guard($permissionAttribute, $acceptedPermission, $loginUrl = "/login", $notAuthorized = '/notAuthorized')
     { 
         if (!self::authorized()) {
             redirect($loginUrl);
@@ -101,7 +101,7 @@ class Auth {
         
         $user = self::user();
         if(!$user || $user->$permissionAttribute < $acceptedPermission) {
-            redirect($loginUrl);
+            redirect($notAuthorized);
             exit;
         }
         return;

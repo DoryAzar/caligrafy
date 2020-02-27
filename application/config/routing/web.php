@@ -31,6 +31,7 @@ try {
     //Route::get('/home', 'AuthController@home');
     //Route::get('/login', 'AuthController');
     //Route::get('/logout', 'AuthController@logout');
+	//Route::get('/notAuthorized', 'AuthController@notAuthorized');
     //Route::get('/register', 'AuthController@registerForm');
     //Route::post('/login', 'AuthController@login');
     //Route::post('/register', 'AuthController@register');

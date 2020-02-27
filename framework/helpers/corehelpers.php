@@ -652,9 +652,9 @@ function user()
  * Method that checks if the user in session has permissions to access 
  * @return boolean of whether or not the user is valid and allowed to perform actions
 */
-function guard($permissionAttribute, $acceptedPermission, $loginUrl = '/')
+function guard($permissionAttribute, $acceptedPermission, $loginUrl = '/login', $notAuthorized = '/notAuthorized')
 {
-    return Auth::guard($permissionAttribute, $acceptedPermission, $loginUrl);
+    return Auth::guard($permissionAttribute, $acceptedPermission, $loginUrl, $notAuthorized);
 }
 
 /**

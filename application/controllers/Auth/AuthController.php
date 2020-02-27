@@ -104,6 +104,15 @@ class AuthController extends Controller {
         // Make a call out to the core helpher function that terminates the user info from the session
         logout('/home');
     }
+	
+	/*
+     * Not Authorized Login page
+     */
+	public function notAuthorized()
+	{
+		return view('/Auth/login', array('error' => true, 'status'=>'danger', 'message_header' => 'Restricted Page','message' => 'You have not been granted permission to access this page'));
+		exit;
+	}
     
     
 }
