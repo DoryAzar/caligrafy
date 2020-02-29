@@ -169,12 +169,6 @@ There are several ways for the Caligrafy community to connect:
     [![](https://caligrafy.com/public/images/resources/viewcourse.png)](https://www.udemy.com/caligrafy/)
 
 
-
-+ If you want to start using Caligrafy, join us in this first online live class that will introduce you to the framework and will help you get started quickly.
-    
-    
-    [![](https://caligrafy.com/public/images/resources/joinevent.png)](https://www.eventbrite.com/e/learn-php-using-caligrafy-tickets-62056781504?utm-medium=discovery&utm-campaign=social&utm-content=attendeeshare&aff=escb&utm-source=cp&utm-term=listing)
-
 ## Need help getting started?
 We are always here to help when you need us. If you need assistance getting started or if you need help understanding how Caligrafy can be useful to you, we can help. Reach out to us by joining our slack channel.
 [Reach out to us](https://join.slack.com/t/caligrafy/shared_invite/enQtNzI4MDY2OTA4MTgzLTI2NDc2NTVmMDNlMWQ5YWYxN2RjZTkwZjdiNjM5ZTg3NjQ2YWYyMzRmZDgzNWE0Nzc4YjQyODM2NDNkNjQ2OTU)
