@@ -673,12 +673,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "3ffce1f66a48a7a903dc39793e22b14366d701f5"
+                "reference": "cad508a9852c9c3a8186781cba1bb998a119d98d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/3ffce1f66a48a7a903dc39793e22b14366d701f5",
-                "reference": "3ffce1f66a48a7a903dc39793e22b14366d701f5",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/cad508a9852c9c3a8186781cba1bb998a119d98d",
+                "reference": "cad508a9852c9c3a8186781cba1bb998a119d98d",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +769,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-02-03T22:33:28+00:00"
+            "time": "2020-02-29T15:02:15+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1062,12 +1062,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38"
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
-                "reference": "fbdeaec0df06cf3d51c93de80c7eb76e271f5a38",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
+                "reference": "4719fa9c18b0464d399f1a63bf624b42b6fa8d14",
                 "shasum": ""
             },
             "require": {
@@ -1079,7 +1079,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -1112,7 +1112,7 @@
                 "polyfill",
                 "portable"
             ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "symfony/polyfill-mbstring",
@@ -1120,12 +1120,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2"
+                "reference": "766ee47e656529b352da69c0ff29da928a9629e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/34094cfa9abe1f0f14f48f490772db7a775559f2",
-                "reference": "34094cfa9abe1f0f14f48f490772db7a775559f2",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/766ee47e656529b352da69c0ff29da928a9629e7",
+                "reference": "766ee47e656529b352da69c0ff29da928a9629e7",
                 "shasum": ""
             },
             "require": {
@@ -1137,7 +1137,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.14-dev"
+                    "dev-master": "1.15-dev"
                 }
             },
             "autoload": {
@@ -1171,7 +1171,7 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-01-13T11:15:53+00:00"
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -1179,12 +1179,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "1e32b8cd6a648f689bcd688f2a74fda9f73a060f"
+                "reference": "83918f971f2590ec390d22ee92f065d0c4966533"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/1e32b8cd6a648f689bcd688f2a74fda9f73a060f",
-                "reference": "1e32b8cd6a648f689bcd688f2a74fda9f73a060f",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/83918f971f2590ec390d22ee92f065d0c4966533",
+                "reference": "83918f971f2590ec390d22ee92f065d0c4966533",
                 "shasum": ""
             },
             "require": {
@@ -1246,7 +1246,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-02-24T15:14:17+00:00"
+            "time": "2020-02-29T10:07:16+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1311,12 +1311,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "8c6f3e2b172b4f914dee6e5b0ed1ec4fa9073422"
+                "reference": "422a76b4b4dd9dc925c596c5f55597d4a9738d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/8c6f3e2b172b4f914dee6e5b0ed1ec4fa9073422",
-                "reference": "8c6f3e2b172b4f914dee6e5b0ed1ec4fa9073422",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/422a76b4b4dd9dc925c596c5f55597d4a9738d61",
+                "reference": "422a76b4b4dd9dc925c596c5f55597d4a9738d61",
                 "shasum": ""
             },
             "require-dev": {
@@ -1349,9 +1349,14 @@
                     "homepage": "https://filis.me"
                 }
             ],
-            "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
+            "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data.",
             "homepage": "https://wixelhq.com/",
-            "time": "2020-02-23T22:05:14+00:00"
+            "keywords": [
+                "validate",
+                "validation",
+                "validator"
+            ],
+            "time": "2020-02-28T17:56:01+00:00"
         }
     ],
     "packages-dev": [],
