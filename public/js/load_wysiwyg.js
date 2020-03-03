@@ -3,6 +3,7 @@ $(document).ready(function() {
             configuration = {
                 minHeight: 200,
                 //maxHeight: 400,
+				dialogsInBody: true,
                 toolbar:[
                          ['style', ['style', 'fontsize', 'bold', 'underline']],
                          ['para', ['ul', 'ol', 'paragraph', 'height']],
@@ -13,6 +14,7 @@ $(document).ready(function() {
             configuration = {
                 minHeight: 200,
                 //maxHeight: 400,
+				dialogsInBody: true,
                 toolbar:[
                          ['style', ['style', 'fontsize', 'bold', 'underline']],
                          ['para', ['ul', 'ol', 'paragraph']]
@@ -22,6 +24,7 @@ $(document).ready(function() {
             configuration = {
                 minHeight: 200,
                 //maxHeight: 400,
+				dialogsInBody: true,
                 toolbar:[
                          ['style', ['style', 'fontsize', 'bold', 'underline']]
                 ]
