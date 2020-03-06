@@ -827,4 +827,12 @@ function httpRequest($url, $method, $data, $headers, $username = null, $password
           return json_decode($response, true);
         }
 }
-    
+
+
+/**
+ * now() returns the current timestamp in a mySQL format
+ */
+
+function now() {
+	return date("Y-m-d H:i:s");
+}
