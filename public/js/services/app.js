@@ -10,7 +10,7 @@ function loadVue(parameters) {
     var body = document.getElementsByTagName('body').item(0);
     for(i = 0; i < parameters.scripts.length; i++) {
         var script = document.createElement('script');
-        script.setAttribute('src', env.home + 'public/' + env.request.uri + '/scripts/' + parameters.scripts[i] + '.js');
+        script.setAttribute('src', env.home + 'public/' + env.request.uriComponents[0] + '/scripts/' + parameters.scripts[i] + '.js');
         body.appendChild(script);        
     }
     
