@@ -32,7 +32,7 @@ var app = new Vue({
          * facedetector.detect(callback, recognize = false, fetchRate = 100): starts a parallel stream that captures any detections or recognitions when available
          * facedetector.prepareCanva(options = null): returns a new canvas on top of the media source
          * facedetector.draw(facedetector): draws the detections on the canvas
-         * facedetector.loadRecognitions({ labels: [], images: [], sampleSize: 100}): load models to recognize by the recognition engine
+         * facedetector.loadRecognition({ labels: [], images: [], sampleSize: 100}): load models to recognize by the recognition engine
          * facedetector.recognize(facedetector): runs the recognition engine and draws on canvas. Must make sure that detections is started before
          * facedetector.fetchImage(canvas, media): takes a canvas capture of the media and returns a blob data image (data url)
          * facedetector.display(message, output): displays a message in the infobar and gives it an ID as specified by the 'output' input
