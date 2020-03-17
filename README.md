@@ -142,7 +142,7 @@ This framework integrates seamlessly with Vue.js to combine the best of PHP with
 4. [Forms](https://github.com/DoryAzar/caligrafy/wiki/9.7.4-Forms)
 5. [Validations](https://github.com/DoryAzar/caligrafy/wiki/9.7.5-Validations)
 
-### AI in Caligraf
+### AI in Caligrafy
 
 Caligrafy provides easy ways to include Artificial Intelligence and Machine Learning to offer features such as Bots, Face Detection and Recognition. 
 
