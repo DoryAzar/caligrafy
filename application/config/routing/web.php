@@ -44,6 +44,9 @@ try {
     Route::post('/bot/communicate', 'WatsonController@communicate');
     Route::post('/bot/{appId}', 'WatsonController@connect');
     Route::delete('/bot', 'WatsonController@end');   
+	
+	// ML Routes - Uncomment only if you want to build machine learning applications
+	Route::get('/ml', function() { return view('Client/app', array('app' => 'index'));});
     
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
