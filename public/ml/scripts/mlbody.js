@@ -153,7 +153,9 @@ const MlBody = class MlBody {
 	  }
 	}
 	
-	// Preparing the canva for use
+	/* 
+    * Preparing the canva for use
+    */	
 	prepareCanva(mlpose) {
 		mlpose.ctx.clearRect(0, 0, mlpose.canvas.width, mlpose.canvas.height);
 		
@@ -176,7 +178,17 @@ const MlBody = class MlBody {
 
 	}
 	
+	/* 
+    * Clearing the canva
+    */	
+	clearCanva(canvas) {
+		canvas.ctx.clearRect(0, 0, canvas.width, canvas.height);
+	}
 	
+	
+	/* 
+    * Filtering the video to extract only the person/body
+    */	
 	filter(error, result) {
 
 		// if there's an error return it
@@ -191,6 +203,9 @@ const MlBody = class MlBody {
 	}
 	
 	
+	/* 
+    * Turn the segmented imag to a canva image
+    */	
 	imageDataToCanvas(imageData, w, h) {
 		// console.log(raws, x, y)
 		const arr = Array.from(imageData)
@@ -209,6 +224,19 @@ const MlBody = class MlBody {
 
 		return ctx.canvas;
 	};
+	
+	
+	toP5(mlpose) {
+		let myCanvas = createCanvas(mlpose.canvas.width, mlpose.canvas.height);
+		myCanvas.parent('detector');
+		myCanvas.id(mlpose.settings.canvas);
+		myCanvas.class('show');
+		mlpose.canvas.remove();
+
+		mlpose.canvas = myCanvas;
+		mlpose.ctx = myCanvas.canvas.getContext('2d');
+		return mlpose.canvas;
+	}
 	
 	
 }

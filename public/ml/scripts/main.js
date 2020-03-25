@@ -20,7 +20,7 @@ var myMl = new MlBody();
  *		- The first argument is always the MlBody object
  */
 
-myMl.detect((myML) => {
+myMl.detect((myMl) => {
 	myMl.drawKeypoints(myMl);
 	myMl.drawSkeleton(myMl);
 	
@@ -43,5 +43,30 @@ myMl.detect((myML) => {
 //	console.log(ml.poses);
 //}
 //	
+
+
+/*
+ * Example using p5.js
+ */
+
 	
-	
+//function setup() {
+//	
+//	myMl.toP5(myMl);
+//	myMl.detect((myMl) => {
+//		clear();
+//		draw();
+//		//myMl.drawKeypoints(myMl);
+//	});
+//
+//}
+//
+//function draw() {
+//	if (myMl.poses && myMl.poses.length > 0) {
+//		let pose = myMl.poses[0].pose;
+//		let nose = pose['nose'];
+//		fill(255, 0,0);
+//		ellipse(nose.x, nose.y, 50);
+//	}
+//	
+//}
