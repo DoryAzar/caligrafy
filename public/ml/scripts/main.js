@@ -62,12 +62,6 @@ function setup() {
 
 
 function draw() {
-	if (myMl.poses && myMl.poses.length > 0) {
-		let pose = myMl.poses[0].pose;
-		let nose = pose['nose'];
-		fill(255, 0,0);
-		ellipse(nose.x, nose.y, 50);
-	}
 	
 	classificationP.html(myMl.brain.results?? message);
 }
