@@ -47,6 +47,7 @@ try {
 	
 	// ML Routes - Uncomment only if you want to build machine learning applications
 	Route::get('/ml', function() { return view('Client/app', array('app' => 'index'));});
+	Route::get('/ml/posedetector', function() { return view('Client/app', array('app' => 'posedetector'));});
     
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
