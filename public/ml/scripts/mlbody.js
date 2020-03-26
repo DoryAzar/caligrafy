@@ -46,6 +46,8 @@ const MlBody = class MlBody {
 	
 	/* 
     * Promise that poseNet model and starts detection
+	* @callback: callback method that we called through out detections
+	* @...arg: any additional arguments passed will be passed to the callback
     */
     async detect(callback, ...args) 
 	{
@@ -83,8 +85,10 @@ const MlBody = class MlBody {
 	
 	/* 
     * function that draws the desired poses 
+	* @mlpose: MlBody object is passed to the method
+	* @posesToDraw: array of poses that the user wants to draw
     */
-	drawFeature(mlpose, posesToDraw) 
+	drawFeature(mlpose = this, posesToDraw) 
 	{
 	
 		mlpose.ctx.fillStyle = 'rgb(255, 0, 0)';
@@ -110,6 +114,7 @@ const MlBody = class MlBody {
 
 	/* 
     * A function to draw ellipses over the detected keypoints
+	* @mlpose: MlBody object is passed to the method
     */
 	drawKeypoints(mlpose = this)  
 	{
@@ -138,6 +143,7 @@ const MlBody = class MlBody {
 
 	/* 
     * A function to draw the skeletons
+	* @mlpose: MlBody object is passed to the method
     */	
 	drawSkeleton(mlpose = this) 
 	{
@@ -162,6 +168,7 @@ const MlBody = class MlBody {
 	
 	/* 
     * Preparing the canva for use
+	* @mlpose: MlBody object is passed to the method
     */	
 	prepareCanva(mlpose = this) 
 	{
@@ -188,6 +195,7 @@ const MlBody = class MlBody {
 	
 	/* 
     * Clearing the canva
+	* @canvas: canvas object element
     */	
 	clearCanva(canvas) 
 	{
@@ -197,6 +205,8 @@ const MlBody = class MlBody {
 	
 	/* 
     * Filtering the video to extract only the person/body
+	* @error: error promised triggered
+	* @result: success promise triggered 
     */	
 	filter(error, result) 
 	{
@@ -215,6 +225,9 @@ const MlBody = class MlBody {
 	
 	/* 
     * Turn the segmented imag to a canva image
+	* @imageData: image data to transform to canvas
+	* @w: width of canvas to put the image on
+	* @h: height of the canvas to put the image on
     */	
 	imageDataToCanvas(imageData, w, h) 
 	{
@@ -238,6 +251,7 @@ const MlBody = class MlBody {
 	
 	/* 
     * Hands off to p5
+	* @mlpose: MlBody object is passed to the method
     */	
 	toP5(mlpose = this) 
 	{
@@ -255,6 +269,8 @@ const MlBody = class MlBody {
 	
 	/* 
     * Trains the integrated model
+	* @options: defines the options of the neural networks: inputs, outputs, debug mode...
+	* @mlpose: MlBody object is passed to the method
     */	
 	train(options, mlpose = this) 
 	{
@@ -264,6 +280,10 @@ const MlBody = class MlBody {
 		}
 	}
 	
+	/*
+	 * Method called when training is completed
+	 * @mlpose: MlBody object is passed to the method
+	 */
 	finishedTraining(mlpose = this) {
 		mlpose.brain.results = 'Training Finishing...'
 		mlpose.classify(mlpose);
@@ -272,7 +292,8 @@ const MlBody = class MlBody {
 
 	
 	/* 
-    * Classifies after training
+    * Classifies detections. Also called after training to start classification automatically upon training completion
+	* @mlpose: MlBody object is passed to the method
     */	
 	classify(mlpose = this) 
 	{
@@ -282,6 +303,12 @@ const MlBody = class MlBody {
 		}
 	}
 	
+	/*
+	 * Method triggered upon classification results 
+	 * @error: when the promise fails
+	 * @results: when the promise succeeds, it returns the results
+	 * @mlpose: MlBody object is passed to the method
+	 */
 	getResults(error, results, mlpose = this) 
 	{
 		mlpose.brain.results = `${results[0].label} (${floor(results[0].confidence * 100)})%`;
@@ -290,6 +317,10 @@ const MlBody = class MlBody {
 	}
 	
 	
+	/*
+	 * Method that gets the inputs specifically for the body pose
+	 * @mlpose: MlBody object is passed to the method
+	 */
 	getInputs(mlpose = this)
 	{
 		let inputs = [];
@@ -307,6 +338,8 @@ const MlBody = class MlBody {
 	
 	/* 
     * Add sample data to the model
+	* @mlpose: MlBody object is passed to the method
+	* @labelInputs: adds the labels to the sampled inputs provided to the brain
     */	
 	addData(mlpose = this, labelInputs) 
 	{
@@ -318,11 +351,35 @@ const MlBody = class MlBody {
 	}
 	
 	/* 
-    * Add sample data to the model
+    * Checks if the MlBody object has a Neural Network brain already defined
     */	
 	hasBrain()
 	{
 		return this.brain != null;
+	}
+	
+	/* 
+	 * Save the entire trained model
+	 * @outputName: the name of the output. default is 'model'
+	 * @callback: callback method to be called when download completed
+	 */
+	save(outputName, callback, mlpose = this)
+	{
+		if (mlpose.hasBrain()) {
+			mlpose.brain.save(outputName, callback);
+		}
+	}
+	
+	/* 
+	 * Save the entire trained model
+	 * @fileOrPath: the name of the file or path to JSON. if the name 'model' is given to the JSON, then 'model-meta.json', 'model-weights.bin' will be fetched as well
+	 * @callback: callback method to be called when download completed
+	 */	
+	load(fileOrpath, callback, mlpose= this)
+	{
+		if (mlpose.hasBrain()) {
+			mlpose.brain.load(fileOrpath, callback);
+		}
 	}
 	
 }

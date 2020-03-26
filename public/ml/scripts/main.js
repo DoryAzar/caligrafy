@@ -85,63 +85,9 @@ myMl.detect((myMl) => {
  * - @addData: adds sample data for training the brain
  * - @train: trains the model and upon results automatically starts classifiying
  * - @classify: classifies the detections
+ *
+ * FOR MORE INFORMATION ABOUT NEURAL NETWORKS, CHECK posedetector.js 
+ *
+ *
  */
-//var myMl = new MlBody({brain: { inputs: 34, outputs: 2, debug:true, task: 'classification'}});
-//
-//let dataButton;
-//let dataLabel;
-//let trainButton;
-//let classificationP;
-//let listElement;
-//let listItem;
-//let message = 'waiting to train model';
-//
-//myMl.detect((myMl) => {
-//	myMl.drawKeypoints(myMl);
-//
-//});
-//
-//function setup() {
-//	myMl.toP5(myMl);
-//	
-//	// Add status text
-//	listElement = createElement('ul');
-//	listElement.parent('infobar');
-//	listElement.id('status');
-//	classificationP = createElement('li', message);
-//	classificationP.id('message');
-//	classificationP.parent('status');
-//	
-//	
-//	// ml UI
-//	listElement = createElement('ul');
-//	listElement.parent('infobar');
-//	listElement.id('mlUI');
-//	
-//	// add select to mlUI
-//	dataLabel = createSelect();
-//	dataLabel.option('Crouch');
-//	dataLabel.option('Stand');
-//	listItem = createElement('li')
-//	listItem.child(dataLabel);
-//	listItem.parent('mlUI');
-//	
-//	// add add data button
-//	listItem = createElement('li');
-//	listItem.parent('mlUI');
-//	dataButton = createButton('add example');
-//	listItem.child(dataButton);
-//	dataButton.mousePressed(() => myMl.addData(myMl, dataLabel.value()));
-//	
-//	// add train button
-//	trainButton = createButton('train');
-//	trainButton.parent('apps');
-//	trainButton.mousePressed(() => myMl.train({ epochs: 25}, myMl));
-//	
-//}
-//
-//
-//function draw() {
-//	
-//	classificationP.html(myMl.brain.results?? message);
-//}
+

@@ -23,10 +23,13 @@ var myMl = new MlBody({brain: { inputs: 34, outputs: 2, debug:true, task: 'class
 let dataButton;
 let dataLabel;
 let trainButton;
+let saveButton;
+let loadButton;
 let classificationP;
 let listElement;
 let listItem;
 let message = 'waiting to train model';
+let appResources = env.home + 'public/' + env.request.uriComponents[0] + '/resources/models/';
 
 myMl.detect((myMl) => {
 	myMl.drawKeypoints(myMl);
@@ -70,6 +73,18 @@ function setup() {
 	trainButton.parent('apps');
 	trainButton.mousePressed(() => myMl.train({ epochs: 25}, myMl));
 	
+	// add a save button
+	saveButton = createButton('save model');
+	saveButton.parent('apps');
+	saveButton.mousePressed(() => myMl.save('model', console.log('saved')));
+	
+	// add a load button
+	loadButton = createButton('load model');
+	loadButton.parent('apps');
+	loadButton.mousePressed(() => myMl.load(appResources + 'model.json', () => {
+		console.log('loaded');
+		myMl.classify(myMl);
+	}));
 }
 
 
