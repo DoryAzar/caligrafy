@@ -8,16 +8,17 @@ const MlBody = class MlBody {
 		this.settings = { ...defaultSettings, ...settings};
 		this.media = document.getElementById(this.settings.media) || null; 
 		this.canvas = document.getElementById(this.settings.canvas) || null;
+		this.ctx = this.canvas? this.canvas.getContext('2d') : null;
 		this.brain = this.settings.brain? ml5.neuralNetwork(this.settings.brain)?? null : null; 
 		this.segmentationImage = document.getElementById('segmentationImage') || null;
 
-		if (this.media && this.canvas && this.media.tagName.toLowerCase() == 'video' && !this.media.src) {
+		if (this.media && this.media.tagName.toLowerCase() == 'video' && !this.media.src) {
 			this.startStream();
-   			this.ctx = this.canvas.getContext('2d');
-  			
-		} else {
-			console.log('Media and canvas are needed for this to work')
+   		} 
+		else {
+			console.log('Media and canvas are needed for this to work');
 		}
+		
 	}
 
     /* 
