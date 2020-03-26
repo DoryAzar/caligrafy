@@ -32,6 +32,10 @@
             <section id="detector">
                 
 				<canvas id='canvas' width="720" height="560" class="show"></canvas>
+				
+				<!-- media can be a video -->
+                <!--<video id="video"  src="path/to/video" type="video/mp4" width="720" height="560" class="show" autoplay="autoplay" muted playsinline controls></video>-->
+				
                 <!-- media can be a webcam -->
                 <video id='video' width="720" height="560" class="show" autoplay="autoplay" muted playsinline></video>
 				
