@@ -8,7 +8,7 @@
  * - brain: {...} defines the Neural Network settings
  */
 
-var myMl = new MlBody();
+var myMl = new MlCore();
 
 /*
  * Detect function allows detection of body poses

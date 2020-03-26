@@ -57,7 +57,7 @@
 			 */
 			loadVue({
 				scripts: [
-					'mlbody', 
+					'mlcore', 
 					'posedetector'
 				]
 			 });

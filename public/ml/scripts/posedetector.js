@@ -18,7 +18,7 @@
  * - @train: trains the model and upon results automatically starts classifiying
  * - @classify: classifies the detections
  */
-var myMl = new MlBody({brain: { inputs: 34, outputs: 2, debug:true, task: 'classification'}});
+var myMl = new MlCore(); // { brain: { type: 'neuralnetwork', options: { inputs: 34, outputs: 2, debug:true, task: 'classification'}}}
 
 let dataButton;
 let dataLabel;
@@ -71,7 +71,7 @@ function setup() {
 	// add train button
 	trainButton = createButton('train');
 	trainButton.parent('apps');
-	trainButton.mousePressed(() => myMl.train({ epochs: 25}, myMl));
+	trainButton.mousePressed(() => myMl.train(myMl, { epochs: 25}));
 	
 	// add a save button
 	saveButton = createButton('save model');
@@ -89,6 +89,5 @@ function setup() {
 
 
 function draw() {
-	
-	classificationP.html(myMl.brain.results?? message);
+	classificationP.html(myMl.brain && myMl.brain.results? myMl.brain.results : message);
 }
