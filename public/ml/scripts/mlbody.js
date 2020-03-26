@@ -1,12 +1,14 @@
 const MlBody = class MlBody {
 	
-	constructor(settings) {
+	constructor(settings) 
+	{
 	
 		// load properties
 		let defaultSettings = { media: 'video', canvas: 'canvas'};
 		this.settings = { ...defaultSettings, ...settings};
 		this.media = document.getElementById(this.settings.media) || null; 
 		this.canvas = document.getElementById(this.settings.canvas) || null;
+		this.brain = this.settings.brain? ml5.neuralNetwork(this.settings.brain)?? null : null; 
 		this.segmentationImage = document.getElementById('segmentationImage') || null;
 
 		if (this.media && this.canvas && this.media.tagName.toLowerCase() == 'video' && !this.media.src) {
@@ -21,7 +23,8 @@ const MlBody = class MlBody {
     /* 
     * Method that starts streaming from computer cam 
     */
-    async startStream() {
+    async startStream() 
+	{
 
         // Stream from media device returns a promise. Compatible on Safari, Chrome and Firefox
         navigator.mediaDevices.getUserMedia({
@@ -44,7 +47,8 @@ const MlBody = class MlBody {
 	/* 
     * Promise that poseNet model and starts detection
     */
-    async detect(callback, ...args) {
+    async detect(callback, ...args) 
+	{
 		
 		// Create a new poseNet method with a single detection
 		this.poseNet = await ml5.poseNet(this.media, this.modelReady);
@@ -80,7 +84,8 @@ const MlBody = class MlBody {
 	/* 
     * function that draws the desired poses 
     */
-	drawFeature(mlpose, posesToDraw) {
+	drawFeature(mlpose, posesToDraw) 
+	{
 	
 		mlpose.ctx.fillStyle = 'rgb(255, 0, 0)';
 
@@ -106,7 +111,8 @@ const MlBody = class MlBody {
 	/* 
     * A function to draw ellipses over the detected keypoints
     */
-	drawKeypoints(mlpose)  {
+	drawKeypoints(mlpose = this)  
+	{
 	
 	  mlpose.ctx.fillStyle = 'rgb(255, 0, 0)';
 		
@@ -133,7 +139,8 @@ const MlBody = class MlBody {
 	/* 
     * A function to draw the skeletons
     */	
-	drawSkeleton(mlpose) {
+	drawSkeleton(mlpose = this) 
+	{
 	  
 	  mlpose.ctx.strokeStyle = 'rgb(255, 0, 0)';
 	  mlpose.ctx.lineWidth = 2;
@@ -156,7 +163,8 @@ const MlBody = class MlBody {
 	/* 
     * Preparing the canva for use
     */	
-	prepareCanva(mlpose) {
+	prepareCanva(mlpose = this) 
+	{
 		mlpose.ctx.clearRect(0, 0, mlpose.canvas.width, mlpose.canvas.height);
 		
 		let im = mlpose.media;
@@ -181,7 +189,8 @@ const MlBody = class MlBody {
 	/* 
     * Clearing the canva
     */	
-	clearCanva(canvas) {
+	clearCanva(canvas) 
+	{
 		canvas.ctx.clearRect(0, 0, canvas.width, canvas.height);
 	}
 	
@@ -189,7 +198,8 @@ const MlBody = class MlBody {
 	/* 
     * Filtering the video to extract only the person/body
     */	
-	filter(error, result) {
+	filter(error, result) 
+	{
 
 		// if there's an error return it
 		if (error) {
@@ -206,7 +216,8 @@ const MlBody = class MlBody {
 	/* 
     * Turn the segmented imag to a canva image
     */	
-	imageDataToCanvas(imageData, w, h) {
+	imageDataToCanvas(imageData, w, h) 
+	{
 		// console.log(raws, x, y)
 		const arr = Array.from(imageData)
 		const canvas = document.createElement('canvas'); // Consider using offScreenCanvas when it is ready?
@@ -225,8 +236,11 @@ const MlBody = class MlBody {
 		return ctx.canvas;
 	};
 	
-	
-	toP5(mlpose) {
+	/* 
+    * Hands off to p5
+    */	
+	toP5(mlpose = this) 
+	{
 		let myCanvas = createCanvas(mlpose.canvas.width, mlpose.canvas.height);
 		myCanvas.parent('detector');
 		myCanvas.id(mlpose.settings.canvas);
@@ -238,5 +252,77 @@ const MlBody = class MlBody {
 		return mlpose.canvas;
 	}
 	
+	
+	/* 
+    * Trains the integrated model
+    */	
+	train(options, mlpose = this) 
+	{
+		if (mlpose.hasBrain()){
+			mlpose.brain.normalizeData();
+			mlpose.brain.train(options, () => mlpose.finishedTraining(mlpose));
+		}
+	}
+	
+	finishedTraining(mlpose = this) {
+		mlpose.brain.results = 'Training Finishing...'
+		mlpose.classify(mlpose);
+	}
+	
+
+	
+	/* 
+    * Classifies after training
+    */	
+	classify(mlpose = this) 
+	{
+		if (mlpose.poses.length > 0) {
+			let inputs = mlpose.getInputs(mlpose);
+			mlpose.brain.classify(inputs, (error, results) => mlpose.getResults(error, results, mlpose));
+		}
+	}
+	
+	getResults(error, results, mlpose = this) 
+	{
+		mlpose.brain.results = `${results[0].label} (${floor(results[0].confidence * 100)})%`;
+		mlpose.classify(mlpose);
+		
+	}
+	
+	
+	getInputs(mlpose = this)
+	{
+		let inputs = [];
+		if (mlpose.hasBrain() && mlpose.poses.length > 0) {
+			let keypoints = mlpose.poses[0].pose.keypoints;
+			keypoints.forEach(keypoint => {
+				inputs.push(keypoint.position.x);
+				inputs.push(keypoint.position.y);
+			});
+		}
+		return inputs;
+	}
+	
+	
+	
+	/* 
+    * Add sample data to the model
+    */	
+	addData(mlpose = this, labelInputs) 
+	{
+		if (mlpose.poses && mlpose.poses.length > 0) {
+			let inputs = mlpose.getInputs(mlpose);
+    		let target = labelInputs;
+    		mlpose.brain.addData(inputs, [target]);
+		}
+	}
+	
+	/* 
+    * Add sample data to the model
+    */	
+	hasBrain()
+	{
+		return this.brain != null;
+	}
 	
 }

@@ -37,6 +37,9 @@
 				
                 <img src="" style="display:none" width="720" height="560" alt="segmentation image" id="segmentationImage"         />
             </section>
+            <section class="controls">
+                <div id="apps"></div>
+            </section>
         </div>
 		
 		

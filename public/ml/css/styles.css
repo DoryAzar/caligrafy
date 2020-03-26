@@ -63,6 +63,18 @@ canvas {
     margin: 2em auto;
 }
 
+#infobar select {
+  padding: 15px 32px;
+  font-size: 1em;
+  margin: 4px 2px;
+  width: 20em;
+  height: 3em;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;	
+}
+
 #infobar input {
     display: block;
     width: 20em;
