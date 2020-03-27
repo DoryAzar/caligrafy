@@ -26,7 +26,7 @@
         <!-- Beginning of the app -->
         <div id="app">
             <header>
-                <h1>Pose Detector - Neural Network Example</h1>
+                <h1>Feature Extractor</h1>
             </header>
 			<section id="infobar"></section>
             <section id="detector">
