@@ -33,9 +33,7 @@ let listItem;
 let message = 'waiting to train model';
 let appResources = env.home + 'public/' + env.request.uriComponents[0] + '/resources/models/';
 
-myMl.detect((myMl) => {
-	myMl.drawKeypoints(myMl);
-});
+
 
 function setup() {
 
