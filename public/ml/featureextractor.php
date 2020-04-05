@@ -51,13 +51,13 @@
 		<!-- Scripts -->
 		<script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
 		<script>loadEnvironment(`<?php echo $env; ?>`);</script>
+		<script src="<?php echo APP_SERVICE_ROOT.'mlcore.js'; ?>"></script>
 		<script> 
 			/* Loading the app client framework
 			 * Any environment variables to be passed on from the server can take place in this here
 			 */
 			loadVue({
 				scripts: [
-					'mlcore', 
 					'featureextractor'
 				]
 			 });
