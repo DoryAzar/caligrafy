@@ -1241,12 +1241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "71a7a1d633d78897718b333c4ddfb548705d02c1"
+                "reference": "54bf7c04a16e0829eef9d06e1709574078f40f94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/71a7a1d633d78897718b333c4ddfb548705d02c1",
-                "reference": "71a7a1d633d78897718b333c4ddfb548705d02c1",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/54bf7c04a16e0829eef9d06e1709574078f40f94",
+                "reference": "54bf7c04a16e0829eef9d06e1709574078f40f94",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1309,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-03-18T07:17:09+00:00"
+            "time": "2020-03-30T11:43:41+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1374,12 +1374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "becdf2e7941ba56171063de81dd1c2100fa496f6"
+                "reference": "73a432fde80a4d205fa2f5ea00eb71500a265ed4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/becdf2e7941ba56171063de81dd1c2100fa496f6",
-                "reference": "becdf2e7941ba56171063de81dd1c2100fa496f6",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/73a432fde80a4d205fa2f5ea00eb71500a265ed4",
+                "reference": "73a432fde80a4d205fa2f5ea00eb71500a265ed4",
                 "shasum": ""
             },
             "require": {
@@ -1424,7 +1424,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-03-17T20:10:57+00:00"
+            "time": "2020-03-18T09:44:43+00:00"
         }
     ],
     "packages-dev": [],
