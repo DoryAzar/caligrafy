@@ -283,16 +283,16 @@
         },
         {
             "name": "js-phpize/js-phpize",
-            "version": "2.7.1",
+            "version": "2.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize.git",
-                "reference": "41a3f8e6c56a36b51d337662446169cf2fb601a3"
+                "reference": "f7f76ae7974d588738527b204910b08d520b63d1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/41a3f8e6c56a36b51d337662446169cf2fb601a3",
-                "reference": "41a3f8e6c56a36b51d337662446169cf2fb601a3",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/f7f76ae7974d588738527b204910b08d520b63d1",
+                "reference": "f7f76ae7974d588738527b204910b08d520b63d1",
                 "shasum": ""
             },
             "require": {
@@ -320,7 +320,7 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code.",
-            "time": "2019-12-20T23:27:52+00:00"
+            "time": "2020-04-06T14:13:38+00:00"
         },
         {
             "name": "js-phpize/js-phpize-phug",
@@ -673,12 +673,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "cad508a9852c9c3a8186781cba1bb998a119d98d"
+                "reference": "26c815cc93c9f3d0624df60c22d2362cc21bf47f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/cad508a9852c9c3a8186781cba1bb998a119d98d",
-                "reference": "cad508a9852c9c3a8186781cba1bb998a119d98d",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/26c815cc93c9f3d0624df60c22d2362cc21bf47f",
+                "reference": "26c815cc93c9f3d0624df60c22d2362cc21bf47f",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +769,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-02-29T15:02:15+00:00"
+            "time": "2020-04-07T10:05:51+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1241,12 +1241,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "54bf7c04a16e0829eef9d06e1709574078f40f94"
+                "reference": "f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/54bf7c04a16e0829eef9d06e1709574078f40f94",
-                "reference": "54bf7c04a16e0829eef9d06e1709574078f40f94",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1",
+                "reference": "f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1309,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-03-30T11:43:41+00:00"
+            "time": "2020-04-06T22:58:33+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
