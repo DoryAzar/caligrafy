@@ -22,7 +22,8 @@ const MlCore = class MlCore {
 			this.startStream();
    		} 
 		else {
-			console.log('Media and canvas are needed for this to work');
+			this.brain = ml5.neuralNetwork(this.settings.brain.options)?? null;
+			console.log('Caligrafy MLCore Neural Networks launched');
 		}
 		
 	}

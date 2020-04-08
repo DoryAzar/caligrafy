@@ -49,6 +49,7 @@ try {
 	Route::get('/ml', function() { return view('Client/app', array('app' => 'index'));});
 	Route::get('/ml/posedetector', function() { return view('Client/app', array('app' => 'posedetector'));});
 	Route::get('/ml/featureextractor', function() { return view('Client/app', array('app' => 'featureextractor'));});
+	Route::get('/ml/neuralnetwork', function() { return view('Client/app', array('app' => 'neuralnetwork'));});
     
     
     // MUST NOT BE REMOVED - Routes need to be run after being defined 
