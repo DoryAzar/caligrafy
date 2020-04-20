@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "a32e06202f2c91425face092d792bc017c0bf0c5"
+                "reference": "aeab480952c737d12303e0453f19ddbbba04d525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/a32e06202f2c91425face092d792bc017c0bf0c5",
-                "reference": "a32e06202f2c91425face092d792bc017c0bf0c5",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/aeab480952c737d12303e0453f19ddbbba04d525",
+                "reference": "aeab480952c737d12303e0453f19ddbbba04d525",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "ethereum",
                 "litecoin"
             ],
-            "time": "2019-05-31T17:23:14+00:00"
+            "time": "2020-04-13T17:36:30+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -108,7 +108,8 @@
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
                 "php": "^7.2.5",
-                "psr/http-client": "^1.0"
+                "psr/http-client": "^1.0",
+                "symfony/polyfill-intl-idn": "^1.11"
             },
             "provide": {
                 "psr/http-client-implementation": "1.0"
@@ -574,12 +575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae"
+                "reference": "95338dd0b0f33bce2dbaa876ee03369e0a04f5e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
-                "reference": "4acfd6a4b33a509d8c88f50e5222f734b6aeebae",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/95338dd0b0f33bce2dbaa876ee03369e0a04f5e5",
+                "reference": "95338dd0b0f33bce2dbaa876ee03369e0a04f5e5",
                 "shasum": ""
             },
             "require": {
@@ -621,7 +622,7 @@
                 "php",
                 "type"
             ],
-            "time": "2020-03-21T18:07:53+00:00"
+            "time": "2020-04-13T11:46:31+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -673,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "26c815cc93c9f3d0624df60c22d2362cc21bf47f"
+                "reference": "2bd6c556d6240919b724f11ef3cb6d20c25c9bfb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/26c815cc93c9f3d0624df60c22d2362cc21bf47f",
-                "reference": "26c815cc93c9f3d0624df60c22d2362cc21bf47f",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/2bd6c556d6240919b724f11ef3cb6d20c25c9bfb",
+                "reference": "2bd6c556d6240919b724f11ef3cb6d20c25c9bfb",
                 "shasum": ""
             },
             "require": {
@@ -769,7 +770,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-04-07T10:05:51+00:00"
+            "time": "2020-04-10T14:10:36+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1115,6 +1116,68 @@
             "time": "2020-02-27T09:26:54+00:00"
         },
         {
+            "name": "symfony/polyfill-intl-idn",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-intl-idn.git",
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
+                "reference": "47bd6aa45beb1cd7c6a16b7d1810133b728bdfcf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php72": "^1.10"
+            },
+            "suggest": {
+                "ext-intl": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Intl\\Idn\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Laurent Bassin",
+                    "email": "laurent@bassin.info"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for intl's idn_to_ascii and idn_to_utf8 functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "idn",
+                "intl",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2020-03-09T19:04:49+00:00"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "dev-master",
             "source": {
@@ -1172,6 +1235,61 @@
                 "shim"
             ],
             "time": "2020-03-09T19:04:49+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "37b0976c78b94856543260ce09b460a7bc852747"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/37b0976c78b94856543260ce09b460a7bc852747",
+                "reference": "37b0976c78b94856543260ce09b460a7bc852747",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.15-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2020-02-27T09:26:54+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
@@ -1241,12 +1359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1"
+                "reference": "3cbcbf81432f28fcbed91f41de75bd2547d70535"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1",
-                "reference": "f527afe6e7e1cf6de1dd74b8bd6c66e1b20919b1",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3cbcbf81432f28fcbed91f41de75bd2547d70535",
+                "reference": "3cbcbf81432f28fcbed91f41de75bd2547d70535",
                 "shasum": ""
             },
             "require": {
@@ -1309,7 +1427,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-04-06T22:58:33+00:00"
+            "time": "2020-04-12T16:48:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
