@@ -17,7 +17,9 @@ require_once "framework/core/Caligrafer.php";
 require_once 'vendor/autoload.php';
        
 // load environment variables
-system("cp framework/settings/.env.example .env");
+if (!file_exists('.env')) {
+	system("cp framework/settings/.env.example .env");
+}
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->overload();
 
@@ -65,6 +67,7 @@ switch(strtolower($argv[1])) {
 		   file_put_contents($file, $input);
 		   file_put_contents(LIB_PATH . 'app/' . $file, $vueInput);
 		   system('sudo chmod -R 777 public/uploads');
+		   system('sudo rm -R .git');
 		   print("\n Application initialized successfully");
 		   print ("\n APP_KEY=".$appKey);
 		   print("\n API_KEY=".$apiKey);
