@@ -1,0 +1,954 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+/*!
+ * @version 1.0
+ *
+ * Main CSS file used for different projects
+ * 
+ * Author: Dory A.Azar
+ * Copyright 2020
+ */
+
+
+/* Defining the basics */
+body  {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  height:100%;
+  font-size: 16px; /* default font size is set to 1em */
+}
+
+body * { /* making sure that the default font is Roboto Light*/
+    -webkit-font-smoothing: antialiased;
+  font-family: 'IBM Plex Sans', sans-serif;    
+  font-weight: lighter; /* default font weight*/
+}
+
+body a:active, body a:hover, body a:visited, body a:link {
+  text-decoration:none;
+  color: inherit;
+}
+
+body .container {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  min-height: 100vh;
+  height:100%;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+/* Defining the header */
+
+header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+  
+}
+
+header a.horizontal-item:hover, header a.horizontal-item.selected, footer a.horizontal-item:hover, footer a.horizontal-item.selected {
+  border-top: 2px solid;
+}
+
+header a.vertical-item:hover, header a.vertical-item.selected {
+  border-bottom:  2px solid;
+}
+
+a.filter:hover, a.filter.selected {
+  border-top: 2px solid;
+  background-color: white;
+  color: black;
+}
+
+.filter {
+  margin-right: 20px;
+}
+
+/* NAVIGATION: Defining the navigation */
+
+nav {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+
+nav.horizontal {
+  height: 60px;
+  max-height: 60px;
+  overflow: hidden;
+}
+
+nav.horizontal ul {
+  display: inline-block;
+  list-style: none;
+  margin-top: 6px;
+  margin-bottom: auto;
+}
+
+nav ul.leftnavigation { text-align: left;}
+nav ul.leftnavigation li {
+  display: inline-block;
+  margin-left: 2em;
+  padding: 0;
+}
+
+nav ul.rightnavigation { text-align: right;}
+nav ul.rightnavigation li {
+  display: inline-block;
+  margin-right: 2em;
+  padding: 0;
+}
+
+nav ul.centernavigation { text-align: center; width: 100%; margin-left: auto; margin-right: auto;}
+nav ul.centernavigation li {
+  display: inline-block;
+  margin: 1em;
+  padding: 0;
+}
+
+nav ul.menu { margin-top:25px;}
+nav ul.menu li {
+  display: block;
+  width: 15px;
+  margin: 0 0.5em;
+  padding-top: 2px;
+  border: thin solid;
+}
+
+nav ul.menulist {
+  display:block;
+  width:100%;
+  position: absolute;
+  margin: 0;
+  padding: 0 0 15px 0;
+  top:60px;
+  z-index: 10;
+}
+
+nav ul.menulist li {
+  display:block;
+  text-align: center;
+  padding: 0.25em 0;
+}
+
+/* Defining the main containers */
+.wrapper {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 0 auto;
+  padding: 0.5em;
+}
+
+section {
+  display: block;
+  width: inherit;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+
+section.banner-section {
+  margin-top: 60px;
+  overflow:hidden;
+}
+
+section.content-section, .content-section {
+  display: block;
+  height: 100%;
+  min-height: calc(92vh);
+  margin: 0;
+  padding-top: 2em;
+}
+
+.wrapper section {
+  display: block;
+  width: inherit;
+  margin: 5px auto;
+  padding: 10px 20px;
+  overflow:hidden;
+}
+
+section.main-section {
+  display: block;
+}
+
+section.section-bar {
+  min-height: 80px;
+  padding: 0;
+  overflow:hidden;
+}
+
+.bounded {
+  display: block;
+  width: 98%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.bounded-large {
+  display: block;
+  width: 98%;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.bounded-xlarge {
+  display: block;
+  width: 98%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.width-max-600 {
+  max-width: 600px;
+}
+
+.height-fixed {
+  min-height:250px;
+  height: 400px;
+}
+
+.section-block {
+  display: inline-block;
+  height: 100%;
+  max-height: 80px;
+  width: auto;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+ul {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  position: relative;
+  margin: 15px 0 0 -20px;
+}
+
+/* CARD container definition */
+
+.card {
+  max-width: 600px;
+  border: thin solid;
+  border-color: #d9d9d9;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 0 0 0 0;
+}
+
+.card .verticalline {
+  display: block;
+  border-left: thin solid;
+  min-height: 200px;
+  height:100%;
+  margin-left:35px;
+  padding: 0 0 0 0;
+  opacity: 0.4;
+}
+
+.card .horizontalline {
+  display:block;
+  border-bottom: thin solid;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right:0;
+  padding: 0 0 0 0;
+  opacity: 0.2;
+}
+
+.card-image {
+    /* Combine with thumbnail for borders to appear*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width:100%;
+}
+
+.card-image-contain {
+    /* Combine with thumbnail for borders to appear*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: auto;
+}
+
+.card-success {
+  border: thin solid;
+  border-color: #006837;
+}
+
+.card-responsive
+{
+    max-width: 100%;
+}
+
+/* FORM Elements */
+
+
+form.boxed {
+  display: block;
+  margin-top: 1em;
+  padding: 1em;
+}
+
+form .btn {
+  max-width: 150px;
+  margin: auto;
+}
+
+form .cap-width {
+  max-width: 360px;
+}
+
+form .input-size-50, .input-size-50 {
+  width: 50px;
+}
+
+form .input-size-75, .input-size-75 {
+  width: 75px;
+}
+
+form .input-size-100, .input-size-100 {
+  width: 100px;
+}
+
+form .input-size-150, .input-size-150 {
+  width: 150px;
+}
+
+form .input-size-200, .input-size-200 {
+  width: 200px;
+}
+
+/* Global positioning and margins*/
+
+/* resetting margins and paddings to adjust to boostrap variations when needed*/
+.reset-padding{
+  padding: 0;
+}
+
+.reset-margin {
+  margin: 0;
+}
+
+.adjust-margins {
+  margin: 0px;
+  padding-top: 1px;
+}
+
+.horizontal-center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.horizontal-left {
+  margin: 2% 9%;
+  text-align: left;
+}
+
+.horizontal-right {
+  margin: inherit;
+  margin-left: 9%;
+  margin-right: 9%;
+  text-align: right;
+}
+
+.vertical-top {
+  margin: inherit;
+  margin-top: 1%;
+  padding-top: 0;
+  vertical-align: top;
+}
+
+.inline-block {
+  display: inline-block;
+  margin: 1em 1em 0 1em;
+}
+
+.inline {
+  display: inline;
+}
+
+
+.equally-spaced-1 {
+  padding: 1em;
+}
+
+.spacer-1 { /* 16px*/
+  display: block;
+  height: 1em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-1half{ /* 24px */
+  display: block;
+  height: 1.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-2{ /* 32px */
+  display: block;
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-2half{ /* 40px */
+  display: block;
+  height: 2.5em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-3 { /* 48px*/
+  display: block;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-4 { /* 48px*/
+  display: block;
+  height: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+.spacer-5 { /* 80px*/
+  display: block;
+  height: 5em;
+  padding: 0;
+  margin: 0;
+}
+
+
+/* Global font sizes */
+.default-text-size {
+  font-size: 1em;
+}
+
+.xsmall-text {
+  font-size: 0.8em;
+}
+
+.small-text {
+  font-size: 0.9em;
+}
+
+.medium-text {
+  font-size: 1.25em;
+}
+
+.large-text {
+  font-size: 1.5em;
+}
+
+.xlarge-text {
+  font-size: 2em;
+}
+
+/* Global text effects */
+.semibold {
+  font-weight: bold;
+}
+
+.light {
+  font-weight: lighter;
+}
+
+.normal {
+  font-weight: normal;
+}
+
+p.error, label.error {
+    color: #990000; /* Harvard red */
+    padding: 0 1%;
+}
+
+/* Color Palette definitions - Defining pairs of background/foreground combinations for contrast compliance */
+#nocolor, .nocolor {
+  background-color:transparent;
+}
+
+#color0, .color0 {
+     background-color:#ffffff;
+     color: #000000;
+     border-color: #ffffff;
+}
+
+.textcolor0 {
+  color:#ffffff;
+}
+
+
+#color1, .color1 {
+    background-color:#000000; /* black */
+    color: #ffffff;
+    border-color: #d5d5d5;
+}
+
+.textcolor1 {
+  color:#000000;
+}
+
+#color2, .color2 {
+    background-color:#990000; /* Harvard Red */
+    color: #ffffff;
+    border-color: #d5d5d5;
+}
+
+.textcolor2 {
+  color:#990000; 
+}
+
+#color3, .color3 {
+    background-color:#88959e; /* Slate */
+    color: #000000;
+    border-color: #d5d5d5;
+}
+
+.textcolor3 {
+  color:#88959e;
+}
+
+#color4, .color4 {
+    background-color:#fafafa; /* light grey */
+    color: #414141;
+    border-color: #d5d5d5;
+}
+
+.textcolor4 {
+  color:#fafafa; 
+}
+
+#color5, .color5 {
+  background-color:#414141; /* Dark grey */
+  color: #f2f2f2;
+  border-color: #d5d5d5;
+}
+
+.textcolor5 {
+  color:#414141;
+}
+
+#color6, .color6 {
+  background-color:#EED461; /* Gold */
+  color: #000000;
+  border-color: #d5d5d5;
+}
+
+#color7, .color7{
+  background-color:#0551A3; /* Blue */
+  color: #000000;
+  border-color: #d5d5d5;
+}
+
+.textcolor7 {
+  color: #0551A3;
+}
+
+#color8, .color8 {
+  background-color: #7AC2FB;
+  color: #000000;
+  border-color: #d5d5d5;
+}
+
+
+/* Decorations */
+
+.horizontalline {
+  display:block;
+  border-bottom: thin solid;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.2;
+}
+
+.verticalline {
+  display: block;
+  border-left: thin solid;
+  min-height: 200px;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0.4;
+  
+}
+
+/*  Text control */
+.truncate {
+  display: block;
+  margin: auto 1.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.word_wrap {
+  word-wrap: break-word;
+  display: table-cell;
+  -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+.word_wrap_block {
+  word-wrap: break-word;
+  display:block;
+  -webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+
+/* Short block with text*/
+/* styles for '...' */ 
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.6em;/*7.5em;*/ 
+  height:3.6em;
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -0.7em;
+  padding-right: 0.7em;
+  max-width: inherit;
+  word-wrap: break-word;
+}
+/* create the ... if needed*/
+.block-with-text:before {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+/* Long block with text - 100 lines*/
+/* styles for '...' */ 
+.long-block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 100em;/*7.5em;*/ 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+  max-width: inherit;
+  word-wrap: break-word;
+}
+/* create the ... if needed*/
+.long-block-with-text:before {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.long-block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
+}
+
+/* Global Effects */
+.dropshadow
+{
+  position:relative;
+  -webkit-box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow:  1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+         box-shadow:  1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  
+}
+
+.showborders {
+  border-style: solid;
+  border-width: thin;
+}
+
+.show-top-bottom-borders {
+  border-style: solid;
+  border-width: thin;
+  border-left: none;
+  border-right: none;
+}
+
+.show-bottom-border {
+  border-style: solid;
+  border-width: thin;
+  border-left:none;
+  border-right: none;
+  border-top:none;
+}
+
+.maketransparent {
+  -moz-opacity: 0.98;
+  opacity: 0.98;
+}
+
+.hide {
+  display:none;
+  visibility: hidden;
+}
+
+.show {
+  display:inherit;
+  visibility: visible;
+}
+
+.blur { /* will apply only to iOS */
+  -webkit-filter: blur(5px) grayscale(50%);
+  -ms-filter: blur(5px) grayscale(50%);
+}
+
+.roundcorners {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.roundtopcorners {
+  -webkit-border-top-left-radius:3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius:3px;
+  border-top-right-radius: 3px;
+}
+.roundbottomcorners {
+  -webkit-border-bottom-left-radius:3px;
+  border-bottom-left-radius:3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius:3px;
+}
+
+.roundleftcorners {
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.roundrightcorners {
+  -webkit-border-top-right-radius:3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* Scrolling Shadow */
+.shadowContainer {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  height: 2%;
+  z-index: 1;
+}
+
+.radialShadowTop {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  background: radial-gradient(farthest-side at 50% 0%, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)) 100% 0;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+  width: inherit;
+  height: 5px;
+  z-index: 1;
+}
+
+.shadowCoverTop {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  z-index: 5;
+}
+
+
+/* Responsiveness */
+
+.vertical-responsive {
+  display: block;
+  width: auto;
+  min-width: calc(45vw);
+  min-height: calc(25vh);
+  max-width: calc(100vw);
+  max-height: calc(75vh);
+  background-repeat: no-repeat;
+  background-position: top center;
+  margin:0 auto;
+  overflow: hidden;
+}
+
+.cover-responsive {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  height:100%; 
+  width:100%;
+  min-height: 150px;
+}
+
+.cover-auto {
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: top center;
+}
+
+.content_icon {
+  display: block;
+  height: auto;
+  width: 150px;
+  margin:2em auto;
+}
+
+.vertical-fixed-3 {
+  display: block;
+  height: 3em;
+  width: auto;
+  margin: 10px auto;
+}
+
+.vertical-fixed-5 {
+  display: block;
+  height: 5em;
+  width: auto;
+  margin: 10px auto;
+}
+
+.vertical-fixed-10 {
+  display: block;
+  height: 10em;
+  width: auto;
+  margin:2em auto;
+}
+
+.vertical-fixed-13 {
+  height: 13em;
+}
+
+.vertical-fixed-20 {
+  height: 40em;
+}
+
+/* TABLE definition */
+
+.table td.bounded-sm, th.bounded-sm {
+  max-width: 200px;
+}
+
+.table td.bounded-lg, th.bounded-lg {
+  max-width: 300px;
+}
+
+.table td.fixedcol-xs, th.fixedcol-xs {
+  width: 50px;
+}
+
+.table td.fixedcol, th.fixedcol {
+  width: 100px;
+}
+
+.table-image {
+  /* Combine with thumbnail for borders to appear*/
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width:auto;
+  height: 75px;
+}
+
+.table-panel {
+  max-width:93%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom:0;
+  padding: 0 0 0 0;
+}

@@ -22,7 +22,7 @@ $dotenv->overload();
 
 Caligrafer::run();
 
-$defaultMsg = "\n 2 functions are available for you: generatekeys and generateapikey \n\n";
+$defaultMsg = "\n 3 functions are available for you: generatekeys, generateapikey and create <project_name> \n\n";
 if($argc < 2) {
     print($defaultMsg);
     exit;
@@ -47,6 +47,16 @@ switch(strtolower($argv[1])) {
         print("\n API_KEY=".$apiKey);
         print("\n\n");
         break;
+	case 'ls':
+		system('ls -la', $retValue);
+		print($retValue);
+		break;
+	case 'create':
+		if (isset($argv[2])) {
+			system('cp -r framework/librairies/app ./'.$argv[2], $retValue);
+			print($retValue);
+		}
+		break;
         
     default:
         print($defaultMsg);
