@@ -79,7 +79,7 @@ switch(strtolower($argv[1])) {
 	case 'create':
 		if (isset($argv[2])) {
 			system('cp -r framework/librairies/app ./'.$argv[2], $retValue);
-			print("\n Project created in the Caligrafy root folder. \n\n Type cd ".$argv[2]. " to access it");
+			print("\n Project created in the Caligrafy root folder. \n\n Type cd ".$argv[2]. " to access it. \n\n");
 		}
 		break;
         
