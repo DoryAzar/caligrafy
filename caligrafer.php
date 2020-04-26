@@ -17,6 +17,7 @@ require_once "framework/core/Caligrafer.php";
 require_once 'vendor/autoload.php';
        
 // load environment variables
+system("cp framework/settings/.env.example .env");
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->overload();
 
@@ -56,7 +57,6 @@ switch(strtolower($argv[1])) {
 		try {
 		   print("\n\n Preparing and signing the project for usage (We might need you to authenticate you) \n");
 		   $file = '.env';
-		   system('cp framework/settings/.env.example '.$file);
            $keys = Caligrafer::generateKeys(); 
            $appKey = isset($keys['APP_KEY'])? $keys['APP_KEY'] : null;
            $apiKey = isset($keys['API_KEY'])? $keys['API_KEY'] : null;
