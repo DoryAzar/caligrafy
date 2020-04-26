@@ -15,8 +15,8 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 
 ## Quick Installation
 + Pull the code from github
-+ run `php caligrafer.php initialize` from the terminal to initialize the framework
 + run `composer install` to get all the dependencies needed
++ run `php caligrafer.php initialize` from the terminal to initialize the framework
 + You are good to go!
 + If the quick installation does not complete successfully, proceed with the manual installation
 
