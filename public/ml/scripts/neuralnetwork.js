@@ -6,7 +6,7 @@
  * - options { inputs, outputs, debug, task}:  set debug to true to see the confidence visor. The task can either be classification or regression depending on whether the output is discreent or continuous
  */
 
-var myMl = new MlCore({ brain: { type: 'neuralnetwork', options: { inputs: 3, outputs: 2, debug:true, task: 'classification'}}}); 
+var myMl = new MlCore({ brain: { type: 'neuralnetwork', options: { inputs: 3, outputs: 1, debug:true, task: 'classification'}}}); 
 
 // Step 1: load data or create some data 
 const data = [
