@@ -83,7 +83,7 @@ switch(strtolower($argv[1])) {
 			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
 			print("\n Project created in the public folder. \n\n Type cd public/".$argv[2]. " to access it and then run npm install to install its dependecies. \n\n");
 		} else {
-			print("\n The project could not be created. Please make sure that the name does not conflict with exsiting public folders. \n\n");
+			print("\n The project could not be created. Please make sure that the name does not conflict with existing public folders. \n\n");
 		}
 		break;
         
