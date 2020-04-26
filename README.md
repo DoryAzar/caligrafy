@@ -13,8 +13,14 @@ Caligrafy bridges the power of server-side languages like PHP with the sophistic
 + MySql > 5.6
 + curl, mbstring, openssl, mcrypt and headers modules must be enabled in your servers
 
+## Quick Installation
++ Pull the code from github
++ run `php caligrafer.php initialize` from the terminal to initialize the framework
++ run `composer install` to get all the dependencies needed
++ You are good to go!
++ If the quick installation does not complete successfully, proceed with the manual installation
 
-## Installation
+## Manual Installation
 + Pull the code from github
 + create a .env file by copying the example `cp .env.example .env`
 + Change the values in .env file to match your local or production server settings

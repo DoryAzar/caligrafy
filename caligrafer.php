@@ -54,7 +54,8 @@ switch(strtolower($argv[1])) {
         break;
 	case 'initialize':
 		try {
-		   $file = '.env2';
+		   print("\n\n Preparing and signing the project for usage (We might need you to authenticate you) \n");
+		   $file = '.env';
 		   system('cp framework/settings/.env.example '.$file);
            $keys = Caligrafer::generateKeys(); 
            $appKey = isset($keys['APP_KEY'])? $keys['APP_KEY'] : null;

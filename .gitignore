@@ -1,4 +1,5 @@
 .env
+.env.BKP
 .DS_Store
 .DS_Store?
 /vendor/
