@@ -23,6 +23,8 @@ if (!file_exists('.env')) {
 $dotenv = Dotenv\Dotenv::create(__DIR__);
 $dotenv->overload();
 
+$restricted = ['app', 'bot', 'css', 'facedetect', 'fonts', 'images', 'js', 'ml', 'resources', 'uploads'];
+
 Caligrafer::run();
 
 $defaultMsg = "\n 3 functions are available for you: 
@@ -77,9 +79,11 @@ switch(strtolower($argv[1])) {
         }
 		break;
 	case 'create':
-		if (isset($argv[2])) {
-			system('cp -r framework/librairies/app ./'.$argv[2], $retValue);
+		if (isset($argv[2]) && !in_array($argv[2], $restricted)) {
+			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
 			print("\n Project created in the Caligrafy root folder. \n\n Type cd ".$argv[2]. " to access it. \n\n");
+		} else {
+			print("\n The project could not be created. Please make sure that the name does not conflict with exsiting public folders. \n\n");
 		}
 		break;
         
