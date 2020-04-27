@@ -19,6 +19,17 @@
         <div id="app" v-cloak>
             {{ response }}
         </div>
+		
+		
+		<!-- TEMPLATES FOR VUE COMPONENTS -->
+	
+		<!--
+		<script type='text/x-template' id='template'>
+			<div>
+				<!-- code here
+			</div>	
+		</script>
+		-->
         
         <!-- Initialization scripts -->
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

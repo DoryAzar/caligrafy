@@ -1,3 +1,20 @@
+/* Components Definition */
+
+// Component Registration
+//Vue.component('component-name', {
+//
+//	template: '#template',
+//	props: [],
+//	methods: {},
+//	data() {
+//		return {
+//			// data definitions
+//		}
+//	}
+//	
+//});
+
+
 var app = new Vue({
   el: '#app',
   data () {
