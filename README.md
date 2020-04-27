@@ -154,7 +154,7 @@ In this section, we cover the basics of a PHP developer could quickly use VueJS.
 
 ### For large scale application purposes
 
-In order to build large scale applications using Vue, we need the ability to leverage the powerful capabilities of Vue such as Single File Application (SFA) and Single File Components (SFC). 
+In order to build large scale applications using Vue, we need the ability to leverage the powerful capabilities of Vue such as Single Page Application (SPA) and Single File Components (SFC). 
 
 1. [Setting up the Vue application](https://github.com/DoryAzar/caligrafy/wiki/9.8.1---Setting-up-the-Vue-application)
 2. [Routing for Single Page Applications](https://github.com/DoryAzar/caligrafy/wiki/9.8.2-Routing-for-Single-Page-Applications)
