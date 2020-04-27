@@ -157,10 +157,9 @@ In this section, we cover the basics of a PHP developer could quickly use VueJS.
 In order to build large scale applications using Vue, we need the ability to leverage the powerful capabilities of Vue such as Single File Application (SFA) and Single File Components (SFC). 
 
 1. [Setting up the Vue application](https://github.com/DoryAzar/caligrafy/wiki/9.8.1---Setting-up-the-Vue-application)
-2. [Serving through Caligrafy]()
+2. [Routing for Single Page Applications](https://github.com/DoryAzar/caligrafy/wiki/9.8.2-Routing-for-Single-Page-Applications)
 3. [Single File Components]()
-4. [Single File Application]()
-5. [State Management]()
+4. [State Management]()
 
 ### AI in Caligrafy
 
