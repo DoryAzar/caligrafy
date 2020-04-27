@@ -27,7 +27,7 @@ $restricted = ['app', 'bot', 'css', 'facedetect', 'fonts', 'images', 'js', 'ml',
 
 Caligrafer::run();
 
-$defaultMsg = "\n 3 functions are available for you: 
+$defaultMsg = "\n Available Functions: 
 				\n - generatekeys: generates an APP and an API pair of keys that you can put in your app's environment variable 
 				\n - generateapikey: generates an API key that you can provide to any third party desiring to access your services
 				\n - create <project_name>: scaffolds a Vue project
