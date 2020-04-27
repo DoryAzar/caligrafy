@@ -151,6 +151,7 @@ In this section, we cover the basics of a PHP developer could quickly use VueJS.
 3. [Requests](https://github.com/DoryAzar/caligrafy/wiki/9.7.3-Requests)
 4. [Forms](https://github.com/DoryAzar/caligrafy/wiki/9.7.4-Forms)
 5. [Validations](https://github.com/DoryAzar/caligrafy/wiki/9.7.5-Validations)
+6. [Components](https://github.com/DoryAzar/caligrafy/wiki/9.7.6-Components)
 
 ### For large scale application purposes
 
