@@ -160,7 +160,7 @@ In order to build large scale applications using Vue, we need the ability to lev
 1. [Setting up the Vue application](https://github.com/DoryAzar/caligrafy/wiki/9.8.1---Setting-up-the-Vue-application)
 2. [Routing for Single Page Applications](https://github.com/DoryAzar/caligrafy/wiki/9.8.2-Routing-for-Single-Page-Applications)
 3. [Single File Components](https://github.com/DoryAzar/caligrafy/wiki/9.8.3-Single-File-Components)
-4. [State Management]()
+4. [State Management](https://github.com/DoryAzar/caligrafy/wiki/9.8.4-State-Management)
 
 ### AI in Caligrafy
 
