@@ -136,12 +136,12 @@ We have created a rigorous documentation to help you understand the basics of th
 12. [Metadata & Rich Cards](https://github.com/DoryAzar/mvc/wiki/9.3-Metadata-&-Social-Rich-Cards)
 13. [Search Referencing and Analytics](https://github.com/DoryAzar/caligrafy/wiki/9.4-Search-Referencing-and-Analytics)
 
-## Caligrafy and Vue.js
+### Caligrafy and Vue.js
 
 Caligrafy is a modern MVC framework that leverages the powerful technologies that fuel each of the M (Model), the V (View) and the C (Controller). Vue.js is a modern and progressive Javascript framework that has been built from the  ground up just like Caligrafy. Vue.js empowers you to create powerful and sophisticated Views. 
 This framework integrates seamlessly with Vue.js to combine the best of PHP with the best of JS.
 
-### For prototyping and learning purposes
+#### For prototyping and learning purposes
 
 In this section, we cover the basics of a PHP developer could quickly use VueJS. 
 
@@ -153,7 +153,7 @@ In this section, we cover the basics of a PHP developer could quickly use VueJS.
 5. [Validations](https://github.com/DoryAzar/caligrafy/wiki/9.7.5-Validations)
 6. [Components](https://github.com/DoryAzar/caligrafy/wiki/9.7.6-Components)
 
-### For large scale application purposes
+#### For large scale application purposes
 
 In order to build large scale applications using Vue, we need the ability to leverage the powerful capabilities of Vue such as Single Page Application (SPA) and Single File Components (SFC). 
 
