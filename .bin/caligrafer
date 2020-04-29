@@ -1,0 +1,3 @@
+#!/bin/bash
+
+./caligrafer.php $1 $2
