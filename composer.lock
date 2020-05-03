@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "aeab480952c737d12303e0453f19ddbbba04d525"
+                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/aeab480952c737d12303e0453f19ddbbba04d525",
-                "reference": "aeab480952c737d12303e0453f19ddbbba04d525",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/126deb154f28276ae33b1aa20fe8b0152920075b",
+                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "ethereum",
                 "litecoin"
             ],
-            "time": "2020-04-13T17:36:30+00:00"
+            "time": "2020-04-21T18:16:20+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -284,16 +284,16 @@
         },
         {
             "name": "js-phpize/js-phpize",
-            "version": "2.8.1",
+            "version": "2.8.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize.git",
-                "reference": "f7f76ae7974d588738527b204910b08d520b63d1"
+                "reference": "60a9bb32f1fe9fe1e0a06bcc873211bfd8256540"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/f7f76ae7974d588738527b204910b08d520b63d1",
-                "reference": "f7f76ae7974d588738527b204910b08d520b63d1",
+                "url": "https://api.github.com/repos/pug-php/js-phpize/zipball/60a9bb32f1fe9fe1e0a06bcc873211bfd8256540",
+                "reference": "60a9bb32f1fe9fe1e0a06bcc873211bfd8256540",
                 "shasum": ""
             },
             "require": {
@@ -321,27 +321,27 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code.",
-            "time": "2020-04-06T14:13:38+00:00"
+            "time": "2020-04-25T20:38:35+00:00"
         },
         {
             "name": "js-phpize/js-phpize-phug",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/js-phpize-phug.git",
-                "reference": "086536acf9d72ed8180210c3dcf1c0d248ad4f69"
+                "reference": "fcc59b3511d61a403d905624bb959dc1773138b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/js-phpize-phug/zipball/086536acf9d72ed8180210c3dcf1c0d248ad4f69",
-                "reference": "086536acf9d72ed8180210c3dcf1c0d248ad4f69",
+                "url": "https://api.github.com/repos/pug-php/js-phpize-phug/zipball/fcc59b3511d61a403d905624bb959dc1773138b9",
+                "reference": "fcc59b3511d61a403d905624bb959dc1773138b9",
                 "shasum": ""
             },
             "require": {
-                "js-phpize/js-phpize": "^2.0.0",
+                "js-phpize/js-phpize": "^2.8.3",
                 "php": ">=7.0",
-                "phug/compiler": "^0.5.0 || ^1.0@dev",
-                "phug/formatter": "^0.5.43 || ^1.0@dev"
+                "phug/compiler": "^1.7.2",
+                "phug/formatter": "^1.7.2"
             },
             "require-dev": {
                 "codeclimate/php-test-reporter": "dev-master",
@@ -364,7 +364,7 @@
                 }
             ],
             "description": "Convert js-like syntax to standalone PHP code in Phug template.",
-            "time": "2019-09-08T19:12:39+00:00"
+            "time": "2020-04-25T21:04:26+00:00"
         },
         {
             "name": "js-transformer/js-transformer",
@@ -575,12 +575,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "95338dd0b0f33bce2dbaa876ee03369e0a04f5e5"
+                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/95338dd0b0f33bce2dbaa876ee03369e0a04f5e5",
-                "reference": "95338dd0b0f33bce2dbaa876ee03369e0a04f5e5",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/be3ba85c4c0e1543233df1feaafd7fe31ea26584",
+                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584",
                 "shasum": ""
             },
             "require": {
@@ -622,7 +622,7 @@
                 "php",
                 "type"
             ],
-            "time": "2020-04-13T11:46:31+00:00"
+            "time": "2020-05-02T14:39:07+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -674,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "2bd6c556d6240919b724f11ef3cb6d20c25c9bfb"
+                "reference": "0d3951469df383181c99997ba6388df33623c2cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/2bd6c556d6240919b724f11ef3cb6d20c25c9bfb",
-                "reference": "2bd6c556d6240919b724f11ef3cb6d20c25c9bfb",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/0d3951469df383181c99997ba6388df33623c2cb",
+                "reference": "0d3951469df383181c99997ba6388df33623c2cb",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-04-10T14:10:36+00:00"
+            "time": "2020-05-03T12:40:56+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1444,7 +1444,7 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0",
+                "php": "^5.5.9 || ^7.0 || ^8.0",
                 "phpoption/phpoption": "^1.7.2",
                 "symfony/polyfill-ctype": "^1.9"
             },
@@ -1492,12 +1492,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "73a432fde80a4d205fa2f5ea00eb71500a265ed4"
+                "reference": "f6171124364238cb5a2e8d4fbab1de666ed9e793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/73a432fde80a4d205fa2f5ea00eb71500a265ed4",
-                "reference": "73a432fde80a4d205fa2f5ea00eb71500a265ed4",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/f6171124364238cb5a2e8d4fbab1de666ed9e793",
+                "reference": "f6171124364238cb5a2e8d4fbab1de666ed9e793",
                 "shasum": ""
             },
             "require": {
@@ -1542,7 +1542,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-03-18T09:44:43+00:00"
+            "time": "2020-04-14T19:30:22+00:00"
         }
     ],
     "packages-dev": [],
