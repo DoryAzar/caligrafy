@@ -51,12 +51,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b"
+                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/126deb154f28276ae33b1aa20fe8b0152920075b",
-                "reference": "126deb154f28276ae33b1aa20fe8b0152920075b",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
+                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
                 "shasum": ""
             },
             "require": {
@@ -87,7 +87,7 @@
                 "ethereum",
                 "litecoin"
             ],
-            "time": "2020-04-21T18:16:20+00:00"
+            "time": "2020-05-05T01:29:28+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -674,12 +674,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "0d3951469df383181c99997ba6388df33623c2cb"
+                "reference": "93146e5e442e2d036c0cc71aa5222a560026f64d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/0d3951469df383181c99997ba6388df33623c2cb",
-                "reference": "0d3951469df383181c99997ba6388df33623c2cb",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/93146e5e442e2d036c0cc71aa5222a560026f64d",
+                "reference": "93146e5e442e2d036c0cc71aa5222a560026f64d",
                 "shasum": ""
             },
             "require": {
@@ -770,7 +770,7 @@
                 "template",
                 "views"
             ],
-            "time": "2020-05-03T12:40:56+00:00"
+            "time": "2020-05-03T16:11:17+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1359,12 +1359,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "317278865a3dd48c31aab47fe3f23a31f409ac4b"
+                "reference": "074b5412f479b9fa78dc7e635f2509e45e410ba9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/317278865a3dd48c31aab47fe3f23a31f409ac4b",
-                "reference": "317278865a3dd48c31aab47fe3f23a31f409ac4b",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/074b5412f479b9fa78dc7e635f2509e45e410ba9",
+                "reference": "074b5412f479b9fa78dc7e635f2509e45e410ba9",
                 "shasum": ""
             },
             "require": {
@@ -1427,7 +1427,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-04-23T22:29:19+00:00"
+            "time": "2020-05-05T19:37:11+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
