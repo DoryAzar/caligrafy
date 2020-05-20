@@ -1359,16 +1359,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "63629be9cb8cd264915bc7d40aa5361a7abad06b"
+                "reference": "fda11887eac0dd2ddd5151b8706e08ee3fddd0ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/63629be9cb8cd264915bc7d40aa5361a7abad06b",
-                "reference": "63629be9cb8cd264915bc7d40aa5361a7abad06b",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/fda11887eac0dd2ddd5151b8706e08ee3fddd0ba",
+                "reference": "fda11887eac0dd2ddd5151b8706e08ee3fddd0ba",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.5",
+                "php": ">=7.2.5",
                 "symfony/polyfill-mbstring": "~1.0",
                 "symfony/polyfill-php80": "^1.15"
             },
@@ -1427,7 +1427,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-05-16T12:09:30+00:00"
+            "time": "2020-05-20T17:44:07+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
