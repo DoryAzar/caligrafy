@@ -90,6 +90,58 @@
             "time": "2020-05-05T01:29:28+00:00"
         },
         {
+            "name": "graham-campbell/result-type",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/GrahamCampbell/Result-Type.git",
+                "reference": "aab2855231419da386965b961cafe1387957181f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/GrahamCampbell/Result-Type/zipball/aab2855231419da386965b961cafe1387957181f",
+                "reference": "aab2855231419da386965b961cafe1387957181f",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0|^8.0",
+                "phpoption/phpoption": "^1.7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5|^7.5|^8.5|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GrahamCampbell\\ResultType\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "An Implementation Of The Result Type",
+            "keywords": [
+                "Graham Campbell",
+                "GrahamCampbell",
+                "Result Type",
+                "Result-Type",
+                "result"
+            ],
+            "time": "2020-05-02T14:25:37+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "dev-master",
             "source": {
@@ -1359,12 +1411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "fda11887eac0dd2ddd5151b8706e08ee3fddd0ba"
+                "reference": "a2f1be47430f9fe87e9d0c7c325f5ca14c3c3276"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/fda11887eac0dd2ddd5151b8706e08ee3fddd0ba",
-                "reference": "fda11887eac0dd2ddd5151b8706e08ee3fddd0ba",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a2f1be47430f9fe87e9d0c7c325f5ca14c3c3276",
+                "reference": "a2f1be47430f9fe87e9d0c7c325f5ca14c3c3276",
                 "shasum": ""
             },
             "require": {
@@ -1427,7 +1479,7 @@
                 "debug",
                 "dump"
             ],
-            "time": "2020-05-20T17:44:07+00:00"
+            "time": "2020-05-23T13:10:26+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1444,9 +1496,13 @@
                 "shasum": ""
             },
             "require": {
-                "php": "^5.5.9 || ^7.0 || ^8.0",
-                "phpoption/phpoption": "^1.7.2",
-                "symfony/polyfill-ctype": "^1.9"
+                "ext-pcre": "*",
+                "graham-campbell/result-type": "^1.0",
+                "php": "^7.1.3 || ^8.0",
+                "phpoption/phpoption": "^1.7.3",
+                "symfony/polyfill-ctype": "^1.17",
+                "symfony/polyfill-mbstring": "^1.17",
+                "symfony/polyfill-php80": "^1.17"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
