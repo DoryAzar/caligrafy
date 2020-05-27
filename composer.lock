@@ -561,16 +561,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.5",
+            "version": "v6.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3"
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a8bf068f64a580302026e484ee29511f661b2ad3",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
                 "shasum": ""
             },
             "require": {
@@ -619,7 +619,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2020-03-14T14:23:48+00:00"
+            "time": "2020-05-27T12:24:03+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -627,12 +627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584"
+                "reference": "25228897fb1f571d1dc857be2f9af062a95b7bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/be3ba85c4c0e1543233df1feaafd7fe31ea26584",
-                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/25228897fb1f571d1dc857be2f9af062a95b7bea",
+                "reference": "25228897fb1f571d1dc857be2f9af062a95b7bea",
                 "shasum": ""
             },
             "require": {
@@ -674,7 +674,7 @@
                 "php",
                 "type"
             ],
-            "time": "2020-05-02T14:39:07+00:00"
+            "time": "2020-05-27T00:05:32+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -1483,29 +1483,31 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "dev-master",
+            "version": "3.6.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156"
+                "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/1bdf24f065975594f6a117f0f1f6cabf1333b156",
-                "reference": "1bdf24f065975594f6a117f0f1f6cabf1333b156",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/8b64814b356b96a90d2bc942b152c80d8888b8d4",
+                "reference": "8b64814b356b96a90d2bc942b152c80d8888b8d4",
                 "shasum": ""
             },
             "require": {
-                "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.0",
-                "php": "^7.1.3 || ^8.0",
-                "phpoption/phpoption": "^1.7.3",
-                "symfony/polyfill-ctype": "^1.17",
-                "symfony/polyfill-mbstring": "^1.17",
-                "symfony/polyfill-php80": "^1.17"
+                "php": "^5.4 || ^7.0 || ^8.0",
+                "phpoption/phpoption": "^1.5",
+                "symfony/polyfill-ctype": "^1.9"
             },
             "require-dev": {
+                "ext-filter": "*",
+                "ext-pcre": "*",
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
+            },
+            "suggest": {
+                "ext-filter": "Required to use the boolean validator.",
+                "ext-pcre": "Required to use most of the library."
             },
             "type": "library",
             "extra": {
@@ -1540,7 +1542,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2019-09-10T21:37:39+00:00"
+            "time": "2020-05-23T09:42:03+00:00"
         },
         {
             "name": "wixel/gump",
