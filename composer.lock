@@ -161,7 +161,7 @@
                 "guzzlehttp/psr7": "^1.6.1",
                 "php": "^7.2.5",
                 "psr/http-client": "^1.0",
-                "symfony/polyfill-intl-idn": "^1.11"
+                "symfony/polyfill-intl-idn": "1.17.0"
             },
             "provide": {
                 "psr/http-client-implementation": "1.0"
@@ -561,16 +561,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.1.5",
+            "version": "v6.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3"
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/a8bf068f64a580302026e484ee29511f661b2ad3",
-                "reference": "a8bf068f64a580302026e484ee29511f661b2ad3",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
                 "shasum": ""
             },
             "require": {
@@ -619,7 +619,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2020-03-14T14:23:48+00:00"
+            "time": "2020-05-27T12:24:03+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -627,12 +627,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584"
+                "reference": "25228897fb1f571d1dc857be2f9af062a95b7bea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/be3ba85c4c0e1543233df1feaafd7fe31ea26584",
-                "reference": "be3ba85c4c0e1543233df1feaafd7fe31ea26584",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/25228897fb1f571d1dc857be2f9af062a95b7bea",
+                "reference": "25228897fb1f571d1dc857be2f9af062a95b7bea",
                 "shasum": ""
             },
             "require": {
@@ -674,7 +674,7 @@
                 "php",
                 "type"
             ],
-            "time": "2020-05-02T14:39:07+00:00"
+            "time": "2020-05-27T00:05:32+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -1169,7 +1169,7 @@
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "dev-master",
+            "version": "v1.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
