@@ -925,16 +925,16 @@
         },
         {
             "name": "pug-php/pug",
-            "version": "3.4.0",
+            "version": "3.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/pug.git",
-                "reference": "81e10e2d890de01182aaeacc00ff4b25da807bab"
+                "reference": "4f5bb7406dddc482966c607fca00e287347abec8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pug-php/pug/zipball/81e10e2d890de01182aaeacc00ff4b25da807bab",
-                "reference": "81e10e2d890de01182aaeacc00ff4b25da807bab",
+                "url": "https://api.github.com/repos/pug-php/pug/zipball/4f5bb7406dddc482966c607fca00e287347abec8",
+                "reference": "4f5bb7406dddc482966c607fca00e287347abec8",
                 "shasum": ""
             },
             "require": {
@@ -1011,7 +1011,7 @@
                 "pug",
                 "template"
             ],
-            "time": "2020-02-03T23:15:28+00:00"
+            "time": "2020-05-28T21:50:47+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
