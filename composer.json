@@ -17,7 +17,7 @@
         "vlucas/phpdotenv": "^3.3",
         "wixel/gump": "dev-master",
         "claviska/simpleimage": "dev-master",
-        "stripe/stripe-php": "6.*",
+        "stripe/stripe-php": "7.*",
         "coinbase/coinbase-commerce": "dev-master",
         "phpmailer/phpmailer": "6.*",
         "phug/phug": "^1.0@dev"
