@@ -13,7 +13,7 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "pug-php/pug": "^3.2",
+        "pug-php/pug": "3.*",
         "vlucas/phpdotenv": "^3.3",
         "wixel/gump": "dev-master",
         "claviska/simpleimage": "dev-master",
