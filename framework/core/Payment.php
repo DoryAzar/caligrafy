@@ -189,7 +189,7 @@ class Payment {
 		  		'amount' => $amount,
 		  		'currency' => $currency,
 		  		// Verify your integration in this guide by including this parameter
-				'metadata' => array_merge($metadata, ['integration_check' => 'accept_a_payment']),
+				'metadata' => strtolower(APP_ENV) == 'production'? $metadata : array_merge($metadata, ['integration_check' => 'accept_a_payment']),
 				'description' => $description,
                 'receipt_email' => $receipt_email
 			]);
