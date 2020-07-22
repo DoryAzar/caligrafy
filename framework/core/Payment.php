@@ -135,6 +135,11 @@ class Payment {
 	}
     
     
+	/**
+	 * Creates an ACH bank link
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
     public function linkBankInformation($publicToken, $account)
     {
         $result = array('action_success' => false, 'error' => 'Transaction could not be completed');
@@ -165,6 +170,37 @@ class Payment {
         return $result;
     }
     
+	
+	/**
+	 * Creates a new payment transaction that might require a customer authentication flow (3DSecure for example)
+	 * @param Integer $amount defines the amount of the transaction in cents
+	 * @param string $currency defines the currecy of the transaction
+	 * @param string $metadata defines the metadata information that can be passed on to the transaction
+	 * @return $result to report on the result of the creation
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+	public function createPaymentIntent($amount, $currency, $metadata = array(), $receipt_email = null, $description = '') 
+	{
+		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
+		try {
+			
+			$intent = \Stripe\PaymentIntent::create([
+		  		'amount' => $amount,
+		  		'currency' => $currency,
+		  		// Verify your integration in this guide by including this parameter
+				'metadata' => array_merge($metadata, ['integration_check' => 'accept_a_payment']),
+				'description' => $description,
+                'receipt_email' => $receipt_email
+			]);
+			
+            $result = $intent?  array('action_success' => true, 'data' => $intent) : $result;
+			
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+	}
     
     private function createStripeToken($card)
     {

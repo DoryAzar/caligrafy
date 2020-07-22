@@ -21,7 +21,6 @@ try {
     // AUTHENTICATION - Remove comment if you have an authentication implemented
     //Auth::authentication('User', 'users');
     
-    
     // ROUTE DEFINITION: get, post, put and delete
     Route::get('/', function() { return view('default/index'); });
     Route::get('/helloworld', function() { echo "Hello World"; });
