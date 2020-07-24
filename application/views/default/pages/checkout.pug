@@ -1,0 +1,21 @@
+html(lang="en")
+  // Defining global variables
+  // Use this aread to define any global variables needed in the UI
+  - $home = session('home');
+  
+  //- Defining the headers
+  head
+    meta(charset="utf-8")
+	meta(name="description", content="Stripe Payment test")
+	meta(name="viewport", content="width=device-width, initial-scale=1")
+	link(rel="stylesheet", href=session('cssUrl').'stripe_global.css')
+	script(src="https://js.stripe.com/v3/")
+	script(src=session('appService')."stripe_checkout.js", defer)
+	
+	body
+		form
+			button(id="checkout-button", data-secret="{$sessionId}", public-key="{$publicKey}") Check out
+
+		
+			
+
