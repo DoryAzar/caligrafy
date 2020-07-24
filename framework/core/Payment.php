@@ -215,7 +215,7 @@ class Payment {
 	 * @author Dory A.Azar
 	 * @version 1.0
 	 */
-	public function createCheckout($amount = 1000, $currency = 'usd', $quantity = 1, $productData = array(), $successUrl = '', $cancelUrl = '', $paymentType = ['card'])
+	public function createCheckout($amount = 1000, $currency = 'usd', $quantity = 1, $productData = array(), $successUrl = '', $cancelUrl = '', $customerEmail = null, $locale = null, $paymentType = ['card'])
 	{
 		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
 		
@@ -232,6 +232,8 @@ class Payment {
     				],
     				'quantity' => $quantity,
   				]],
+				'customer_email' => $customerEmail,
+				'locale' => $locale,
   				'mode' => 'payment'
 			]; 
 			
