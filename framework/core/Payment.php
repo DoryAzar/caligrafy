@@ -201,6 +201,56 @@ class Payment {
 		}
 		return $result;
 	}
+	
+	/**
+	 * Creates a new integrated checkout session
+	 * @param Integer $amount defines the amount of the transaction in cents
+	 * @param string $currency defines the currency of the transaction
+	 * @param string $quantity defines the quantity of products
+	 * @param string $productData defines the product information that can be passed on to the transaction
+	 * @param string $successUrl defines the url that it will redirect to when successful payment
+	 * @param string $cancelUrl defines the url that it will redirect to when the payment fails
+	 * @param array $paymentType defines the different payment methods to be supported by checkout
+	 * @return $result to report on the result of the creation
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+	public function createCheckout($amount = 1000, $currency = 'usd', $quantity = 1, $productData = array(), $successUrl = '', $cancelUrl = '', $paymentType = ['card'])
+	{
+		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
+		
+		try {
+			
+			// Initial parameters area
+			$parameters = [
+  				'payment_method_types' => $paymentType,
+  				'line_items' => [[
+    				'price_data' => [
+      					'currency' => $currency,
+      					'product_data' => $productData,
+      					'unit_amount' => $amount,
+    				],
+    				'quantity' => $quantity,
+  				]],
+  				'mode' => 'payment'
+			]; 
+			
+			// If success URL specified, then add to parameters
+			if (isset($successUrl) && trim($successUrl) != '') { $parameters = array_merge($parameters, ['success_url' => $successUrl]); }
+			
+			// If cancel URL specified then add to parameters
+			if (isset($cancelUrl) && trim($cancelUrl) != '') { $parameters = array_merge($parameters, ['cancel_url' => $cancelUrl]); }
+			
+			$checkout = \Stripe\Checkout\Session::create($parameters);
+			
+			$result = $checkout? array('action_success' => true, 'data' => $checkout) : $result;
+			
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+		
+	}
     
     private function createStripeToken($card)
     {
