@@ -771,12 +771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "39195e9b085f15d55a179f9df4b39197b538c5bc"
+                "reference": "a6cd174f5c87fca3d43583ec19e86f509864e0c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/39195e9b085f15d55a179f9df4b39197b538c5bc",
-                "reference": "39195e9b085f15d55a179f9df4b39197b538c5bc",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/a6cd174f5c87fca3d43583ec19e86f509864e0c1",
+                "reference": "a6cd174f5c87fca3d43583ec19e86f509864e0c1",
                 "shasum": ""
             },
             "require": {
@@ -867,7 +867,21 @@
                 "template",
                 "views"
             ],
-            "time": "2020-05-16T15:02:18+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/kylekatarnls",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/pug-php",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/pug-php/pug",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-08-09T20:52:10+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1394,12 +1408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "4b5ca0096f952ea114182b10e6d8d47c3d84ac8d"
+                "reference": "5fdbb74f38bfa7529532a43335a6757267f0ec43"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/4b5ca0096f952ea114182b10e6d8d47c3d84ac8d",
-                "reference": "4b5ca0096f952ea114182b10e6d8d47c3d84ac8d",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/5fdbb74f38bfa7529532a43335a6757267f0ec43",
+                "reference": "5fdbb74f38bfa7529532a43335a6757267f0ec43",
                 "shasum": ""
             },
             "require": {
@@ -1476,7 +1490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-06-30T14:43:42+00:00"
+            "time": "2020-08-10T08:10:48+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
