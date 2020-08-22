@@ -1558,7 +1558,7 @@
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Wixel/GUMP.git",
+                "url": "git@github.com:Wixel/GUMP.git",
                 "reference": "3e69c2f5f074fa4fa9052a9f57d0daa23353d8e8"
             },
             "dist": {
