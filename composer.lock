@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "fb4fd14b879f8ae4c0850daf18a4ea06378c9d74"
+                "reference": "22336072d501c210d7e950af44b0fec9e4ed0a73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/fb4fd14b879f8ae4c0850daf18a4ea06378c9d74",
-                "reference": "fb4fd14b879f8ae4c0850daf18a4ea06378c9d74",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/22336072d501c210d7e950af44b0fec9e4ed0a73",
+                "reference": "22336072d501c210d7e950af44b0fec9e4ed0a73",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-07T10:43:58+00:00"
+            "time": "2020-08-27T10:48:56+00:00"
         },
         {
             "name": "coinbase/coinbase-commerce",
@@ -1114,16 +1114,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.49.0",
+            "version": "v7.50.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "db6229bff448f7f3bf7f6aee112d5d9ba34ca4ba"
+                "reference": "0195e3dcc34123df9a441069dbf08db17c3b025d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/db6229bff448f7f3bf7f6aee112d5d9ba34ca4ba",
-                "reference": "db6229bff448f7f3bf7f6aee112d5d9ba34ca4ba",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/0195e3dcc34123df9a441069dbf08db17c3b025d",
+                "reference": "0195e3dcc34123df9a441069dbf08db17c3b025d",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1167,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-08-19T22:48:20+00:00"
+            "time": "2020-08-28T20:17:35+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
