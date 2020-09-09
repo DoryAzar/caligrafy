@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "22336072d501c210d7e950af44b0fec9e4ed0a73"
+                "reference": "ae043784262e2ebc262d1b125509ef1fea1f1d5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/22336072d501c210d7e950af44b0fec9e4ed0a73",
-                "reference": "22336072d501c210d7e950af44b0fec9e4ed0a73",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/ae043784262e2ebc262d1b125509ef1fea1f1d5e",
+                "reference": "ae043784262e2ebc262d1b125509ef1fea1f1d5e",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-08-27T10:48:56+00:00"
+            "time": "2020-09-04T18:40:08+00:00"
         },
         {
             "name": "coinbase/coinbase-commerce",
@@ -1114,16 +1114,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.51.0",
+            "version": "v7.52.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "879a3545126ebc77218c53d2055572b7e473fbcf"
+                "reference": "51e95c514aff45616dff09791ca5b2f10cf5c4e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/879a3545126ebc77218c53d2055572b7e473fbcf",
-                "reference": "879a3545126ebc77218c53d2055572b7e473fbcf",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/51e95c514aff45616dff09791ca5b2f10cf5c4e8",
+                "reference": "51e95c514aff45616dff09791ca5b2f10cf5c4e8",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1167,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-09-02T21:04:02+00:00"
+            "time": "2020-09-08T19:29:20+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1408,12 +1408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "47a2370f91b5811f09581781ab275fdb22a99aea"
+                "reference": "618ecd0d52952b4c8de45404482c8a1d6cf0402f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/47a2370f91b5811f09581781ab275fdb22a99aea",
-                "reference": "47a2370f91b5811f09581781ab275fdb22a99aea",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/618ecd0d52952b4c8de45404482c8a1d6cf0402f",
+                "reference": "618ecd0d52952b4c8de45404482c8a1d6cf0402f",
                 "shasum": ""
             },
             "require": {
@@ -1490,7 +1490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-02T16:27:44+00:00"
+            "time": "2020-09-08T14:20:09+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
