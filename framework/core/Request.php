@@ -125,14 +125,15 @@ class Request  {
     {
         $this->_request = getallheaders();
         $this->method = isset($_REQUEST['_method']) && $_REQUEST['_method'] != ''? strtoupper($_REQUEST['_method']) : $_SERVER['REQUEST_METHOD'];
-        $this->host = $this->_request['Host']?? '';
-        $this->authorization = $this->_request['Authorization']?? '';
-        $this->cache = $this->_request['Cache']?? '';
+		
+		$this->host = $this->_request['host']?? ($this->_request['Host']?? '');
+		$this->authorization = $this->_request['authorization']?? ($this->_request['Authorization']?? '');
+		$this->cache = $this->_request['cache']?? ($this->_request['Cache']?? '');
         $this->userAgent = $this->_request['User-Agent']?? '';
-        $this->accept = $this->_request['Accept']?? '';
-        $this->acceptEncoding = $this->_request['Accept-Encoding']?? '';
-        $this->acceptLanguage = $this->_request['Accept-Language']?? '';
-        $this->cookie = $this->_request['Cookie']?? '';
+		$this->accept = $this->_request['accept']?? ($this->_request['Accept']?? '');
+        $this->acceptEncoding = $this->_request['accept-encoding']?? ($this->_request['Accept-Encoding']?? '');
+		$this->acceptLanguage = $this->_request['accept-language']?? ($this->_request['Accept-Language']?? '');
+        $this->cookie = $this->_request['cookie']?? ($this->_request['Cookie']?? '');
         
         $this->uriParameters = $this->getURIParameters();
         $this->uri = isset($_REQUEST['uri']) && $_REQUEST['uri'] != ''? sanitizePath($_REQUEST['uri']) : '/';
