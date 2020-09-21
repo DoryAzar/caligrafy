@@ -233,24 +233,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "bbf3b200bc83c1e9298580a9f99b9be248543467"
+                "reference": "8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/bbf3b200bc83c1e9298580a9f99b9be248543467",
-                "reference": "bbf3b200bc83c1e9298580a9f99b9be248543467",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9",
+                "reference": "8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.5"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^7.5"
+                "symfony/phpunit-bridge": "^4.4 || ^5.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.3-dev"
+                    "dev-master": "1.4-dev"
                 }
             },
             "autoload": {
@@ -276,7 +276,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2020-06-21T23:10:57+00:00"
+            "time": "2020-09-21T06:06:31+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -284,12 +284,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "188cc82398f157483976ccf61bd04ee80afcf29c"
+                "reference": "ba0f9e2b36630745137a79df1674da01cd0df461"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/188cc82398f157483976ccf61bd04ee80afcf29c",
-                "reference": "188cc82398f157483976ccf61bd04ee80afcf29c",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/ba0f9e2b36630745137a79df1674da01cd0df461",
+                "reference": "ba0f9e2b36630745137a79df1674da01cd0df461",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -347,7 +347,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2020-05-17T20:05:25+00:00"
+            "time": "2020-09-19T15:30:49+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -889,12 +889,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-client.git",
-                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621"
+                "reference": "22b2ef5687f43679481615605d7a15c557ce85b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-client/zipball/2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
-                "reference": "2dfb5f6c5eff0e91e20e913f8c5452ed95b86621",
+                "url": "https://api.github.com/repos/php-fig/http-client/zipball/22b2ef5687f43679481615605d7a15c557ce85b1",
+                "reference": "22b2ef5687f43679481615605d7a15c557ce85b1",
                 "shasum": ""
             },
             "require": {
@@ -919,7 +919,7 @@
             "authors": [
                 {
                     "name": "PHP-FIG",
-                    "homepage": "http://www.php-fig.org/"
+                    "homepage": "https://www.php-fig.org/"
                 }
             ],
             "description": "Common interface for HTTP clients",
@@ -930,7 +930,7 @@
                 "psr",
                 "psr-18"
             ],
-            "time": "2020-06-29T06:28:15+00:00"
+            "time": "2020-09-19T09:12:31+00:00"
         },
         {
             "name": "psr/http-message",
@@ -1408,12 +1408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "dcd65546800408f3de20b654c0ff426904f3185c"
+                "reference": "bb85e3e3413e576f952620a05933a96cc0c06ec2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/dcd65546800408f3de20b654c0ff426904f3185c",
-                "reference": "dcd65546800408f3de20b654c0ff426904f3185c",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/bb85e3e3413e576f952620a05933a96cc0c06ec2",
+                "reference": "bb85e3e3413e576f952620a05933a96cc0c06ec2",
                 "shasum": ""
             },
             "require": {
@@ -1490,7 +1490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-09T12:41:49+00:00"
+            "time": "2020-09-20T07:20:17+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
