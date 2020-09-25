@@ -771,12 +771,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "163ed88e28047c38bf6f6df25448aff30fd549b5"
+                "reference": "ee81108f9d7be420b8c57571679168ebd64f1762"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/163ed88e28047c38bf6f6df25448aff30fd549b5",
-                "reference": "163ed88e28047c38bf6f6df25448aff30fd549b5",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/ee81108f9d7be420b8c57571679168ebd64f1762",
+                "reference": "ee81108f9d7be420b8c57571679168ebd64f1762",
                 "shasum": ""
             },
             "require": {
@@ -881,7 +881,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-17T20:02:57+00:00"
+            "time": "2020-09-25T14:45:07+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1114,16 +1114,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.55.0",
+            "version": "v7.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "992057d4fd50b3979a8cdabf1d44bd13d55a78a9"
+                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/992057d4fd50b3979a8cdabf1d44bd13d55a78a9",
-                "reference": "992057d4fd50b3979a8cdabf1d44bd13d55a78a9",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
+                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1167,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-09-24T23:45:12+00:00"
+            "time": "2020-09-25T18:15:04+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
