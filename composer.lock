@@ -173,9 +173,9 @@
             },
             "require": {
                 "ext-json": "*",
-                "guzzlehttp/promises": "^1.0",
-                "guzzlehttp/psr7": "^1.6.1",
-                "php": "^7.2.5",
+                "guzzlehttp/promises": "^1.4",
+                "guzzlehttp/psr7": "^1.7",
+                "php": "^7.2.5 || ^8.0",
                 "psr/http-client": "^1.0"
             },
             "provide": {
@@ -233,12 +233,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9"
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9",
-                "reference": "8d7c8fb942cb9856b7b5c98e68e9c34d56e806a9",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/60d379c243457e073cff02bc323a2a86cb355631",
+                "reference": "60d379c243457e073cff02bc323a2a86cb355631",
                 "shasum": ""
             },
             "require": {
@@ -276,7 +276,7 @@
             "keywords": [
                 "promise"
             ],
-            "time": "2020-09-21T06:06:31+00:00"
+            "time": "2020-09-30T07:37:28+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -284,12 +284,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "b2007a51b06f899b278be4d1b31593831c1be65f"
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/b2007a51b06f899b278be4d1b31593831c1be65f",
-                "reference": "b2007a51b06f899b278be4d1b31593831c1be65f",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
                 "shasum": ""
             },
             "require": {
@@ -347,7 +347,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2020-09-23T20:12:44+00:00"
+            "time": "2020-09-30T07:37:11+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -1114,16 +1114,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.56.0",
+            "version": "v7.57.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc"
+                "reference": "e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
-                "reference": "987596ad7ca747ce498e13bc1e3d1a57fbeb94cc",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5",
+                "reference": "e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5",
                 "shasum": ""
             },
             "require": {
@@ -1167,7 +1167,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-09-25T18:15:04+00:00"
+            "time": "2020-09-30T05:53:53+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1408,12 +1408,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "bb85e3e3413e576f952620a05933a96cc0c06ec2"
+                "reference": "61d516c2748f66d6f1ed6462d67425009c870d63"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/bb85e3e3413e576f952620a05933a96cc0c06ec2",
-                "reference": "bb85e3e3413e576f952620a05933a96cc0c06ec2",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/61d516c2748f66d6f1ed6462d67425009c870d63",
+                "reference": "61d516c2748f66d6f1ed6462d67425009c870d63",
                 "shasum": ""
             },
             "require": {
@@ -1490,7 +1490,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-20T07:20:17+00:00"
+            "time": "2020-09-29T22:43:35+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
