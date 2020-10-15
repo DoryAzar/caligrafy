@@ -1115,16 +1115,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.57.0",
+            "version": "v7.58.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5"
+                "reference": "af383f8c707f841302ffceacfeffd2c7f74f362f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5",
-                "reference": "e2475efff624c6b9b62e8ea14ba7ee4e417cbfe5",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/af383f8c707f841302ffceacfeffd2c7f74f362f",
+                "reference": "af383f8c707f841302ffceacfeffd2c7f74f362f",
                 "shasum": ""
             },
             "require": {
@@ -1168,7 +1168,7 @@
                 "payment processing",
                 "stripe"
             ],
-            "time": "2020-09-30T05:53:53+00:00"
+            "time": "2020-10-14T15:00:30+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
