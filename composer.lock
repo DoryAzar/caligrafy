@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/claviska/SimpleImage.git",
-                "reference": "7343f978aeed6a3eab56ef64146e6b3e4b36dfba"
+                "reference": "ab2ab8a4672738ab77b39b00922ee4e79aeadb11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/7343f978aeed6a3eab56ef64146e6b3e4b36dfba",
-                "reference": "7343f978aeed6a3eab56ef64146e6b3e4b36dfba",
+                "url": "https://api.github.com/repos/claviska/SimpleImage/zipball/ab2ab8a4672738ab77b39b00922ee4e79aeadb11",
+                "reference": "ab2ab8a4672738ab77b39b00922ee4e79aeadb11",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +49,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-10-26T19:47:08+00:00"
+            "time": "2020-10-30T20:47:26+00:00"
         },
         {
             "name": "coinbase/coinbase-commerce",
@@ -545,20 +545,20 @@
         },
         {
             "name": "nodejs-php-fallback/nodejs-php-fallback",
-            "version": "1.5.1",
+            "version": "1.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
-                "reference": "24963d8833905356cfdcb197fb575f3eade8750e"
+                "reference": "aa815be58e277fbf1c7c1d520cd9a7f95b04946e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/24963d8833905356cfdcb197fb575f3eade8750e",
-                "reference": "24963d8833905356cfdcb197fb575f3eade8750e",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/aa815be58e277fbf1c7c1d520cd9a7f95b04946e",
+                "reference": "aa815be58e277fbf1c7c1d520cd9a7f95b04946e",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0",
+                "composer-plugin-api": "^1.0 || ^2.0",
                 "php": ">=5.3.0"
             },
             "require-dev": {
@@ -586,7 +586,21 @@
                 }
             ],
             "description": "Allow you to call node.js module or scripts throught PHP and call a fallback function if node.js is not available",
-            "time": "2020-01-09T23:51:08+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/kylekatarnls",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/Carbon",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/nesbot/carbon",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-31T13:00:25+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
