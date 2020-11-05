@@ -545,16 +545,16 @@
         },
         {
             "name": "nodejs-php-fallback/nodejs-php-fallback",
-            "version": "1.5.x-dev",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kylekatarnls/nodejs-php-fallback.git",
-                "reference": "aa815be58e277fbf1c7c1d520cd9a7f95b04946e"
+                "reference": "0acdf44b057868e4a6bc4e28551dbf91e5ce13fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/aa815be58e277fbf1c7c1d520cd9a7f95b04946e",
-                "reference": "aa815be58e277fbf1c7c1d520cd9a7f95b04946e",
+                "url": "https://api.github.com/repos/kylekatarnls/nodejs-php-fallback/zipball/0acdf44b057868e4a6bc4e28551dbf91e5ce13fe",
+                "reference": "0acdf44b057868e4a6bc4e28551dbf91e5ce13fe",
                 "shasum": ""
             },
             "require": {
@@ -600,7 +600,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-31T13:00:25+00:00"
+            "time": "2020-10-30T14:11:42+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
@@ -786,12 +786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "58a20e3ff5df57ba7c111a6b8da84f5d179cea3e"
+                "reference": "46059e9b4a0c9adbae0b173afadb97b77e9d1525"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/58a20e3ff5df57ba7c111a6b8da84f5d179cea3e",
-                "reference": "58a20e3ff5df57ba7c111a6b8da84f5d179cea3e",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/46059e9b4a0c9adbae0b173afadb97b77e9d1525",
+                "reference": "46059e9b4a0c9adbae0b173afadb97b77e9d1525",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-02T12:13:24+00:00"
+            "time": "2020-11-01T11:14:56+00:00"
         },
         {
             "name": "psr/http-client",
@@ -1423,12 +1423,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "c78bd92e4eb9f9f3929c74bcf5c200332dec8fcc"
+                "reference": "b75af2fd53fbf718b45add928e80db0b5af560f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/c78bd92e4eb9f9f3929c74bcf5c200332dec8fcc",
-                "reference": "c78bd92e4eb9f9f3929c74bcf5c200332dec8fcc",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b75af2fd53fbf718b45add928e80db0b5af560f9",
+                "reference": "b75af2fd53fbf718b45add928e80db0b5af560f9",
                 "shasum": ""
             },
             "require": {
@@ -1500,7 +1500,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-27T10:14:44+00:00"
+            "time": "2020-10-28T21:46:03+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
