@@ -786,12 +786,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "8bfe1d01c4346465d4f1c13c22ead1a932d7d831"
+                "reference": "f4e169a92711f6bc33fbdb4ce64d63b159a017c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/8bfe1d01c4346465d4f1c13c22ead1a932d7d831",
-                "reference": "8bfe1d01c4346465d4f1c13c22ead1a932d7d831",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/f4e169a92711f6bc33fbdb4ce64d63b159a017c6",
+                "reference": "f4e169a92711f6bc33fbdb4ce64d63b159a017c6",
                 "shasum": ""
             },
             "require": {
@@ -896,7 +896,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-08T14:50:56+00:00"
+            "time": "2020-11-14T18:53:28+00:00"
         },
         {
             "name": "psr/http-client",
