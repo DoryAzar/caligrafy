@@ -1572,12 +1572,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "3c94b7c87922b1f9f5e48613eae94f2770bb836b"
+                "reference": "e8416a3942f8e868c930e3577e12ba23ef02e8fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/3c94b7c87922b1f9f5e48613eae94f2770bb836b",
-                "reference": "3c94b7c87922b1f9f5e48613eae94f2770bb836b",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/e8416a3942f8e868c930e3577e12ba23ef02e8fe",
+                "reference": "e8416a3942f8e868c930e3577e12ba23ef02e8fe",
                 "shasum": ""
             },
             "require": {
@@ -1625,7 +1625,7 @@
                 "validation",
                 "validator"
             ],
-            "time": "2020-09-26T12:14:29+00:00"
+            "time": "2020-12-13T17:54:26+00:00"
         }
     ],
     "packages-dev": [],
