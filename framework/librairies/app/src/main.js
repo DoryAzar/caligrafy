@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from '@/App.vue'
 import VueRouter from 'vue-router'
+import '@/assets/css/styles.css'
 
 // Import Page Components
 import HomePage from '@/components/pages/HomePage.vue'
