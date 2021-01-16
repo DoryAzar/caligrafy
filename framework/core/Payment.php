@@ -176,23 +176,28 @@ class Payment {
 	 * @param Integer $amount defines the amount of the transaction in cents
 	 * @param string $currency defines the currecy of the transaction
 	 * @param string $metadata defines the metadata information that can be passed on to the transaction
+	 * @param string $receipt_email defines the email address where the receipt should be sent
+	 * @param string $description defines a description of the product beind sold
+	 * @param array $transfer defines the transfer data to vendors if they  exist. keys possible: 'destination' for connected stripe account. 'amount' to define the amount the vendor will receive
 	 * @return $result to report on the result of the creation
 	 * @author Dory A.Azar
 	 * @version 1.0
 	 */
-	public function createPaymentIntent($amount, $currency, $metadata = array(), $receipt_email = null, $description = '') 
+	public function createPaymentIntent($amount, $currency, $metadata = array(), $receipt_email = null, $description = '', $transfer = array() ) 
 	{
 		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
 		try {
 			
-			$intent = \Stripe\PaymentIntent::create([
-		  		'amount' => $amount,
+			$input = array(
+				'amount' => $amount,
 		  		'currency' => $currency,
 		  		// Verify your integration in this guide by including this parameter
 				'metadata' => strtolower(APP_ENV) == 'production'? $metadata : array_merge($metadata, ['integration_check' => 'accept_a_payment']),
 				'description' => $description,
                 'receipt_email' => $receipt_email
-			]);
+			);
+			$input = !empty($transfer)? array_merge($input, $transfer) : $input;
+			$intent = \Stripe\PaymentIntent::create($input);
 			
             $result = $intent?  array('action_success' => true, 'data' => $intent) : $result;
 			
@@ -211,11 +216,13 @@ class Payment {
 	 * @param string $successUrl defines the url that it will redirect to when successful payment
 	 * @param string $cancelUrl defines the url that it will redirect to when the payment fails
 	 * @param array $paymentType defines the different payment methods to be supported by checkout
+	 * @param array $payment_intent_data. Potential attributes: 'application_fee_amount' for charging vendors
+	 * @param array $vendor. Potential array keys: 'stripe_account' for the vendor account
 	 * @return $result to report on the result of the creation
 	 * @author Dory A.Azar
 	 * @version 1.0
 	 */
-	public function createCheckout($amount = 1000, $currency = 'usd', $quantity = 1, $productData = array(), $successUrl = '', $cancelUrl = '', $customerEmail = null, $locale = null, $paymentType = ['card'])
+	public function createCheckout($amount = 1000, $currency = 'usd', $quantity = 1, $productData = array(), $successUrl = '', $cancelUrl = '', $customerEmail = null, $locale = null, $paymentType = ['card'], $payment_intent_data = array(), $vendor = array())
 	{
 		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
 		
@@ -243,7 +250,9 @@ class Payment {
 			// If cancel URL specified then add to parameters
 			if (isset($cancelUrl) && trim($cancelUrl) != '') { $parameters = array_merge($parameters, ['cancel_url' => $cancelUrl]); }
 			
-			$checkout = \Stripe\Checkout\Session::create($parameters);
+			$parameters = array_merge($parameters, $payment_intent_data);
+			
+			$checkout = \Stripe\Checkout\Session::create($parameters, $vendor);
 			
 			$result = $checkout? array('action_success' => true, 'data' => $checkout) : $result;
 			

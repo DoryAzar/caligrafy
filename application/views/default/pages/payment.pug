@@ -14,9 +14,11 @@ html(lang="en")
 	
 	body
 		form(id="payment-form")
-			#card-element
+			.form-row
+				#card-element
+				p(id="card-error", role="alert")
+				
 			button(id="submit", data-secret="{$clientSecret}", public-key="{$publicKey}")
 				#spinner.spinner.hidden
 				span(id="button-text") Pay
-			p(id="card-error", role="alert")
 			p.result-message.hidden Payment succeeded
