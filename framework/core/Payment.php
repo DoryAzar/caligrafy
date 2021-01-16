@@ -253,6 +253,83 @@ class Payment {
 		return $result;
 		
 	}
+	
+	/* Create Vendor Account in Stripe
+	 * This allows vendors to receive direct payouts
+	 * An account needs to be created in order to onboard the vendor
+	 * @param string $type. Default is 'express'
+	 * @param string $country. Country code. Default 'US'
+	 * @param array $accountInformation. Default is empty. Stripe Account additional fields
+	 */
+	
+	public function createAccount($type = 'express', $country = 'US', $accountInformation = array())
+	{
+		$result = array('action_success' => false, 'error' => 'Account could not be created');
+		
+		try {
+			$input = array_merge(array('type' => $type, 'country' => $country), $accountInformation);
+			$account = \Stripe\Account::create($input);
+			$result = $account? array('action_success' => true, 'data' => $account) : $result;
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+
+	}
+	
+	
+	/* Create Account Link for onboarding vendor
+	 * An account link needs to be created to onboard a vendor
+	 * @param string $accountId. Required Id of the Stripe Account
+	 * @param string $refreshUrl. Required. The URL that will regenerate the onboarding in case it expired
+	 * @param string $returnUrl. Required. The URL that will be redirected when process completed (even if not finalized)
+	 * @param string $type. Default is 'account_onboarding'. Other possible values is 'account_update'
+	 */
+	
+	public function createAccountLink($accountId, $refreshUrl, $returnUrl, $type = 'account_onboarding')
+	{
+		$result = array('action_success' => false, 'error' => 'Account Link could not be created');
+		try {
+			$input = array('account' => $accountId, 'refresh_url' => $refreshUrl, 'return_url' => $returnUrl, 'type' => $type);
+			$account_links = \Stripe\AccountLink::create($input);
+			$result = $account_links? array('action_success' => true, 'data' => $account_links) : $result;
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+		
+	}
+	
+	/* Update a vendor account
+	 * @param string $accountId. Required Id of the Stripe Account
+	 * @param array $updates
+	 */
+	public function updateAccount($accountId, $updates)
+	{
+		$result = array('action_success' => false, 'error' => 'Account could not be updated');
+		try {
+			$account = \Stripe\Account::update($accountId, $updates);
+			$result = $account? array('action_success' => true, 'data' => $account) : $result;
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+	}
+	
+	/* Retrieve Vendor Account
+	 * @param string $accountId. Required Id of the Stripe Account
+	 */
+	public function retrieve($accountId)
+	{
+		$result = array('action_success' => false, 'error' => 'Account could not be found');
+		try {
+			$account = \Stripe\Account::retrieve($accountId, []);
+			$result = $account? array('action_success' => true, 'data' => $account) : $result;
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+	}
     
     private function createStripeToken($card)
     {
