@@ -268,20 +268,24 @@ class Payment {
 	 * An account needs to be created in order to onboard the vendor
 	 * @param string $type. Default is 'express'
 	 * @param string $country. Country code. Default 'US'
+	 * @param array $capabilities. Defines the capabilities requested for the account. Defaut is card_payment: false and transfer: true
 	 * @param array $accountInformation. Default is empty. Stripe Account additional fields
 	 */
 	
-	public function createAccount($type = 'express', $country = 'US', $accountInformation = array())
+	public function createAccount($type = 'express', $country = 'US', $capabilities = array(), $accountInformation = array())
 	{
 		$result = array('action_success' => false, 'error' => 'Account could not be created');
 		
 		try {
-			$input = array_merge(array('type' => $type, 'country' => $country), $accountInformation);
+			$capabilities = !empty($capabilities)? $capabilities : array('card_payments' => [ 'requested' => false,],
+ 								'transfers' => ['requested' => true,]);
+			$input = array_merge(array('type' => $type, 'country' => $country, 'capabilities' => $capabilities), $accountInformation);
 			$account = \Stripe\Account::create($input);
 			$result = $account? array('action_success' => true, 'data' => $account) : $result;
 		} catch(Exception $e) {
 			$result['error'] = $e->getMessage();
 		}
+		
 		return $result;
 
 	}
