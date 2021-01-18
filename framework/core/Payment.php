@@ -337,7 +337,7 @@ class Payment {
 		$result = array('action_success' => false, 'error' => 'Account could not be found');
 		try {
 			$account = \Stripe\Account::retrieve($accountId, []);
-			$result = $account? array('action_success' => true, 'data' => $account) : $result;
+			$result = $account && !isset($account['error'])? array('action_success' => true, 'data' => $account) : $result;
 		} catch(Exception $e) {
 			$result['error'] = $e->getMessage();
 		}
