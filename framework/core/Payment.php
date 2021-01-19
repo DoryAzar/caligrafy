@@ -276,8 +276,10 @@ class Payment {
 	{
 		$result = array('action_success' => false, 'error' => 'Account could not be created');
 		
+		$cardRequired = strtolower($country) != 'us';
+		
 		try {
-			$capabilities = !empty($capabilities)? $capabilities : array('card_payments' => [ 'requested' => false,],
+			$capabilities = !empty($capabilities)? $capabilities : array('card_payments' => [ 'requested' => $cardRequired,],
  								'transfers' => ['requested' => true,]);
 			$input = array_merge(array('type' => $type, 'country' => $country, 'capabilities' => $capabilities), $accountInformation);
 			$account = \Stripe\Account::create($input);
