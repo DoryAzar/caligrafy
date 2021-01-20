@@ -208,6 +208,33 @@ class Payment {
 	}
 	
 	/**
+	 * Retrieve Payment Intent
+	 * @param string $intentId 
+	 * @return $result to report on the result of the creation
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+	public function retrieveIntent($intentId)
+	{
+		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
+		try {
+			$intent = null;
+			if (isset($intentId)) {
+				$intent = \Stripe\PaymentIntent::retrieve(
+					$intentId,
+					[]
+				);	
+				$result = $intent?  array('action_success' => true, 'data' => $intent) : $result;
+			}
+	
+		} catch(Exception $e) {
+		 	$result['error'] = $e->getMessage();
+		}
+		return $result;
+
+	}
+	
+	/**
 	 * Creates a new integrated checkout session
 	 * @param Integer $amount defines the amount of the transaction in cents
 	 * @param string $currency defines the currency of the transaction
