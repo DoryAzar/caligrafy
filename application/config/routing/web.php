@@ -22,7 +22,6 @@ try {
     //Auth::authentication('User', 'users');
     
     // ROUTE DEFINITION: get, post, put and delete
-	Route::get('/test', 'TestController@retrieveIntent');
     Route::get('/', function() { return view('default/index'); });
     Route::get('/helloworld', function() { echo "Hello World"; });
 	
