@@ -300,17 +300,18 @@ class Payment {
 	 * @param array $accountInformation. Default is empty. Stripe Account additional fields
 	 */
 	
-	public function createAccount($email = null, $type = 'express', $country = 'US', $capabilities = array(), $accountInformation = array())
+	public function createAccount($email = null, $country = null, $type = 'express', $capabilities = array(), $accountInformation = array())
 	{
 		$result = array('action_success' => false, 'error' => 'Account could not be created');
 		
 		$cardRequired = strtolower($country) != 'us';
 		$email = $email? ['email' => $email] : [];
+		$country = $country? ['country' => $country] : [];
 		
 		try {
 			$capabilities = !empty($capabilities)? $capabilities : array('card_payments' => [ 'requested' => $cardRequired,],
  								'transfers' => ['requested' => true,]);
-			$input = array_merge($email, array('type' => $type, 'country' => $country, 'capabilities' => $capabilities), $accountInformation);
+			$input = array_merge($email, $country, array('type' => $type, 'capabilities' => $capabilities), $accountInformation);
 			$account = \Stripe\Account::create($input);
 			$result = $account? array('action_success' => true, 'data' => $account) : $result;
 		} catch(Exception $e) {
