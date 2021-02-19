@@ -618,16 +618,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.2.0",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "e38888a75c070304ca5514197d4847a59a5c853f"
+                "reference": "4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/e38888a75c070304ca5514197d4847a59a5c853f",
-                "reference": "e38888a75c070304ca5514197d4847a59a5c853f",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb",
+                "reference": "4a08cf4cdd2c38d12ee2b9fa69e5d235f37a6dcb",
                 "shasum": ""
             },
             "require": {
@@ -682,7 +682,7 @@
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
             "support": {
                 "issues": "https://github.com/PHPMailer/PHPMailer/issues",
-                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.2.0"
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.3.0"
             },
             "funding": [
                 {
@@ -690,7 +690,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-11-25T15:24:57+00:00"
+            "time": "2021-02-19T15:28:08+00:00"
         },
         {
             "name": "phpoption/phpoption",
@@ -1143,16 +1143,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.72.0",
+            "version": "v7.74.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "e502d1e97ec7857038d2131ded3134af964a55c5"
+                "reference": "e45b12ff0b47746b646f51c8249210303fb076f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e502d1e97ec7857038d2131ded3134af964a55c5",
-                "reference": "e502d1e97ec7857038d2131ded3134af964a55c5",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/e45b12ff0b47746b646f51c8249210303fb076f5",
+                "reference": "e45b12ff0b47746b646f51c8249210303fb076f5",
                 "shasum": ""
             },
             "require": {
@@ -1198,9 +1198,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.72.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.74.0"
             },
-            "time": "2021-02-09T03:22:51+00:00"
+            "time": "2021-02-18T00:17:33+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1264,7 +1264,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1288,12 +1288,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
-                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483"
+                "reference": "3709eb82b37c8d6eb23cf10ef19b27b3312d1632"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/2d63434d922daf7da8dd863e7907e67ee3031483",
-                "reference": "2d63434d922daf7da8dd863e7907e67ee3031483",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-idn/zipball/3709eb82b37c8d6eb23cf10ef19b27b3312d1632",
+                "reference": "3709eb82b37c8d6eb23cf10ef19b27b3312d1632",
                 "shasum": ""
             },
             "require": {
@@ -1368,7 +1368,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-22T09:19:47+00:00"
+            "time": "2021-02-19T11:00:07+00:00"
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
@@ -1437,7 +1437,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/main"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1518,7 +1518,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/main"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1595,7 +1595,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-php72/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1679,7 +1679,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.22.1"
             },
             "funding": [
                 {
@@ -1703,12 +1703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "93c1914af9c0619294d867a0fa346d5ea6b7d707"
+                "reference": "898d0e3b20171d9178c0fcd058a76b5698cc804e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/93c1914af9c0619294d867a0fa346d5ea6b7d707",
-                "reference": "93c1914af9c0619294d867a0fa346d5ea6b7d707",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/898d0e3b20171d9178c0fcd058a76b5698cc804e",
+                "reference": "898d0e3b20171d9178c0fcd058a76b5698cc804e",
                 "shasum": ""
             },
             "require": {
@@ -1784,7 +1784,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-25T14:09:21+00:00"
+            "time": "2021-02-18T23:11:25+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
