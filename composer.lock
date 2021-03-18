@@ -260,12 +260,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "202292ec8bf0fdf3d80bf3d84ef877acbaecbefb"
+                "reference": "a67cdbf85690e54a7b92fe91c297b20d2607c0b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/202292ec8bf0fdf3d80bf3d84ef877acbaecbefb",
-                "reference": "202292ec8bf0fdf3d80bf3d84ef877acbaecbefb",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/a67cdbf85690e54a7b92fe91c297b20d2607c0b2",
+                "reference": "a67cdbf85690e54a7b92fe91c297b20d2607c0b2",
                 "shasum": ""
             },
             "require": {
@@ -327,7 +327,7 @@
                 "issues": "https://github.com/guzzle/psr7/issues",
                 "source": "https://github.com/guzzle/psr7/tree/1.x"
             },
-            "time": "2021-03-07T10:01:39+00:00"
+            "time": "2021-03-15T11:15:53+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -1703,12 +1703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "8de3852aa0f9ab442cc6d5679062f7a192196082"
+                "reference": "401993ef351ad60a95e6059c9a50f746f1a3724d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/8de3852aa0f9ab442cc6d5679062f7a192196082",
-                "reference": "8de3852aa0f9ab442cc6d5679062f7a192196082",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/401993ef351ad60a95e6059c9a50f746f1a3724d",
+                "reference": "401993ef351ad60a95e6059c9a50f746f1a3724d",
                 "shasum": ""
             },
             "require": {
@@ -1784,7 +1784,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-03-06T08:05:19+00:00"
+            "time": "2021-03-17T16:56:09+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
