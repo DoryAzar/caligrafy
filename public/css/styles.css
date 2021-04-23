@@ -63,10 +63,12 @@ header {
 
 header a.horizontal-item:hover, header a.horizontal-item.selected, footer a.horizontal-item:hover, footer a.horizontal-item.selected {
   border-top: 2px solid;
+  cursor: pointer;
 }
 
 header a.vertical-item:hover, header a.vertical-item.selected {
   border-bottom:  2px solid;
+  cursor: pointer;
 }
 
 a.filter:hover, a.filter.selected {
@@ -247,14 +249,14 @@ section.section-bar {
   padding: 0.5em 0;
 }
 
-ul {
+nav ul {
   display: block;
   position: relative;
   margin: 0;
   padding: 0;
 }
 
-li {
+nav li {
   position: relative;
   margin: 15px 0 0 -20px;
 }
@@ -854,7 +856,7 @@ p.error, label.error {
   left: 0;
   display: block;
   width: 100%;
-  height: 2px;
+  height: 3px;
   z-index: 5;
 }
 
