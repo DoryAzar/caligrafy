@@ -62,12 +62,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4"
+                "reference": "19abbd2d5ab09cd69c3a15edd3e4867c342dd23a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
-                "reference": "5e80d667d2f8ba6ef0da78fde02d501a06c3fdb4",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/19abbd2d5ab09cd69c3a15edd3e4867c342dd23a",
+                "reference": "19abbd2d5ab09cd69c3a15edd3e4867c342dd23a",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "issues": "https://github.com/coinbase/coinbase-commerce-php/issues",
                 "source": "https://github.com/coinbase/coinbase-commerce-php/tree/master"
             },
-            "time": "2020-05-05T01:29:28+00:00"
+            "time": "2021-05-04T18:24:49+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1144,16 +1144,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.77.0",
+            "version": "v7.78.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "f6724447481f6fb8c2e714165e092adad9ca470a"
+                "reference": "6ec33fa8e9de2322be93d28dfd685661c67ca549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/f6724447481f6fb8c2e714165e092adad9ca470a",
-                "reference": "f6724447481f6fb8c2e714165e092adad9ca470a",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/6ec33fa8e9de2322be93d28dfd685661c67ca549",
+                "reference": "6ec33fa8e9de2322be93d28dfd685661c67ca549",
                 "shasum": ""
             },
             "require": {
@@ -1199,9 +1199,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.77.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.78.0"
             },
-            "time": "2021-04-12T17:19:16+00:00"
+            "time": "2021-05-05T23:55:32+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
