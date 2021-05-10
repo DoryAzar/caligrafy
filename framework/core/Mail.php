@@ -62,7 +62,9 @@ class Mail {
     public function sendMail($recipients, $emailContent, $from)
     {
         if (empty($recipients) || empty($emailContent) || empty($from)) {
-            throw new Exception(Errors::get('4001'), 4001);
+            //throw new Exception(Errors::get('4001'), 4001);
+			return false;
+			exit;
         }
         
 		$this->recipientEmail = $recipients['email']?? '';
@@ -88,7 +90,8 @@ class Mail {
 		
 		$this->mailer->MsgHTML($content);
 		if(!$this->mailer->Send()) {
-			throw new Exception(Errors::get('4001'), 4001);
+			//throw new Exception(Errors::get('4001'), 4001);
+			return false;
 		} 
 
         return true;
