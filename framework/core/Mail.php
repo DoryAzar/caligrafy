@@ -46,10 +46,15 @@ class Mail {
         //Server settings
 		$this->mailer->isSMTP();
 		$this->mailer->Mailer = "smtp";
-        $this->mailer->SMTPDebug = 0;   
+        $this->mailer->SMTPDebug = APP_DEBUG? 1 : 0;   
 		$this->mailer->SMTPAuth = true;
-		$this->mailer->SMTPSecure = 'tls';
-        $this->mailer->Port = $this->mailPort;   
+		$this->mailer->Port = $this->mailPort;   
+		if ($this->mailPort == 465) {
+			$this->mailer->SMTPSecure = 'ssl';
+		} else {
+			$this->mailer->SMTPSecure = 'tls';
+		}
+        
         $this->mailer->Host = $this->mailHost;
         $this->mailer->Username = $this->mailUsername;
         $this->mailer->Password = $this->mailPassword;
