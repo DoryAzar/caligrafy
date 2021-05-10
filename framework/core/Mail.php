@@ -53,6 +53,7 @@ class Mail {
         $this->mailer->Host = $this->mailHost;
         $this->mailer->Username = $this->mailUsername;
         $this->mailer->Password = $this->mailPassword;
+      
                     
         return $this;
     }
@@ -72,7 +73,13 @@ class Mail {
 		$this->fromName = $from['name']?? '';
 		
 		$this->mailer->IsHTML(true);
-		$this->mailer->AddAddress($this->recipientEmail, $this->recipientName);
+		if (is_array($this->recipientEmail)) {
+			foreach($this->recipientEmail as $recipientEmail) {
+				$this->mailer->AddAddress($recipientEmail);
+			}
+		} else {
+			$this->mailer->AddAddress($this->recipientEmail, $this->recipientName);
+		}
 		$this->mailer->SetFrom($this->fromEmail, $this->fromName);
 		//$this->mailer->AddReplyTo("replytoemail", "replyto name");
 		//$this->mailer->AddCC("ccemail", "ccname");
