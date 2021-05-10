@@ -16,8 +16,10 @@
 namespace Caligrafy;
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception as MailerException;
 use \Exception as Exception;
+
 
 class Mail {
     
@@ -35,58 +37,57 @@ class Mail {
         $this->mailUsername = MAIL_USERNAME;
         $this->mailPassword = MAIL_PASSWORD;
         
-        $this->mailer = new PHPMailer;
+        $this->mailer = new PHPMailer();
         if (!$this->mailer) {
             throw new Exception(Errors::get('4000'), 4000);  
             exit;
         }
         
         //Server settings
-        $this->mailer->SMTPDebug = 2;                                       
-        $this->mailer->isSMTP();
+		$this->mailer->isSMTP();
+		$this->mailer->Mailer = "smtp";
+        $this->mailer->SMTPDebug = 1;   
+		$this->mailer->SMTPAuth = true;
+		$this->mailer->SMTPSecure = 'tls';
+        $this->mailer->Port = $this->mailPort;   
         $this->mailer->Host = $this->mailHost;
-        $this->mailer->SMTPAuth = true;
         $this->mailer->Username = $this->mailUsername;
         $this->mailer->Password = $this->mailPassword;
-        $this->mailer->SMTPSecure = 'tls';
-        $this->mailer->Port = $this->mailPort;     
+        
+          
                     
         return $this;
     }
     
     
-    public function sendMail($recipients, $content)
+    public function sendMail($recipients, $emailContent, $from)
     {
-        if (empty($recipients)) {
+        if (empty($recipients) || empty($emailContent) || empty($from)) {
             throw new Exception(Errors::get('4001'), 4001);
         }
         
-        // adding recipients with name
-        $this->mailer->setFrom($recipients['from']);
-        $this->mailer->addAddress($recipients['to']);
-        
-        
-        //$this->add($recipients['from'], 'setFrom')
-        //     ->add($recipients['to'], 'addAddress')
-        //     ->add($recipients['reply_to'], 'addReplyTo')
-        //     ->add($recipients['cc'], 'addCC')
-        //     ->add($recipients['bcc'], 'addBCC')
-        //     ->add($recipients['attachment'], 'addAttachment');
-        
-        // add Content
-        $this->mailer->isHTML(true);
-        $this->mailer->Subject = 'Here is the subject';
-        $this->mailer->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $this->mailer->AltBody = 'This is the body in plain text for non-HTML mail clients';
-    
-        
-        if(!$this->mailer->send()) {
-            return $this;
-            exit;
-        }       
+		$this->recipientEmail = $recipients['email']?? '';
+		$this->recipientName = $recipients['name']?? '';
+		$this->subject = $emailContent['subject']?? '';
+		$this->body = $emailContent['body']?? '';
+		$this->fromEmail = $from['email']?? '';
+		$this->fromName = $from['name']?? '';
+		
+		$this->mailer->IsHTML(true);
+		$this->mailer->AddAddress($this->recipientEmail, $this->recipientName);
+		$this->mailer->SetFrom($this->fromEmail, $this->fromName);
+		//$this->mailer->AddReplyTo("replytoemail", "replyto name");
+		//$this->mailer->AddCC("ccemail", "ccname");
+		$this->mailer->Subject = $this->subject;
+		$content = $this->body;
+		
+		$this->mailer->MsgHTML($content);
+		if(!$this->mailer->Send()) {
+			throw new Exception(Errors::get('4001'), 4001);
+		} 
 
         return true;
-        
+       
     }
     
     
