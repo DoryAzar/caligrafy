@@ -836,3 +836,16 @@ function httpRequest($url, $method, $data, $headers, $username = null, $password
 function now() {
 	return date("Y-m-d H:i:s");
 }
+
+/**
+ * sendMail() sends an email using the configuration in the .env file
+ * recipients: array('email' => 'recipient_email', 'name' => 'recipent_name)
+ * content: array('body' => 'html content', 'subject' => 'subject')
+ * from: array('email' => 'from_email', 'name' => 'from_name')
+ */
+
+function sendMail($recipients, $emailContent, $from)
+{
+	$mail = new Mail();
+	return $mail->sendMail($recipients, $emailContent, $from);
+}
