@@ -816,12 +816,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phug-php/phug.git",
-                "reference": "183e43ff7ea61475cf97e7ef343d223ad53ca8b2"
+                "reference": "02f4e171231fa2f6295b093f340fa9432c7544f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phug-php/phug/zipball/183e43ff7ea61475cf97e7ef343d223ad53ca8b2",
-                "reference": "183e43ff7ea61475cf97e7ef343d223ad53ca8b2",
+                "url": "https://api.github.com/repos/phug-php/phug/zipball/02f4e171231fa2f6295b093f340fa9432c7544f6",
+                "reference": "02f4e171231fa2f6295b093f340fa9432c7544f6",
                 "shasum": ""
             },
             "require": {
@@ -934,7 +934,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-05-02T18:39:43+00:00"
+            "time": "2021-05-16T15:49:00+00:00"
         },
         {
             "name": "psr/http-message",
