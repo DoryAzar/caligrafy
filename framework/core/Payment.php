@@ -345,6 +345,24 @@ class Payment {
 		
 	}
 	
+	/* Create Login Link for onboarding vendor
+	 * An account link needs to be created to onboard a vendor
+	 * @param string $accountId. Required Id of the Stripe Account
+	 */
+	
+	public function createLoginLink($accountId)
+	{
+		$result = array('action_success' => false, 'error' => 'Account Link could not be created');
+		try {
+			$account_links = \Stripe\Account::createLoginLink($accountId);
+			$result = $account_links? array('action_success' => true, 'data' => $account_links) : $result;
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+		
+	}
+	
 	/* Update a vendor account
 	 * @param string $accountId. Required Id of the Stripe Account
 	 * @param array $updates
