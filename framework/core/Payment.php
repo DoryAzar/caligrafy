@@ -290,6 +290,33 @@ class Payment {
 		
 	}
 	
+	
+	/**
+	 * Retrieve Checkout Session
+	 * @param string $sessionId 
+	 * @return $result to report on the result of the creation
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+	
+	
+	public function retrieveCheckout($sessionId)
+	{
+		$result = array('action_success' => false, 'error' => 'Session could not be retrieved');
+		
+		try {
+			
+			$session = \Stripe\Checkout\Session::retrieve($sessionId);
+			if ($session) {
+				$result = array('action_success' => true, 'data' => $session);
+			}
+			
+		} catch(Exception $e) {
+			$result['error'] = $e->getMessage();
+		}
+		return $result;
+	}
+	
 	/* Create Vendor Account in Stripe
 	 * This allows vendors to receive direct payouts
 	 * An account needs to be created in order to onboard the vendor
