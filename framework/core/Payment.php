@@ -78,7 +78,7 @@ class Payment {
             $this->_ach_client_id = ACH_CLIENT_ID;
             $this->_ach_public_key = ACH_PUBLIC_KEY;
             if (strtolower(APP_ENV) == 'production') {
-                $this->_ach_url = "https://google.plaid.com";
+                $this->_ach_url = "https://development.plaid.com";
                 $this->_ach_secret = ACH_PRODUCTION_SECRET;
             } else {
                 $this->_ach_url = "https://sandbox.plaid.com";
