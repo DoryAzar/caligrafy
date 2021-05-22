@@ -105,7 +105,7 @@ class Payment {
 	 * @version 1.0
 	 */
 
-	public function createTransaction($amount, $currency, $card, $receipt_email = null, $metadata = null, $description = '', $save = false) {
+	public function createTransaction($amount, $currency, $card, $receipt_email = null, $metadata = null, $description = '', $transfer = array(), $save = false) {
         
         $result = array('action_success' => false, 'error' => 'Transaction could not be completed');
         // Create a charge: this will charge the user's card
@@ -115,14 +115,16 @@ class Payment {
               $token = is_array($card)? $this->createStripeToken($card) : $card;
               
               if (isset($token)) {
-                $outcome = \Stripe\Charge::create(array(
+				$input = array(
                 "amount" => $amount, // Amount in cents
                 "currency" => $currency,
                 "source" => $token,
                 "metadata" => $metadata,
                 "description" => $description,
                 "receipt_email" => $receipt_email
-                ));
+                );
+				$input = !empty($transfer)? array_merge($input, $transfer) : $input;
+                $outcome = \Stripe\Charge::create($input);
                 $result = $outcome && $outcome->id?  array('action_success' => true, 'data' => array('confirmation' => $outcome->id)) : $result;
               }
           }
@@ -132,6 +134,28 @@ class Payment {
 		  $result['error'] = $e->getMessage();
 		}
 		return $result;
+	}
+	
+	/**
+	 * Creates a link token
+	 * @return a temporary link token that will be replaced with a public token by the client
+	 * @author Dory A.Azar
+	 * @version 1.0
+	 */
+	public function createLinkToken()
+	{
+		$result = array('action_success' => false, 'error' => 'Transaction could not be completed');
+		$data = array('client_id' => $this->_ach_client_id,
+                         'secret' => $this->_ach_secret,
+					  	 'client_name' => 'Paypost',
+					  	 'user' => ['client_user_id' => 'paypost'],
+                         'products' => ['auth'],
+					  	 'country_codes' => ['US'],
+					 	 'language' => 'en');
+        $headers = array("Content-Type: application/json");
+        $response = httpRequest($this->_ach_url.'/link/token/create', 'POST', $data, $headers);
+		return $response['link_token']?? null;
+		
 	}
     
     
