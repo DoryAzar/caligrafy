@@ -181,14 +181,24 @@ class Payment {
                          'secret' => $this->_ach_secret,
                          'access_token' => $response['access_token'],
                          'account_id' => $account);
+				
+				$identity_data = array('client_id' => $this->_ach_client_id,
+                         'secret' => $this->_ach_secret,
+                         'access_token' => $response['access_token'],
+						 'options' => ['account_ids' => array($account)]
+						);
                 
+				// get the bank account info
                 $response = httpRequest($this->_ach_url.'/processor/stripe/bank_account_token/create', 'POST', $data, $headers);
+				
+				// get the identity of the selected account
+				$identity = httpRequest($this->_ach_url.'/identity/get', 'POST', $identity_data, $headers);
                 
             }
             
             $response = isset($response['stripe_bank_account_token'])? $response['stripe_bank_account_token'] : null;
             if ($response) {
-                $result = array('action_success' => true, 'token' => $response);
+                $result = array('action_success' => true, 'token' => $response, 'identity' => $identity?? null);
             }
         }
         return $result;
