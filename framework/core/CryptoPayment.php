@@ -26,6 +26,30 @@ class CryptoPayment {
 	* @property string Stripe public_key
 	*/
 	private $_public_key;
+	
+	/**
+	* @var string the Coinbase url 
+	* @property string the Coinbase url
+	*/
+	private $_coinbase_url;
+	
+	/**
+	* @var string the Coinbase API key
+	* @property string the Coinbase API key
+	*/
+	private $_coinbase_client_key;
+	
+	/**
+	* @var string the Coinbase API secret
+	* @property string the Coinbase API secret
+	*/
+	private $_coinbase_client_secret;
+	
+	/**
+	* @var string the Coinbase API Version 
+	* @property string the Coinbase API Version 
+	*/
+	private $_coinbase_version;
 
 
 	/**
@@ -39,6 +63,14 @@ class CryptoPayment {
 	{
 		$this->_public_key = CRYPTO_PAY_KEY;
         ApiClient::init($this->_public_key);
+		
+		if (COINBASE_API_KEY && COINBASE_API_SECRET && COINBASE_VERSION) {
+			$this->_coinbase_client_key = COINBASE_API_KEY;
+			$this->_coinbase_client_secret = COINBASE_API_SECRET;
+			$this->_coinbase_version  = COINBASE_VERSION;
+			$this->_coinbase_url = "https://api.coinbase.com";
+		}
+		
         return $this;
 
 	}
@@ -126,6 +158,35 @@ class CryptoPayment {
         return $status;
         
     }
+	
+	/* Create a coinbase request
+	 * @param string $requestPath defines the endpoint url of the api
+	 * @param string $requestMethod defines the name of the method in upper case
+	 * @param array $body defines the set of value/key pairs that go into the body of the request
+	 * @param array $additionalHeaders defines any additional headers to be attached to the request
+	 * @return array result of the request
+	 */
+	public function coinbaseRequest($requestPath, $requestMethod, $body = null, $additionalHeaders = null)
+	{
+		$url = $this->_coinbase_url.$requestPath;
+		$requestMethod = strtoupper($requestMethod)?? "GET";
+		$timestamp = time();
+		$body = $body? json_encode($body) : '';
+		$message = $timestamp.$requestMethod.$requestPath.$body;
+		$signature  = hash_hmac('SHA256', $message, $this->_coinbase_client_secret);
+		
+		$headers = array(
+				"Content-Type:application/json",
+				"CB-ACCESS-SIGN:".$signature,
+				"CB-ACCESS-TIMESTAMP:".$timestamp,
+				"CB-ACCESS-KEY:".$this->_coinbase_client_key,
+				"CB-VERSION:".$this->_coinbase_version
+			);
+		$headers = $additionalHeaders? array_merge($headers, $additionalHeaders) : $headers;
+		
+		$result = httpRequest($url, $requestMethod, $body, $headers);
+		return $result;
+	}
     
 
 }
