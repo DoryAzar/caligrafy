@@ -839,13 +839,27 @@ function now() {
 
 /**
  * sendMail() sends an email using the configuration in the .env file
- * recipients: array('email' => 'recipient_email', 'name' => 'recipent_name)
- * content: array('body' => 'html content', 'subject' => 'subject')
- * from: array('email' => 'from_email', 'name' => 'from_name')
+ * @param array $recipients: array('email' => 'recipient_email', 'name' => 'recipent_name)
+ * @param array $content: array('body' => 'html content', 'subject' => 'subject')
+ * @param array from: array('email' => 'from_email', 'name' => 'from_name')
  */
 
 function sendMail($recipients, $emailContent, $from)
 {
 	$mail = new Mail();
 	return $mail->sendMail($recipients, $emailContent, $from);
+}
+
+
+/**
+ * arraySort() sorts a multimdimensional array by a column
+ * @param array $array defines the  array to sort
+ * @param string $attribute defines the column to sort by
+ * @param string $sort defines the sorting direction: SORT_ASC, SORT_DESC
+ * @return array sorted array
+ */
+function arraySort($array, $attribute, $sort = SORT_DESC)
+{
+	$columnSorter = array_column($array, $attribute);
+	return array_multisort($columnSorter,$sort,$array)? $array : false ;
 }
