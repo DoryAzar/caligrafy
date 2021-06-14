@@ -1704,12 +1704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "381e6d7c7e8fcd4778448ff99c2b525df91e4218"
+                "reference": "b6bebc6da1a0f86556c18dc421e5a47c37a73ed8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/381e6d7c7e8fcd4778448ff99c2b525df91e4218",
-                "reference": "381e6d7c7e8fcd4778448ff99c2b525df91e4218",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/b6bebc6da1a0f86556c18dc421e5a47c37a73ed8",
+                "reference": "b6bebc6da1a0f86556c18dc421e5a47c37a73ed8",
                 "shasum": ""
             },
             "require": {
@@ -1725,6 +1725,7 @@
                 "ext-iconv": "*",
                 "symfony/console": "^4.4|^5.0|^6.0",
                 "symfony/process": "^4.4|^5.0|^6.0",
+                "symfony/uid": "^5.1|^6.0",
                 "twig/twig": "^2.13|^3.0.4"
             },
             "suggest": {
@@ -1784,7 +1785,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-06-06T09:52:30+00:00"
+            "time": "2021-06-12T08:49:37+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
