@@ -62,12 +62,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/coinbase/coinbase-commerce-php.git",
-                "reference": "19abbd2d5ab09cd69c3a15edd3e4867c342dd23a"
+                "reference": "c258b69d5bb6d4dd45fdc68fee3b60c4a75247d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/19abbd2d5ab09cd69c3a15edd3e4867c342dd23a",
-                "reference": "19abbd2d5ab09cd69c3a15edd3e4867c342dd23a",
+                "url": "https://api.github.com/repos/coinbase/coinbase-commerce-php/zipball/c258b69d5bb6d4dd45fdc68fee3b60c4a75247d2",
+                "reference": "c258b69d5bb6d4dd45fdc68fee3b60c4a75247d2",
                 "shasum": ""
             },
             "require": {
@@ -103,7 +103,7 @@
                 "issues": "https://github.com/coinbase/coinbase-commerce-php/issues",
                 "source": "https://github.com/coinbase/coinbase-commerce-php/tree/master"
             },
-            "time": "2021-05-04T18:24:49+00:00"
+            "time": "2021-06-11T00:21:35+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
