@@ -1144,16 +1144,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.90.0",
+            "version": "v7.92.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "c33e0810a05be37b0ff372f2bc83b82ca8010e61"
+                "reference": "4b549e6f7d3e7ffd877547a0f1e8bd01c363e268"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/c33e0810a05be37b0ff372f2bc83b82ca8010e61",
-                "reference": "c33e0810a05be37b0ff372f2bc83b82ca8010e61",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4b549e6f7d3e7ffd877547a0f1e8bd01c363e268",
+                "reference": "4b549e6f7d3e7ffd877547a0f1e8bd01c363e268",
                 "shasum": ""
             },
             "require": {
@@ -1199,9 +1199,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.90.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.92.0"
             },
-            "time": "2021-07-21T01:11:04+00:00"
+            "time": "2021-07-28T17:38:57+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1519,7 +1519,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/main"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -1620,12 +1620,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "19d03c391c6abb6791f5f757fb36e551bffeaa68"
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/19d03c391c6abb6791f5f757fb36e551bffeaa68",
-                "reference": "19d03c391c6abb6791f5f757fb36e551bffeaa68",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/1100343ed1a92e3a38f9ae122fc0eb21602547be",
+                "reference": "1100343ed1a92e3a38f9ae122fc0eb21602547be",
                 "shasum": ""
             },
             "require": {
@@ -1680,7 +1680,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/main"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.23.1"
             },
             "funding": [
                 {
@@ -1696,7 +1696,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-13T14:34:27+00:00"
+            "time": "2021-07-28T13:41:28+00:00"
         },
         {
             "name": "symfony/var-dumper",
@@ -1704,12 +1704,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "4b983378c38e43249021480234870fe7b87eeff8"
+                "reference": "22cb67cd80984a60a924c00d8ce3ad72bc73b2c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/4b983378c38e43249021480234870fe7b87eeff8",
-                "reference": "4b983378c38e43249021480234870fe7b87eeff8",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/22cb67cd80984a60a924c00d8ce3ad72bc73b2c6",
+                "reference": "22cb67cd80984a60a924c00d8ce3ad72bc73b2c6",
                 "shasum": ""
             },
             "require": {
@@ -1785,7 +1785,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-07-21T12:43:48+00:00"
+            "time": "2021-07-29T06:20:44+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
