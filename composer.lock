@@ -1706,12 +1706,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "d2cddff81e7f23a5463917b044bc264b1b3b8303"
+                "reference": "2aed8e1237aabc587e75fb5adc1d0b98d3450b08"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/d2cddff81e7f23a5463917b044bc264b1b3b8303",
-                "reference": "d2cddff81e7f23a5463917b044bc264b1b3b8303",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2aed8e1237aabc587e75fb5adc1d0b98d3450b08",
+                "reference": "2aed8e1237aabc587e75fb5adc1d0b98d3450b08",
                 "shasum": ""
             },
             "require": {
@@ -1787,7 +1787,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-17T14:20:01+00:00"
+            "time": "2021-08-24T19:02:39+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
