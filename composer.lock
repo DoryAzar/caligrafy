@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d"
+                "reference": "c1dd809c8f51a477701052f4b9e5b4bb5c1061aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/8e7d04f1f6450fef59366c399cfad4b9383aa30d",
-                "reference": "8e7d04f1f6450fef59366c399cfad4b9383aa30d",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/c1dd809c8f51a477701052f4b9e5b4bb5c1061aa",
+                "reference": "c1dd809c8f51a477701052f4b9e5b4bb5c1061aa",
                 "shasum": ""
             },
             "require": {
@@ -239,9 +239,24 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
+                    "homepage": "https://github.com/Tobion"
                 }
             ],
             "description": "Guzzle promises library",
@@ -250,9 +265,23 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/1.4.1"
+                "source": "https://github.com/guzzle/promises/tree/master"
             },
-            "time": "2021-03-07T09:25:29+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/promises",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-09-05T15:38:28+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -260,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91"
+                "reference": "9d006741ba865a45adccfac45d8e1053086a5a3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/dc960a912984efb74d0a90222870c72c87f10c91",
-                "reference": "dc960a912984efb74d0a90222870c72c87f10c91",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9d006741ba865a45adccfac45d8e1053086a5a3f",
+                "reference": "9d006741ba865a45adccfac45d8e1053086a5a3f",
                 "shasum": ""
             },
             "require": {
@@ -303,12 +332,33 @@
             ],
             "authors": [
                 {
+                    "name": "Graham Campbell",
+                    "email": "hello@gjcampbell.co.uk",
+                    "homepage": "https://github.com/GrahamCampbell"
+                },
+                {
                     "name": "Michael Dowling",
                     "email": "mtdowling@gmail.com",
                     "homepage": "https://github.com/mtdowling"
                 },
                 {
+                    "name": "George Mponos",
+                    "email": "gmponos@gmail.com",
+                    "homepage": "https://github.com/gmponos"
+                },
+                {
+                    "name": "Tobias Nyholm",
+                    "email": "tobias.nyholm@gmail.com",
+                    "homepage": "https://github.com/Nyholm"
+                },
+                {
+                    "name": "Márk Sági-Kazár",
+                    "email": "mark.sagikazar@gmail.com",
+                    "homepage": "https://github.com/sagikazarmark"
+                },
+                {
                     "name": "Tobias Schultze",
+                    "email": "webmaster@tubo-world.de",
                     "homepage": "https://github.com/Tobion"
                 }
             ],
@@ -327,7 +377,7 @@
                 "issues": "https://github.com/guzzle/psr7/issues",
                 "source": "https://github.com/guzzle/psr7/tree/1.x"
             },
-            "time": "2021-04-26T09:17:50+00:00"
+            "time": "2021-09-05T19:11:18+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -700,12 +750,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "7554fd1827d20613c2ffddf91d41a75f36b4f1af"
+                "reference": "2ec690eb226ab1b0de5cd23113ee4d0c684c88ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/7554fd1827d20613c2ffddf91d41a75f36b4f1af",
-                "reference": "7554fd1827d20613c2ffddf91d41a75f36b4f1af",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/2ec690eb226ab1b0de5cd23113ee4d0c684c88ae",
+                "reference": "2ec690eb226ab1b0de5cd23113ee4d0c684c88ae",
                 "shasum": ""
             },
             "require": {
@@ -762,7 +812,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-08-28T21:30:13+00:00"
+            "time": "2021-09-02T23:28:35+00:00"
         },
         {
             "name": "phug/js-transformer-filter",
@@ -1146,16 +1196,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.94.0",
+            "version": "v7.95.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "03cd6b5c1c4fc9087ddd1dd046457bff274294d6"
+                "reference": "ed372a1f6430b06dda408bb33b27d2be35ceaf07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/03cd6b5c1c4fc9087ddd1dd046457bff274294d6",
-                "reference": "03cd6b5c1c4fc9087ddd1dd046457bff274294d6",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/ed372a1f6430b06dda408bb33b27d2be35ceaf07",
+                "reference": "ed372a1f6430b06dda408bb33b27d2be35ceaf07",
                 "shasum": ""
             },
             "require": {
@@ -1201,9 +1251,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.94.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.95.0"
             },
-            "time": "2021-08-19T14:15:27+00:00"
+            "time": "2021-09-02T02:30:40+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
