@@ -170,8 +170,18 @@ Caligrafy provides easy ways to include Artificial Intelligence and Machine Lear
 2. [Face Detection and Recognition](https://github.com/DoryAzar/caligrafy/wiki/9.9.2-Face-Detection-and-Face-Recognition)
     
 ## Learn through examples
-Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our you tube channel.
+
++ Caligrafy is an outstanding framework for educational purposes. We constantly develop instructional video materials to illustrate the main features of the framework. Stay on the look for more video tutorials on our youtube channel.
 [Caligrafy Video Channel](https://www.youtube.com/channel/UCo0ZZbiHVGlF9lFWFpVhG8g)
+
+
++ Projects build using Caligrafy
+
+    + [Paypost.me](https://paypost.me): Create shareable payment links that accept credit card payments, bank transfers and crypto payments
+
+    + [Postcart](https://post-cart.com/Postcart/): Service that lets people sell stuff they own or make directly in a post from any social network
+
+    + [kickposter](https://kickposter.us/kickposter/):  Service that helps designers, makers, entrepreneurs and other creators fund their project ideas with the help of friends and family directly from a post on any social network
     
 ## Connecting with the Caligrafy Community
 There are several ways for the Caligrafy community to connect:
