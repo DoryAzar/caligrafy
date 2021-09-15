@@ -175,7 +175,7 @@ Caligrafy provides easy ways to include Artificial Intelligence and Machine Lear
 [Caligrafy Video Channel](https://www.youtube.com/channel/UCo0ZZbiHVGlF9lFWFpVhG8g)
 
 
-+ Projects build using Caligrafy
++ Projects built using Caligrafy
 
     + [Paypost.me](https://paypost.me): Create shareable payment links that accept credit card payments, bank transfers and crypto payments
 
