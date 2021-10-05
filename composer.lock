@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "c1dd809c8f51a477701052f4b9e5b4bb5c1061aa"
+                "reference": "6482c05c394f91793fec16ef6e46eff0e1fd2a0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/c1dd809c8f51a477701052f4b9e5b4bb5c1061aa",
-                "reference": "c1dd809c8f51a477701052f4b9e5b4bb5c1061aa",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/6482c05c394f91793fec16ef6e46eff0e1fd2a0f",
+                "reference": "6482c05c394f91793fec16ef6e46eff0e1fd2a0f",
                 "shasum": ""
             },
             "require": {
@@ -281,7 +281,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-05T15:38:28+00:00"
+            "time": "2021-10-05T15:50:34+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -289,12 +289,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "9d006741ba865a45adccfac45d8e1053086a5a3f"
+                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9d006741ba865a45adccfac45d8e1053086a5a3f",
-                "reference": "9d006741ba865a45adccfac45d8e1053086a5a3f",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
+                "reference": "1afdd860a2566ed3c2b0b4a3de6e23434a79ec85",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,21 @@
                 "issues": "https://github.com/guzzle/psr7/issues",
                 "source": "https://github.com/guzzle/psr7/tree/1.x"
             },
-            "time": "2021-09-05T19:11:18+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/Nyholm",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/guzzlehttp/psr7",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2021-10-05T13:56:00+00:00"
         },
         {
             "name": "js-phpize/js-phpize",
@@ -1756,12 +1770,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "083f2bcb9d8f041288fca711d03d9497e58543cf"
+                "reference": "9036cb3ce8fa8791403af694ae7481c98e9aa8ad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/083f2bcb9d8f041288fca711d03d9497e58543cf",
-                "reference": "083f2bcb9d8f041288fca711d03d9497e58543cf",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9036cb3ce8fa8791403af694ae7481c98e9aa8ad",
+                "reference": "9036cb3ce8fa8791403af694ae7481c98e9aa8ad",
                 "shasum": ""
             },
             "require": {
@@ -1837,7 +1851,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-24T16:10:30+00:00"
+            "time": "2021-10-05T07:49:52+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1845,12 +1859,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8"
+                "reference": "a1bf4c9853d90ade427b4efe35355fc41b3d6988"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/5e679f7616db829358341e2d5cccbd18773bdab8",
-                "reference": "5e679f7616db829358341e2d5cccbd18773bdab8",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/a1bf4c9853d90ade427b4efe35355fc41b3d6988",
+                "reference": "a1bf4c9853d90ade427b4efe35355fc41b3d6988",
                 "shasum": ""
             },
             "require": {
@@ -1861,7 +1875,7 @@
             "require-dev": {
                 "ext-filter": "*",
                 "ext-pcre": "*",
-                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20"
+                "phpunit/phpunit": "^4.8.36 || ^5.7.27 || ^6.5.14 || ^7.5.20 || ^8.5.21"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator.",
@@ -1885,13 +1899,11 @@
             "authors": [
                 {
                     "name": "Graham Campbell",
-                    "email": "graham@alt-three.com",
-                    "homepage": "https://gjcampbell.co.uk/"
+                    "email": "hello@gjcampbell.co.uk"
                 },
                 {
                     "name": "Vance Lucas",
-                    "email": "vance@vancelucas.com",
-                    "homepage": "https://vancelucas.com/"
+                    "email": "vance@vancelucas.com"
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
@@ -1914,7 +1926,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-20T14:39:46+00:00"
+            "time": "2021-10-02T19:07:56+00:00"
         },
         {
             "name": "wixel/gump",
