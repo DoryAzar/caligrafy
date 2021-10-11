@@ -204,12 +204,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "6482c05c394f91793fec16ef6e46eff0e1fd2a0f"
+                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6482c05c394f91793fec16ef6e46eff0e1fd2a0f",
-                "reference": "6482c05c394f91793fec16ef6e46eff0e1fd2a0f",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
+                "reference": "136a635e2b4a49b9d79e9c8fee267ffb257fdba0",
                 "shasum": ""
             },
             "require": {
@@ -222,7 +222,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -265,7 +265,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/master"
+                "source": "https://github.com/guzzle/promises/tree/1.5.0"
             },
             "funding": [
                 {
@@ -281,7 +281,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-05T15:50:34+00:00"
+            "time": "2021-10-07T13:05:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -1210,16 +1210,16 @@
         },
         {
             "name": "stripe/stripe-php",
-            "version": "v7.97.0",
+            "version": "v7.99.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stripe/stripe-php.git",
-                "reference": "ae41c309ce113362706f8d5f19cf0cf2c730bc4a"
+                "reference": "4ff083656c7b96d00e2a7429b657f9d743f5cc9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/ae41c309ce113362706f8d5f19cf0cf2c730bc4a",
-                "reference": "ae41c309ce113362706f8d5f19cf0cf2c730bc4a",
+                "url": "https://api.github.com/repos/stripe/stripe-php/zipball/4ff083656c7b96d00e2a7429b657f9d743f5cc9a",
+                "reference": "4ff083656c7b96d00e2a7429b657f9d743f5cc9a",
                 "shasum": ""
             },
             "require": {
@@ -1265,9 +1265,9 @@
             ],
             "support": {
                 "issues": "https://github.com/stripe/stripe-php/issues",
-                "source": "https://github.com/stripe/stripe-php/tree/v7.97.0"
+                "source": "https://github.com/stripe/stripe-php/tree/v7.99.0"
             },
-            "time": "2021-09-16T21:28:33+00:00"
+            "time": "2021-10-11T15:43:50+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1770,12 +1770,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "9036cb3ce8fa8791403af694ae7481c98e9aa8ad"
+                "reference": "a60e015a49db26dda873ca3ef74776db65f5e709"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/9036cb3ce8fa8791403af694ae7481c98e9aa8ad",
-                "reference": "9036cb3ce8fa8791403af694ae7481c98e9aa8ad",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/a60e015a49db26dda873ca3ef74776db65f5e709",
+                "reference": "a60e015a49db26dda873ca3ef74776db65f5e709",
                 "shasum": ""
             },
             "require": {
@@ -1851,7 +1851,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-10-05T07:49:52+00:00"
+            "time": "2021-10-06T12:45:54+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
