@@ -24,7 +24,7 @@ class Watson {
 	* @var string the Watson API URI
 	* @property Watson API URI
 	*/
-	private $_watson_url = 'https://gateway.watsonplatform.net/assistant/api/v2/assistants/';
+	private $_watson_url = 'https://api.us-south.assistant.watson.cloud.ibm.com/instances/797dcdd0-68e1-4632-9dbb-b367d8e020bd/v2/assistants/';
     
     
     /**
@@ -78,7 +78,7 @@ class Watson {
 	{
 		$this->_api_key = WATSON_API_KEY;
         $this->_watson_assistant_id = $watson_assistant_id;
-        $this->_watson_api_version = "?version=2019-02-28";
+        $this->_watson_api_version = "?version=2021-11-27";
         $this->_watson_context = array();
         $this->_watson_conversation_log = array();
         
@@ -112,7 +112,7 @@ class Watson {
         }
         
         $url = $this->_watson_url.$this->_watson_assistant_id."/sessions/".$this->_watson_session."/message".$this->_watson_api_version;
-        $result = httpRequest($url, 'POST', $input, array('Content-Type:application/json'), 'apikey', $this->_api_key);
+        $result = httpRequest($url, 'POST', $input, array('Accept: application/json', 'Content-Type:application/json'), 'apikey', $this->_api_key);
         
         // If there is an output then log the conversation
         if (!empty($result) && isset($result['output']['generic'][0])) {    

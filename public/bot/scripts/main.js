@@ -53,8 +53,9 @@ var app = new Vue({
       
     // Connect to the bot
       connect: function(route) {
-            axios.post(route + this.botId, '', this.config)
+            axios.post(route + this.botId, [], this.config)
             .then(response => {
+                console.log(response);
                 // if an error occurs then show a generic message
                 if(response.data === true) {
                     console.log('Connected');
