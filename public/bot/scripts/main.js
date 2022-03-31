@@ -44,6 +44,11 @@ var app = new Vue({
             app.communicate(app.route, JSON.stringify(input));
           });
       },
+
+      addContext: function(context = null) {
+        if (context)
+            this.addAction('text',[], context);
+      },
       
       promptUser: function(message, action = 'text', options = []) {
           this.addMessage(message);
@@ -116,7 +121,7 @@ var app = new Vue({
   /* upon object load, the following will be executed */
   mounted () {
       this.connect(this.route);
-      this.addMessage('Hi!');
+      this.addMessage("Hi there!");
       this.addAction('text', [], { "bot_name": 'Cali' });
   }
 
