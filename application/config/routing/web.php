@@ -19,20 +19,20 @@ try {
     
     
     // AUTHENTICATION - Remove comment if you have an authentication implemented
-    //Auth::authentication('User', 'users');
+    // Auth::authentication('User', 'users');
     
     // ROUTE DEFINITION: get, post, put and delete
     Route::get('/', function() { return view('default/index'); });
     Route::get('/helloworld', function() { echo "Hello World"; });
 	
     // Auth Routes - Uncomment only if AUTHENTICATION activated above
-    //Route::get('/home', 'AuthController@home');
-    //Route::get('/login', 'AuthController');
-    //Route::get('/logout', 'AuthController@logout');
-	//Route::get('/notAuthorized', 'AuthController@notAuthorized');
-    //Route::get('/register', 'AuthController@registerForm');
-    //Route::post('/login', 'AuthController@login');
-    //Route::post('/register', 'AuthController@register');
+    // Route::get('/home', 'AuthController@home');
+    // Route::get('/login', 'AuthController');
+    // Route::get('/logout', 'AuthController@logout');
+	// Route::get('/notAuthorized', 'AuthController@notAuthorized');
+    // Route::get('/register', 'AuthController@registerForm');
+    // Route::post('/login', 'AuthController@login');
+    // Route::post('/register', 'AuthController@register');
     
     // Face Detect - Uncomment only if you want to build face detection
     Route::get('/facedetect', function() { return view('Client/app', array('facedetect' => 'index'));});
