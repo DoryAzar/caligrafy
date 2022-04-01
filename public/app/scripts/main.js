@@ -1,21 +1,4 @@
-/* Components Definition */
-
-// Component Registration
-//Vue.component('component-name', {
-//
-//	template: '#template',
-//	props: [],
-//	methods: {},
-//	data() {
-//		return {
-//			// data definitions
-//		}
-//	}
-//	
-//});
-
-
-Vue.createApp({
+const app = Vue.createApp({
     el: '#app',
     data () {
       return {
@@ -49,4 +32,23 @@ Vue.createApp({
         this.all(this.env.home);
     }
   
-  }).mount('#app');
+});
+
+// Mount the app
+app.mount('#app');
+
+/* Components Definition */
+
+// Component Registration
+//app.component('component-name', {
+//
+//	template: '#template',
+//	props: [],
+//	methods: {},
+//	data() {
+//		return {
+//			// data definitions
+//		}
+//	}
+//	
+//});

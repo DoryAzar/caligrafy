@@ -1,6 +1,6 @@
 var detector = new FaceDetector('detection');
 
-var app = Vue.createApp({
+const app = Vue.createApp({
   el: '#app',
   data () {
     return {
@@ -113,4 +113,7 @@ var app = Vue.createApp({
       
   }
 
-}).mount('#app');
+});
+
+// mount the app
+app.mount('#app');
