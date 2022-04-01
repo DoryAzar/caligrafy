@@ -42,7 +42,7 @@
 
         
         <!-- Initialization scripts -->
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue@3"></script>
         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <script src="<?php echo APP_SERVICE_ROOT.'app.js'; ?>"></script>
         <script src="<?php echo APP_SERVICE_ROOT.'face-api.min.js'; ?>"></script>
