@@ -177,8 +177,6 @@ Caligrafy provides easy ways to include Artificial Intelligence and Machine Lear
 
 + Projects built using Caligrafy
 
-    + [Paypost.me](https://paypost.me): Create shareable payment links that accept credit card payments, bank transfers and crypto payments
-
     + [Postcart](https://post-cart.com/Postcart/): Service that lets people sell stuff they own or make directly in a post from any social network
 
     + [kickposter](https://kickposter.us/kickposter/):  Service that helps designers, makers, entrepreneurs and other creators fund their project ideas with the help of friends and family directly from a post on any social network
