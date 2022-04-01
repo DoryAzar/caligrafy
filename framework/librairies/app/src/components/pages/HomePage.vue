@@ -5,7 +5,7 @@
 -->
 
 <template>
-    <div id='home'>
+    <div id='vue-home'>
 		<div class='spacer-2'></div>
 		<show-message message="Welcome to Caligrafy"></show-message>
 		<div class='spacer-2'></div>
@@ -16,7 +16,7 @@
 import ShowMessage from '@/components/global/ShowMessage.vue';
 
 export default {
-    name: 'home',
+    name: 'vue-home',
     components: {
         'show-message': ShowMessage
     },

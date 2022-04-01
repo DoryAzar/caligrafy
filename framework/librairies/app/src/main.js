@@ -1,6 +1,6 @@
-import Vue from 'vue'
+import { createApp } from 'vue'
 import App from '@/App.vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import '@/assets/css/styles.css'
 
 // Import Page Components
@@ -9,9 +9,6 @@ import HomePage from '@/components/pages/HomePage.vue'
 // import Store State Management
 import store from '@/common/store'
 
-Vue.use(VueRouter);
-
-Vue.config.productionTip = false
 
 // define the routes
 const routes = [
@@ -20,17 +17,24 @@ const routes = [
 ];
 
 // initialize the router
-const router = new VueRouter({
-	routes: routes,
-	mode: 'history' // avoiding anchoring
+const router = createRouter ({
+	history: createWebHistory(),
+	routes: routes
 });
 
 
 // Instantiate the vue instance
-new Vue({
-	store: store, 
-	router: router,
-	render: h => h(App),
-}).$mount('#app')
+const app  = createApp(App);
+
+// configure app
+app.config.productionTip = false;
+
+// use router and store
+app.use(router);
+app.use(store);
+
+//  mount app
+app.mount('#app');
+
 
 

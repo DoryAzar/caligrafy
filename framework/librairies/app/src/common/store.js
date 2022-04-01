@@ -3,14 +3,10 @@
  * Author: Dory Azar
  *
  */
-import Vue from 'vue'
-import Vuex from 'vuex'
+import { createStore } from 'vuex'
 
 //import * as app from '@/common/app.js'
-
-Vue.use(Vuex)
-
-export default new Vuex.Store({
+const store = createStore({
     state: {},
 	
 	mutations: {},
@@ -20,3 +16,5 @@ export default new Vuex.Store({
 	getters: {}
 	
 });
+
+export default store;
