@@ -34,8 +34,6 @@ const app = Vue.createApp({
   
 });
 
-// Mount the app
-app.mount('#app');
 
 /* Components Definition */
 
@@ -52,3 +50,6 @@ app.mount('#app');
 //	}
 //	
 //});
+
+// Mount the app
+app.mount('#app');
