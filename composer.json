@@ -13,14 +13,14 @@
     "minimum-stability": "dev",
     "require": {
         "php": ">=7.0",
-        "pug-php/pug": "3.*",
+        "pug-php/pug": "dev-master",
         "vlucas/phpdotenv": "^3.3",
         "wixel/gump": "dev-master",
         "claviska/simpleimage": "dev-master",
         "stripe/stripe-php": "7.*",
         "coinbase/coinbase-commerce": "dev-master",
         "phpmailer/phpmailer": "6.*",
-        "phug/phug": "^1.0@dev"
+        "phug/phug": "1.x-dev"
     },
     "config": {
         "allow-plugins": {

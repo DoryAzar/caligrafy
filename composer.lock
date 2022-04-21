@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5dc50fce01875f0534625827779d6d62",
+    "content-hash": "11c5b3b207c76f0f17087078038c3eb8",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -1066,7 +1066,7 @@
         },
         {
             "name": "pug-php/pug",
-            "version": "3.5.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pug-php/pug.git",
@@ -1091,6 +1091,7 @@
             "require-dev": {
                 "phpunit/phpunit": ">=4.8.35 <9.0"
             },
+            "default-branch": true,
             "bin": [
                 "pug"
             ],
@@ -2008,6 +2009,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "pug-php/pug": 20,
         "wixel/gump": 20,
         "claviska/simpleimage": 20,
         "coinbase/coinbase-commerce": 20,
