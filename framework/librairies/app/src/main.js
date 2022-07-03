@@ -34,6 +34,7 @@ app.config.productionTip = false;
 
 // integrate http request engine
 app.config.globalProperties.http = axios;
+app.config.globalProperties.axios = axios; /* for backward compatibility also can use axios */
 
 // app api configuration
 app.config.globalProperties.apiKey = {
