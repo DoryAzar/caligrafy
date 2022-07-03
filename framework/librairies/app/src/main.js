@@ -9,6 +9,9 @@ import HomePage from '@/components/pages/HomePage.vue'
 // import Store State Management
 import store from '@/common/store'
 
+// Integrate axios for http requests
+let axios = require('axios');
+
 
 // define the routes
 const routes = [
@@ -28,6 +31,26 @@ const app  = createApp(App);
 
 // configure app
 app.config.productionTip = false;
+
+// integrate http request engine
+app.config.globalProperties.http = axios;
+
+// app api configuration
+app.config.globalProperties.apiKey = {
+	apiKey: process.env.VUE_APP_API_KEY,
+	apiRoute: '' /* specify api route here or in env file */
+};
+app.config.globalProperties.apiConfig = {
+	
+	async: true,
+	crossDomain: true,
+	headers: {
+		"Authorization": "Bearer " + app.config.globalProperties.config.apiKey,
+		'Content-Type': 'application/json',
+		'Set-Cookie': 'widget_session=caligrafy_app; SameSite=None; Secure'
+	}
+	
+};
 
 // use router and store
 app.use(router);
