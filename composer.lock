@@ -1721,12 +1721,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-dumper.git",
-                "reference": "3730500d4025613bd69fc9e9f39e8fc1eca38c7e"
+                "reference": "2672bdc01c1971e3d8879ce153ec4c3621be5f07"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/3730500d4025613bd69fc9e9f39e8fc1eca38c7e",
-                "reference": "3730500d4025613bd69fc9e9f39e8fc1eca38c7e",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/2672bdc01c1971e3d8879ce153ec4c3621be5f07",
+                "reference": "2672bdc01c1971e3d8879ce153ec4c3621be5f07",
                 "shasum": ""
             },
             "require": {
@@ -1801,7 +1801,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-06-27T17:10:44+00:00"
+            "time": "2022-07-20T13:45:53+00:00"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -1886,12 +1886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "3878abe3cb53c90bfce59add8eb18f78b1955445"
+                "reference": "8de017fb22c6b5b5483e38a2d171e4fcbca57393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/3878abe3cb53c90bfce59add8eb18f78b1955445",
-                "reference": "3878abe3cb53c90bfce59add8eb18f78b1955445",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/8de017fb22c6b5b5483e38a2d171e4fcbca57393",
+                "reference": "8de017fb22c6b5b5483e38a2d171e4fcbca57393",
                 "shasum": ""
             },
             "require": {
@@ -1900,14 +1900,14 @@
                 "ext-intl": "*",
                 "ext-json": "*",
                 "ext-mbstring": "*",
-                "php": ">=7.0"
+                "php": ">=7.1"
             },
             "require-dev": {
                 "kamermans/docblock-reflection": "^1.0",
                 "maddhatter/markdown-table": "^1.0",
                 "mockery/mockery": "^1.3",
                 "php-coveralls/php-coveralls": "^2.2",
-                "phpunit/phpunit": "^6"
+                "phpunit/phpunit": "^6|^9"
             },
             "default-branch": true,
             "type": "library",
@@ -1942,9 +1942,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Wixel/GUMP/issues",
-                "source": "https://github.com/Wixel/GUMP/tree/v1.12.2"
+                "source": "https://github.com/Wixel/GUMP/tree/v2.0.0"
             },
-            "time": "2022-02-17T08:59:41+00:00"
+            "time": "2022-07-15T09:14:21+00:00"
         }
     ],
     "packages-dev": [],
