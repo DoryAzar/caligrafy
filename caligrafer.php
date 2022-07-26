@@ -82,7 +82,9 @@ switch(strtolower($argv[1])) {
 	case 'create':
 		if (isset($argv[2]) && !in_array(strtolower($argv[2]), $restricted)) {
 			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
-			system('npm install');
+			system('cd public/'.$argv[2]);
+			system('npm install', $retValue);
+			system('npm run serve');
 			print("\n Project created in the public folder. \n\n Type cd public/".$argv[2]. " to access it and then run npm install to install its dependecies. \n\n");
 		} else {
 			print("\n The project could not be created. Please make sure you have node.js with npm installed and that the name does not conflict with existing public folders. \n\n");
