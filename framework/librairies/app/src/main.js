@@ -37,7 +37,7 @@ app.config.globalProperties.http = axios;
 app.config.globalProperties.axios = axios; /* for backward compatibility also can use axios */
 
 // app api configuration
-app.config.globalProperties.apiKey = {
+app.config.globalProperties.config = {
 	apiKey: process.env.VUE_APP_API_KEY,
 	apiRoute: '' /* specify api route here or in env file */
 };
