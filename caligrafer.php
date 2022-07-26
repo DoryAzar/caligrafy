@@ -68,8 +68,9 @@ switch(strtolower($argv[1])) {
 		   $vueInput = "VUE_APP_APP_KEY=".$appKey."\n"."VUE_APP_API_KEY=".$apiKey."\n";
 		   file_put_contents($file, $input);
 		   file_put_contents(LIB_PATH . 'app/' . $file, $vueInput);
-		   system('sudo chmod -R 777 public/uploads');
-		   system('sudo rm -R .git');
+		   system('chmod -R 777 public/uploads');
+		   system('chmod -R 777 .git');
+		   system('rm -R .git');
 		   print("\n Application initialized successfully");
 		   print ("\n APP_KEY=".$appKey);
 		   print("\n API_KEY=".$apiKey);
@@ -81,9 +82,10 @@ switch(strtolower($argv[1])) {
 	case 'create':
 		if (isset($argv[2]) && !in_array(strtolower($argv[2]), $restricted)) {
 			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
+			system('npm install');
 			print("\n Project created in the public folder. \n\n Type cd public/".$argv[2]. " to access it and then run npm install to install its dependecies. \n\n");
 		} else {
-			print("\n The project could not be created. Please make sure that the name does not conflict with existing public folders. \n\n");
+			print("\n The project could not be created. Please make sure you have node.js with npm installed and that the name does not conflict with existing public folders. \n\n");
 		}
 		break;
         
