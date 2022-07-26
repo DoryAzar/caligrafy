@@ -82,15 +82,15 @@ switch(strtolower($argv[1])) {
 	case 'create':
 		if (isset($argv[2]) && !in_array(strtolower($argv[2]), $restricted)) {
 			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
-			print("\n Project created in the public folder. \n\n Type cd public/".$argv[2]. " to access it and then run npm install to install its dependecies. \n\n");
-			chdir("public");
-			chdir($argv[2]);
+			print("\n Project created in the public folder.\n Type cd public/".$argv[2]. " to access it anytime\n\n");
+			chdir("public/".$argv[2]);
 			print("\n Installing packages...\n\n");
-			system('npm install', $retValue);
+			system('npm install');
 			print("\n VueJS project successfully created and all packages have been installed.
-					\n - To run local server, type: \' npm run serve \'
-					\n - To run a build, type: \'npm run build\'  
+					\n - To run local server, type: 'npm run serve'
+					\n - To run a build, type: 'npm run build'  
 					\n\n");
+			echo getcwd();
 		} else {
 			print("\n The project could not be created. Please make sure you have node.js with npm installed and that the name does not conflict with existing public folders. \n\n");
 		}
