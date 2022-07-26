@@ -87,8 +87,10 @@ switch(strtolower($argv[1])) {
 			chdir($argv[2]);
 			print("\n Installing packages...\n\n");
 			system('npm install', $retValue);
-			print("\n Running development server. CTRL Z to quit. \n\n");
-			system('npm run serve');
+			print("\n VueJS project successfully created and all packages have been installed.
+					\n - To run local server, type: \' npm run serve \'
+					\n - To run a build, type: \'npm run build\'  
+					\n\n");
 		} else {
 			print("\n The project could not be created. Please make sure you have node.js with npm installed and that the name does not conflict with existing public folders. \n\n");
 		}
