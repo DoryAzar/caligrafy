@@ -83,8 +83,9 @@ switch(strtolower($argv[1])) {
 		if (isset($argv[2]) && !in_array(strtolower($argv[2]), $restricted)) {
 			system('cp -r framework/librairies/app ./public/'.$argv[2], $retValue);
 			print("\n Project created in the public folder. \n\n Type cd public/".$argv[2]. " to access it and then run npm install to install its dependecies. \n\n");
-			system('cd public/'.$argv[2]);
-			print("\n Installing packages \n\n");
+			chdir("public");
+			chdir($argv[2]);
+			print("\n Installing packages...\n\n");
 			system('npm install', $retValue);
 			print("\n Running development server. CTRL Z to quit. \n\n");
 			system('npm run serve');
