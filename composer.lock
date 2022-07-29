@@ -1886,12 +1886,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "8de017fb22c6b5b5483e38a2d171e4fcbca57393"
+                "reference": "478069c936ba091e375e04ccc05af143f03807c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/8de017fb22c6b5b5483e38a2d171e4fcbca57393",
-                "reference": "8de017fb22c6b5b5483e38a2d171e4fcbca57393",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/478069c936ba091e375e04ccc05af143f03807c4",
+                "reference": "478069c936ba091e375e04ccc05af143f03807c4",
                 "shasum": ""
             },
             "require": {
@@ -1906,7 +1906,7 @@
                 "kamermans/docblock-reflection": "^1.0",
                 "maddhatter/markdown-table": "^1.0",
                 "mockery/mockery": "^1.3",
-                "php-coveralls/php-coveralls": "^2.2",
+                "php-coveralls/php-coveralls": "^2.5",
                 "phpunit/phpunit": "^6|^9"
             },
             "default-branch": true,
@@ -1942,9 +1942,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Wixel/GUMP/issues",
-                "source": "https://github.com/Wixel/GUMP/tree/v2.0.0"
+                "source": "https://github.com/Wixel/GUMP/tree/master"
             },
-            "time": "2022-07-15T09:14:21+00:00"
+            "time": "2022-07-17T12:34:25+00:00"
         }
     ],
     "packages-dev": [],
