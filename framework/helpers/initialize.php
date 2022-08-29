@@ -40,9 +40,9 @@ define("FONTS_PATH", PUBLIC_PATH . "fonts" . DS);
 
 
 //URL of the application
-$serverName = isset($_SERVER['SERVER_NAME'])? $_SERVER['SERVER_NAME'].DS : '';
-$port =  isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] != '80'  ? $_SERVER['SERVER_PORT'] : '';
-$_SESSION['base'] = getenv('APP_PROTOCOL')."://".$serverName.':'.$port;
+$serverName = isset($_SERVER['SERVER_NAME'])? $_SERVER['SERVER_NAME'] : '';
+$port =  isset($_SERVER['SERVER_PORT']) && $_SERVER['SERVER_PORT'] != '80'  ? ':'.$_SERVER['SERVER_PORT'] : '';
+$_SESSION['base'] = getenv('APP_PROTOCOL')."://".$serverName.$port.DS;
 $_SESSION['home'] = $_SESSION['base'].(getenv('APP_ROOT')? getenv('APP_ROOT').DS : '');
 $_SESSION['public'] = $_SESSION['home'].'public'.DS;
 $_SESSION['uploadsUrl'] = $_SESSION['home']."public/uploads".DS;
