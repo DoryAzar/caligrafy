@@ -1,5 +1,10 @@
 # Caligrafy - A Web Application Framework For Novice Developers
-![Caligrafy](https://github.com/DoryAzar/caligrafy/blob/master/public/images/resources/banner_white.png)
+
+Caligrafy Quill - the latest version of Caligrafy - is out!
+Check out all the features of Caligrafy Quill and how it integrates seamlessly with Vue.js
+> [Get Caligrafy Quill](https://github.com/caligrafy/caligrafy-quill) 
+
+<br />
 
 ## What is Caligrafy
 
